@@ -1,0 +1,62 @@
+form#ctaForm {
+  display: flex;
+  text-align: center;
+  // Hack IE 11
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    flex: inherit;
+    display: block;
+  }
+
+  .form-section {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 1em;
+  }
+
+  .button-primary {
+    margin-top: 2em;
+    background: none;
+  }
+
+  .page {
+    // height:200px;
+    //position: relative;
+    transition: all 0.3s;
+    //left:0;
+    opacity: 1;
+
+    &[data-slide="show"] {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    &[data-slide="hideLeft"] {
+      //left: -1000px;
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+
+    &[data-slide="hideRight"] {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+  }
+
+  .page-confirm {
+    .fa {
+      color: white;
+    }
+
+    .message p {
+      padding: 0 1em;
+      color: white;
+      font-size: 1.2em;
+      line-height: 1.3em;
+    }
+
+    .success, .error {
+      display: none;
+    }
+  }
+
+}

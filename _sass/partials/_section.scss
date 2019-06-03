@@ -1,0 +1,214 @@
+section.section {
+  min-height: 85vh;
+  overflow: auto; // bug fix
+  h1, h2 {
+    margin-top: 0;
+  }
+
+  &.section-invert { // sections avec text clair sur fond foncé
+    color: white;
+    text-shadow: $textShadow;
+    background-color: $darkColorBackground;
+
+    h1, h2 {
+      color: $primaryColor;
+      text-shadow: none;
+    }
+
+    .button {
+      color: white;
+    }
+  }
+
+  &.section-white { // sections avec text clair sur fond foncé
+    color: black;
+    text-shadow: none;
+    background-color: white;
+
+    h1, h2 {
+      color: $primaryColor;
+      text-shadow: none;
+    }
+
+    .button {
+      color: black;
+    }
+  }
+
+  &.section-color { // sections avec text clair sur fond foncé
+    color: white;
+    text-shadow: $textShadow;
+    background-color: $primaryColor;
+
+    h1, h2 {
+      color: white;
+      text-shadow: none;
+    }
+
+    .h1 {
+      font-size: 28px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .h2 {
+      font-size: 26px;
+      font-weight: 400;
+      color: $accentColor;
+      text-transform: uppercase;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    .h3 {
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .button {
+      color: white;
+    }
+  }
+}
+
+// OVERRIDES DU SLIDER
+
+section.topSlider {
+  margin-top: 50px;
+
+  .flexslider {
+    margin: 0;
+    border: 0 solid transparent;
+    background-color: #000;
+
+    ul.slides {
+      min-height: 100%;
+
+      img {
+        height: 430px;
+        -moz-user-select: none;
+        width: auto;
+        overflow: hidden;
+      }
+
+      li {
+        position: relative;
+
+        .captionBox {
+          position: absolute;
+          bottom: 22%;
+          right: 11%;
+          padding: 15px;
+          background-color: rgba(0, 0, 0, .75);
+          max-width: 248px;
+
+          display: block;
+
+          p {
+            color: #fff;
+            float: left;
+            width: 100%;
+
+            &.title {
+              font-size: 32px;
+              font-weight: 600;
+              margin: 0 0 10px 0;
+              line-height: 1em;
+            }
+
+            &.description {
+              font-size: 18px;
+              font-weight: 400;
+              margin: 8px 0 0 0;
+              line-height: 1.2em;
+            }
+          }
+
+          hr.yellow {
+            width: 40%;
+            border-bottom: 3px solid $accentColor;
+            float: left;
+          }
+        }
+      }
+    }
+
+    .flex-control-nav {
+      bottom: 38px;
+    }
+
+    .flex-direction-nav a:before {
+      font-size: 28px;
+    }
+  }
+}
+
+// END OF SLIDER
+//FLOATING MENU
+.floatingSection {
+  position: absolute;
+  width: 100%;
+  margin-top: -88px;
+
+  .subMenu {
+    width: 100%;
+    background-color: $darkColorBackground;
+    margin: 50px 0;
+    position: static;
+    z-index: 10000;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px;
+
+    a {
+      color: #fff;
+      font-weight: 400;
+      text-decoration: none;
+      text-align: center;
+      padding: 16px;
+      float: left;
+      border-right: 1px solid $accentColor;
+      width: 20%;
+
+      &:last-child {
+        border-right: 0px solid transparent;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+}
+
+@mixin sectionFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5em 0;
+  // Hack IE 11
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    display: block;
+    flex: inherit;
+  }
+}
+
+.main {
+  .section:first-of-type {
+    margin-top: $headerHeightMobile;
+    height: calc( 100vh - #{$headerHeightMobile} );
+    @media only screen and (min-width:$mobileBreakpoint) {
+      margin-top: $headerHeight;
+      height: calc( 100vh - #{$headerHeight} );
+      min-height: 550px;
+    }
+  }
+}
+
+@import 'sections/punchline';
+@import 'sections/media';
+@import 'sections/video';
+@import 'sections/features';
+@import 'sections/information';

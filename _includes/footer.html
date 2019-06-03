@@ -1,5 +1,38 @@
-<footer>
-
-  <small>This project is maintained by <a href="https://www.danurbanowicz.com" rel="noopener">Dan Urbanowicz</a>. View the repo on <a href="https://github.com/danurbanowicz/jekyll-netlify-boilerplate" rel="noopener">Github</a></small>
+<!--------------------------------->
+<!-- Section Footer ------------>
+<!--------------------------------->
+<footer class="footer" role="contentinfo">
+  <div class="logo">
+    <img src="http://placehold.it/250x50" alt="XXXXX">
+  </div>
+  <div class="logo-sec">
+    <span class="mention">Propulsé par : </span>
+    <a href="http://google.com" target="_blank">
+      <img src="http://placehold.it/250x50" alt="XXXXX">
+    </a>
+  </div>
 
 </footer>
+
+<script src="/assets/components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("XXXXXXXX");
+  })();
+</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/smooth-scroll.js"></script>
+<script src="/assets/js/jquery.flexslider.js"></script>
+<script src="/assets/js/jquery.flexslider.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a.scroll');
+</script>
+
+<script>
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>

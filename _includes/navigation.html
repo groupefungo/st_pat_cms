@@ -1,11 +1,79 @@
-{% assign navurl = page.url | remove: 'index.html' %}
-<ul>
-{% for item in include.navigation %}
-  <li>
-    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
-    {% if item.subitems %}
-      {% include navigation.html navigation=item.subitems %}
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
+<!--{% assign navurl = page.url | remove: 'index.html' %}-->
+<!--<ul>-->
+<!--{% for item in include.navigation %}-->
+  <!--<li>-->
+    <!--<a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>-->
+    <!--{% if item.subitems %}-->
+      <!--{% include navigation.html navigation=item.subitems %}-->
+    <!--{% endif %}-->
+  <!--</li>-->
+<!--{% endfor %}-->
+<!--</ul>-->
+
+<div class="logo">
+    <img src="/assets/img/logo_stpats.svg" alt="St. Patrick's High School">
+  </div>
+
+  <!----------->
+  <!-- MENUS -->
+  <!----------->
+  <div class="menu">
+    <ul>
+      <li><a data-scroll class="scroll" href="#about">About</a></li>
+      <li><a data-scroll class="scroll" href="#foundation">The Foundation</a></li>
+      <li><a data-scroll class="scroll" href="#profiles">Profiles</a></li>
+      <li><a data-scroll class="scroll" href="#activities">Activities</a></li>
+      <li><a data-scroll class="scroll" href="#contact">Contact Us</a></li>
+      <li><a class="subscribe" href="#">
+        <small>INFORMATIONS OR</small>
+        <br>REGISTRATION</a>
+      </li>
+      <li>
+        <span class="socialMedias"><a href="#" class="facebook" target="_blank"><img src="assets/img/facebook2.svg"
+                                                                                     alt="Facebook"> </a><a href="#"
+                                                                                                            class="twitter"
+                                                                                                            target="_blank"><img
+                src="assets/img/twitter.svg" alt="Facebook"> </a> </span></li>
+    </ul>
+  </div>
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input id="js-closeMenu" type="checkbox"/>
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span> <span></span> <span></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a data-scroll class="click-mobile scroll" href="#">
+        <li>Accueil</li>
+      </a> <a data-scroll class="click-mobile scroll" href="#about">
+      <li>About</li>
+    </a> <a data-scroll class="click-mobile scroll" href="#foundation">
+      <li>The Foundation</li>
+    </a> <a data-scroll class="click-mobile scroll" href="#profiles">
+      <li>Profiles</li>
+    </a> <a data-scroll class="click-mobile scroll" href="#activities">
+      <li>Activities</li>
+    </a> <a data-scroll class="click-mobile scroll" href="#contact">
+      <li>Contact Us</li>
+    </a> <a class="click-mobile" href="#" target="_blank">
+      <li><img src="assets/img/facebook.svg"></li>
+    </a>
+    </ul>
+  </div>
+  <!-------------------->
+  <!-- CALL TO ACTION -->
+  <!-------------------->
+  <a href="#f" style="display: none;" class="button button-secondary button-cta">Call to action</a>

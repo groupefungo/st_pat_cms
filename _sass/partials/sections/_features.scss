@@ -1,0 +1,123 @@
+section.section.section-features{
+  @include sectionFlex();
+  min-height: 40vh;
+  text-align: center;
+  padding-bottom: 2em;
+  .feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom:3em;
+  }
+  i.fa{
+    font-size:3em;
+  }
+  .description{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top:0.5em;
+  }
+  @media only screen and (min-width:$mobileBreakpoint) {
+    i.fa{
+      font-size:4em;
+    }
+    .description{
+      max-width: 300px;
+      margin-top:0;
+      margin-left:1em;
+      font-size: 1.3em;
+    }
+  }
+  .newsBox {
+    width: 100%;
+    background-color: rgba(0,0,0,1);
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.65);
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,0.65);
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+
+    .mainNews {
+      width: 50%;
+      float: left;
+      height: auto;
+      overflow: hidden;
+      background-color: red;
+    }
+    .secondaryNews {
+      width: 50%;
+      float: left;
+
+      .singleNews {
+        background-color: rgba(255,255,255,1);
+        position: relative;
+        width: 100%;
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        min-height: 75px;
+        max-height: 28%;
+        border-bottom: 1px solid #eee;
+
+        &:last-child {
+          border-bottom: 0px solid transparent;
+        }
+
+        .picture {
+          width: 25%;
+          min-height: 100%;
+          float: left;
+          overflow: hidden;
+          border: 1px solid rgba(0,0,0,0.7);
+          margin-right: 8px;
+
+          img {
+            height: 100%;
+            width: auto;
+          }
+        }
+
+        .details {
+          width: 100%;
+
+          p {
+            text-shadow: none;
+            color: #000000;
+            font-size: 12px;
+            margin: 0;
+            width: 80%;
+            float: left;
+
+            &.message {
+              text-overflow: ellipsis;
+              line-height: 1.2em;
+            }
+
+            &.title {
+              font-size: 16px;
+              color: $primaryColor;
+              font-weight: 600;
+              line-height: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #profiles {
+
+    .profiles {
+      display: block;
+
+      .profileBox {
+        background-color: red;
+        border: 1px solid black;
+        width: 25%;
+        float: left;
+      }
+    }
+  }
+}

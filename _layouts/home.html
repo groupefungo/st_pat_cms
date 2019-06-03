@@ -2,22 +2,272 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<!--<h2>{{ page.title }}</h2>-->
 
-  {% include page-intro.html %}
+  <!--{% include page-intro.html %}-->
 
-  {{ content }}
+  <!--{{ content }}-->
 
-  <section>
+  <!--<section>-->
 
-    <h3>Recent posts from the blog</h3>
+    <!--<h3>Recent posts from the blog</h3>-->
 
-    <ul>
-      {% for post in site.posts limit:3 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    <!--<ul>-->
+      <!--{% for post in site.posts limit:3 %}-->
+        <!--<li>-->
+          <!--<a href="{{ post.url }}">{{ post.title }}</a>-->
+        <!--</li>-->
+      <!--{% endfor %}-->
+    <!--</ul>-->
 
+  <!--</section>-->
+
+<main class="main" role="main">
+
+  <!--------------------------------->
+  <!-- Section Slider ------------>
+  <!--------------------------------->
+  <section class="topSlider">
+    <div class="container-fluid">
+      <section class="slider">
+        <div class="flexslider">
+
+          <div class="flex-viewport" style="overflow: hidden; position: relative;">
+            <ul class="slides"
+                style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px);">
+              <li class="clone" aria-hidden="true"
+                  style="width: 602px; margin-right: 0px; float: left; display: block;">
+                <img src="assets/img/slider/slide_1.png" draggable="false">
+                <div class="captionBox">
+                  <p class="title">International Students Program</p>
+                  <hr class="yellow">
+                  <p class="description">Lorem ipsum dolor sit emet , consectetur.</p>
+                  <a class="button button-block button-primary">Tell me more</a>
+                </div>
+              </li>
+              <li style="width: 602px; margin-right: 0px; float: left; display: block;" class="" data-thumb-alt="">
+                <img src="assets/img/slider/slide_1.png" draggable="false">
+                <div class="captionBox">
+                  <p class="title">International Students Program</p>
+                  <hr class="yellow">
+                  <p class="description">Lorem ipsum dolor sit emet , consectetur.</p>
+                  <a class="button button-block button-primary">Tell me more</a>
+                </div>
+              </li>
+              <li data-thumb-alt="" style="width: 602px; margin-right: 0px; float: left; display: block;" class="">
+                <img src="assets/img/slider/slide_1.png" draggable="false">
+                <div class="captionBox">
+                  <p class="title">International Students Program</p>
+                  <hr class="yellow">
+                  <p class="description">Lorem ipsum dolor sit emet , consectetur.</p>
+                  <a class="button button-block button-primary">Tell me more</a>
+                </div>
+              </li>
+              <li data-thumb-alt="" style="width: 602px; margin-right: 0px; float: left; display: block;"
+                  class="flex-active-slide">
+                <img src="assets/img/slider/slide_1.png" draggable="false">
+                <div class="captionBox">
+                  <p class="title">International Students Program</p>
+                  <hr class="yellow">
+                  <p class="description">Lorem ipsum dolor sit emet , consectetur.</p>
+                  <a class="button button-block button-primary">Tell me more</a>
+                </div>
+              </li>
+              <li data-thumb-alt="" style="width: 602px; margin-right: 0px; float: left; display: block;" class="">
+                <img src="assets/img/slider/slide_1.png" draggable="false">
+                <div class="captionBox">
+                  <p class="title">International Students Program</p>
+                  <hr class="yellow">
+                  <p class="description">Lorem ipsum dolor sit emet , consectetur.</p>
+                  <a class="button button-block button-primary">Tell me more</a>
+                </div>
+              </li>
+              <li style="width: 602px; margin-right: 0px; float: left; display: block;" class="clone"
+                  aria-hidden="true">
+                <img src="assets/img/slider/slide_1.png" draggable="false">
+                <div class="captionBox">
+                  <p class="title">International Students Program</p>
+                  <hr class="yellow">
+                  <p class="description">Lorem ipsum dolor sit emet , consectetur.</p>
+                  <a class="button button-block button-primary">Tell me more</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ol class="flex-control-nav flex-control-paging">
+
+          </ol>
+          <ul class="flex-direction-nav">
+            <li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li>
+            <li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </section>
+
+  <!--------------------------------->
+  <!-- Section Punchline ------------>
+  <!--------------------------------->
+  <section id="subFloatMenu" class="floatingSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="subMenu">
+            <a href="#" class="">FEATURED EVENTS</a>
+            <a href="#" class="">JUSTIFY AN ABSENCE</a>
+            <a href="#" class="">REPORT A BULLY</a>
+            <a href="#" class="">FEATURED EVENTS</a>
+            <a href="#" class="">FEATURED EVENTS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------->
+  <!-- Section NEWS ------------>
+  <!--------------------------------->
+  <section class="section section-features section-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="h1">WHAT’S UP IN ST.PAT’S HIGH SCHOOL</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="newsBox">
+            <div class="mainNews">
+
+            </div>
+            <div class="secondaryNews">
+              <div class="singleNews text-left">
+                <span class="picture"></span>
+                <div class="details">
+                  <p class="title">Titre de l'article</p>
+                  <a class="button button-alert pull-right">Read More</a>
+                  <p class="message">Texte de l'article qui devrait être couper quelque part Texte de l'article qui
+                    devrait être couper quelque part Texte de l'article qui devrait être couper quelque part</p>
+                </div>
+              </div>
+              <div class="singleNews text-left">
+                <span class="picture"></span>
+                <div class="details">
+                  <p class="title">Titre de l'article</p>
+                  <a class="button button-alert pull-right">Read More</a>
+                  <p class="message">Texte de l'article qui devrait être couper quelque part Texte de l'article qui
+                    devrait être couper quelque part Texte de l'article qui devrait être couper quelque part</p>
+                </div>
+              </div>
+              <div class="singleNews text-left">
+                <span class="picture"></span>
+                <div class="details">
+                  <p class="title">Titre de l'article</p>
+                  <a class="button button-alert pull-right">Read More</a>
+                  <p class="message">Texte de l'article qui devrait être couper quelque part Texte de l'article qui
+                    devrait être couper quelque part Texte de l'article qui devrait être couper quelque part</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="h2">Where academic, arts and sports meet.</h2>
+          <h2 class="h3">418.525.8421</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------->
+  <!-- Section Profiles ------------>
+  <!--------------------------------->
+  <section id="profiles" class="section section-features section-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>PROFILES</h2>
+          <hr>
+          <h4>Every kid is different, so we offer individual profiles</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="profiles">
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+            <div class="profileBox"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------->
+  <!-- Section Features ------------>
+  <!--------------------------------->
+  <section class="section section-features section-invert">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Titre</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="feature">
+            <i class="fa fa-usd fa-5x fa-inverse"></i>
+            <span class="description">Advantage</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature">
+            <i class="fa fa-calendar fa-5x fa-inverse"></i>
+            <span class="description">Advantage</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature">
+            <i class="fa fa-arrows fa-5x fa-inverse"></i>
+            <span class="description">Advantage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------->
+  <!-- Section Media ------------>
+  <!--------------------------------->
+  <section class="section section-media hide-mobile"></section>
+
+  <!--------------------------------->
+  <!-- Section Informations ------------>
+  <!--------------------------------->
+  <section class="section section-info section-invert">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Information </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, nisl ac commodo varius, urna turpis
+            imperdiet risus, non aliquam turpis augue quis nunc. </p>
+          <div class="buttonWrapper hide-mobile"><a href="#f" class="button button-primary">Call to action</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

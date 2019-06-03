@@ -1,0 +1,86 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: $ctaFooterHeight;
+  color: white;
+  background-color: $footerBackground;
+
+  .logo {
+    float: left;
+
+    img {
+      height: 20px;
+    }
+  }
+
+  .logo-sec {
+    .mention {
+      display: inline-block;
+      float: left;
+      margin-left: 12px;
+      position: relative;
+      bottom: -6px;
+    }
+
+    a {
+      float: left;
+    }
+
+    img {
+      height: 28px;
+    }
+
+    @media only screen and (min-width: $mobileBreakpoint) {
+      display: flex;
+      align-items: center;
+      .mention {
+        bottom: 2px;
+        margin-left: 0;
+      }
+      img {
+        height: 35px;
+      }
+    }
+  }
+
+  .list-social-links {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    line-height: 1em;
+
+    a {
+      margin-left: 1em;
+      font-size: 1.4em;
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    padding: 20px 30px;
+    margin-bottom: 0;
+    .logo {
+      img {
+        height: 50px;
+      }
+    }
+    .list-social-links {
+      font-size: 1.4em;
+    }
+  }
+}
+
+.cta-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  height: $ctaFooterHeight;
+  padding-top: 20px;
+  width: 100%;
+  background-color: $ctaFooterBackground;
+  text-align: center;
+  @media only screen and (min-width: $mobileBreakpoint) {
+    display: none;
+  }
+}

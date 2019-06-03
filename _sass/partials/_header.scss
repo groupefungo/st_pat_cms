@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $headerHeightMobile;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 20px;
+  background-color: $headerBackground;
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.5);
+
+  .logo {
+    text-align: center;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .button-cta {
+    display: none;
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    justify-content: space-between;
+    height: $headerHeight;
+    padding: 20px 30px;
+    .logo {
+      float: left;
+
+      img {
+        height: 78px;
+      }
+    }
+    .button-cta {
+      display: inherit;
+      float: right;
+    }
+  }
+}

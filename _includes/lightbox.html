@@ -1,0 +1,102 @@
+<!--------------------------------->
+<!-- Lightbox formulaire ------------>
+<!--------------------------------->
+<div class="lightbox-wrapper short-animate" id="f">
+    <form class="form" id="ctaForm" action="">
+
+        <div class="lightbox-content page page1">
+            <div class="form-section">
+                <div class="form-error swing-top-right-bck"></div>
+
+                <div class="form-group form-checkbox-list">
+                    <label for="">Question 1</label>
+                    <ul class="clear">
+                        <li>
+                            <input type="radio" name="question-1" id="reponse-1a" value="Réponse A">
+                            <label for="reponse-1a">Réponse A</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" name="question-1" id="reponse-1b" value="Réponse B">
+                            <label for="reponse-1b">Réponse B</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" name="question-1" id="reponse-1c" value="Je ne sais pas">
+                            <label for="reponse-1c">Je ne sais pas</label>
+                            <div class="check"></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="button button-primary nextPage" type="button">Suivant</button>
+            </div>
+        </div>
+        <div class="lightbox-content page page2" data-slide="hideRight">
+            <div class="form-section">
+                <div class="form-error swing-top-right-bck"></div>
+
+                <div class="form-group form-checkbox-list">
+                    <label for="">Question 2</label>
+                    <ul class="clear">
+                        <li>
+                            <input type="radio" name="question-2" id="reponse-2a" value="Réponse A">
+                            <label for="reponse-2a">Réponse A</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" name="question-2" id="reponse-2b" value="Réponse B">
+                            <label for="reponse-2b">Réponse B</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" name="question-2" id="reponse-2c" value="Je ne sais pas">
+                            <label for="reponse-2c">Je ne sais pas</label>
+                            <div class="check"></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="button button-primary nextPage" type="button">Suivant</button>
+            </div>
+        </div>
+
+
+        <div class="lightbox-content page page3" data-slide="hideRight">
+            <div class="form-section">
+                <div class="form-error swing-top-right-bck"></div>
+                <label for="">Coordonnées</label>
+                <div class="form-group">
+                    <input type="text" name="nomutilisateur" data-req="required" placeholder="NOM">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="courriel" placeholder="COURRIEL" data-req="required" data-type="email">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="telephone" data-req="required" data-type="phone" placeholder="418-123-4567">
+                </div>
+                <button type="submit" class="button button-primary" data-type="submit">Envoyer</button>
+            </div>
+        </div>
+
+        <div class="lightbox-content page page-confirm" data-slide="hideRight">
+            <div class="wait">
+                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="message success">
+                <i class="fa fa-check-circle fa-4x" aria-hidden="true"></i>
+                <p>Votre message a été envoyé avec succès.<br> Nous vous contacterons prochainement. Merci !</p>
+            </div>
+            <div class="message error">
+                <i class="fa fa-exclamation-circle fa-4x" aria-hidden="true"></i>
+                <p>Désolé, une erreur s'est produite.<br> Votre message n'a pu être envoyé.<br> Veuillez nous contacter au <a
+                        href="tel:+XXXXX">XXXX</a>.</p>
+            </div>
+        </div>
+
+    </form>
+</div>
+<div id="lightbox-controls" class="short-animate">
+    <a id="close-lightbox" class="long-animate" href="#!">Fermer</a>
+</div>

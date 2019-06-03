@@ -1,0 +1,7 @@
+section.section.section-info{
+  @include sectionFlex();
+  min-height: 40vh;
+  .buttonWrapper{
+    margin-top:4em;
+  }
+}

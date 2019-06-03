@@ -1,0 +1,46 @@
+a.button, button.button{
+  color: $generalFontColor;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  cursor: pointer;
+  &.button-primary{
+    color: $buttonTextColor;
+    background-color: $buttonPrimaryBackground;
+    border: solid 3px white;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    &:hover{
+      background-color: $buttonPrimaryBackgroundHover;
+    }
+  }
+  &.button-secondary{
+    background-color: $buttonSecondaryBackground;
+    font-size: 1.6rem;
+    padding:0.8em 2em;
+    &:hover{
+      background-color: lighten($buttonSecondaryBackground, 5%);
+    }
+  }
+  &.button-alert{
+    background-color: #d32027;
+    font-size: .6rem;
+    padding: .5em 0.8em;
+    font-weight: 400;
+    position: absolute;
+    width: auto;
+    text-align: center;
+    right: 5px;
+    bottom: 5px;
+
+    &:hover{
+      background-color: darken(#d32027, 5%);
+    }
+  }
+  &.button-block {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+}

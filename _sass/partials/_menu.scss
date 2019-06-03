@@ -1,0 +1,92 @@
+.menu {
+  position: absolute;
+  right: 0;
+  display: none;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+    li {
+      float: left;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 40px 20px;
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.08em;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #333333;
+        }
+
+        &.phonenumber {
+          font-size: 3em;
+          color: #fff;
+          margin-left: 55px;
+          line-height: 0.8em;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe {
+    color: #fff;
+    background-color: $primaryColor;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    padding: 28px 15px;
+    display: block;
+
+    &:hover {
+      color: #ffffff;
+      background-color: darken($primaryColor, 5%);
+    }
+
+    small {
+      font-size: 65%;
+    }
+  }
+
+  span.socialMedias {
+    position: relative;
+    margin: 0;
+    float: right;
+    width: 50px;
+    margin-left: 3px;
+
+    a {
+      height: 50%;
+      margin: 0;
+      padding: 6px;
+      display: grid;
+
+      &.facebook {
+        background-color: #006da5;
+
+        &:hover {
+          background-color: darken(#006da5, 5%);
+        }
+      }
+
+      &.twitter {
+        background-color: #41c1cd;
+
+        &:hover {
+          background-color: darken(#41c1cd, 5%);
+        }
+      }
+    }
+  }
+}
