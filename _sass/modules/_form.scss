@@ -2,22 +2,22 @@ form.form{
   label{
     display: block;
     color: #fff;
-    font-weight: 700;
-    font-size: 2.5em;
+    font-weight: 400;
+    font-size: 1em;
     text-align: left;
-    line-height: 1em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase;
+    line-height: 1.25em;
+    margin-bottom: 2.5em;
+    text-transform: none;
     @media only screen and (min-width:$mobileBreakpoint) {
-      font-size: 3.4em;
+      font-size: 1.5em;
     }
   }
   .form-group{
     text-align: left;
-    margin-bottom: 1.4em;
+    margin-bottom: 1.1em;
     input[type=text], input[type=email]{
       width:100%;
-      border:none;
+      border: 1px solid #e8e8e8;
       padding:15px 30px;
     }
     // Selecteurs doivent rester séparés
@@ -33,7 +33,6 @@ form.form{
     input:-ms-input-placeholder {
       color: $inputPlaceholder !important;
     }
-
   }
   .form-error{
     display:none;
@@ -42,5 +41,10 @@ form.form{
     color: $primaryColor;
     line-height: 1.2em;
     background: #ffffff;
+  }
+  textarea {
+    color: #4f4f4f;
+    border: 1px solid #e8e8e8;
+    padding: 15px 30px;
   }
 }

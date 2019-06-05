@@ -22,6 +22,25 @@ a.button, button.button{
       background-color: lighten($buttonSecondaryBackground, 5%);
     }
   }
+  &.button-third{
+    background-color: $buttonPrimaryBackground;
+    font-size: 1.6rem;
+    padding:0.8em 2em;
+    &:hover{
+      background-color: lighten($buttonPrimaryBackground, 5%);
+    }
+  }
+  &.button-lightbox, &.button-lightbox.visited, &.button-lightbox.active {
+    background-color: $accentColor;
+    color: $darkColorBackground;
+    font-size: 1.6rem;
+    padding:0.8em 2.7em;
+    margin: 0 3px;
+    border: none;
+    &:hover{
+      background-color: darken($accentColor, 10%);
+    }
+  }
   &.button-alert{
     background-color: #d32027;
     font-size: .6rem;

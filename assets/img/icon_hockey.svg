@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="94px" viewBox="0 0 94 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_hockey</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 61 0 61 51 0 51"></polygon>
+    </defs>
+    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LANDING-PAGE" transform="translate(-814.000000, -2769.000000)">
+            <g id="Group-11" transform="translate(814.000000, 2759.000000)">
+                <g id="icon_hockey" transform="translate(0.000000, 10.000000)">
+                    <rect id="Rectangle" fill="#FAAF3A" fill-rule="nonzero" x="0" y="0" width="94" height="94"></rect>
+                    <g id="Group-3" transform="translate(17.000000, 22.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M5.08333333,27.8432906 C10.5035964,32.6145 19.7717839,35.7 30.5,35.7 C41.2282161,35.7 50.4964036,32.6145 55.9166667,27.8432906 L55.9166667,33.15 C55.9166667,40.0603406 44.2769453,45.9 30.5,45.9 C16.7230547,45.9 5.08333333,40.0603406 5.08333333,33.15 L5.08333333,27.8432906 Z M30.5,5.1 C44.2769453,5.1 55.9166667,10.9395 55.9166667,17.85 C55.9166667,24.7603406 44.2769453,30.6 30.5,30.6 C16.7230547,30.6 5.08333333,24.7603406 5.08333333,17.85 C5.08333333,10.9395 16.7230547,5.1 30.5,5.1 Z M30.5,51 C47.602875,51 61,43.160025 61,33.15 L61,17.85 C61,7.83981563 47.602875,0 30.5,0 C13.397125,0 0,7.83981563 0,17.85 L0,33.15 C0,43.160025 13.397125,51 30.5,51 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

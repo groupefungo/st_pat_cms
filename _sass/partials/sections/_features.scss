@@ -2,7 +2,7 @@ section.section.section-features{
   @include sectionFlex();
   min-height: 40vh;
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
   .feature{
     display: flex;
     align-items: center;
@@ -27,6 +27,50 @@ section.section.section-features{
       margin-top:0;
       margin-left:1em;
       font-size: 1.3em;
+    }
+  }
+  .smallNewsBox {
+    width: 100%;
+    background-color: rgba(0,0,0,1);
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.65);
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,0.65);
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    span {
+
+      &.title {
+        color: $accentColor;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.25em;
+        padding: 8px 8px 0 8px;
+        min-height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &.description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.3em;
+        padding: 8px;
+        min-height: 110px;
+        max-height: 110px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
     }
   }
   .newsBox {
@@ -106,17 +150,190 @@ section.section.section-features{
       }
     }
   }
+}
 
-  #profiles {
+#profiles {
 
-    .profiles {
-      display: block;
+  .profiles {
+    display: block;
+    background-color: darken($accentColor,5%);
 
-      .profileBox {
-        background-color: red;
-        border: 1px solid black;
+    .profileBox {
+      background-color: darken($accentColor,5%);
+      width: 100%;
+      float: left;
+      height: auto;
+      padding-bottom: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-position: center center;
+      background-size: cover;
+      background-blend-mode: multiply;
+      background-repeat: no-repeat;
+
+      &.football { background-image: url("/assets/img/profiles/profile_foot.png"); }
+      &.woodworking { background-image: url("/assets/img/profiles/profile_wood.png"); }
+      &.visualart { background-image: url("/assets/img/profiles/profile_visualart.png"); }
+      &.hockey { background-image: url("/assets/img/profiles/profile_hockey.png"); }
+      &.rugby { background-image: url("/assets/img/profiles/profile_rugby.png"); }
+      &.sciencetech { background-image: url("/assets/img/profiles/profile_sciencetech.png"); }
+      &.basketball { background-image: url("/assets/img/profiles/profile_basketball.png"); }
+      &.spanish { background-image: url("/assets/img/profiles/profile_spanish.png"); }
+      &.dramarts { background-image: url("/assets/img/profiles/profile_dramarts.png"); }
+      &.leadership { background-image: url("/assets/img/profiles/profile_leadership.png"); }
+      &.musicvocals { background-image: url("/assets/img/profiles/profile_musicvocals.png"); }
+      &.multisports { background-image: url("/assets/img/profiles/profile_multisports.png"); }
+
+      &.green, &.yellow {
+
+      }
+      &:nth-child(2n+2) {
+        background-color: darken($primaryColor,5%);
+      }
+
+      span {
+        color: $primaryColorReverse;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding: 5px 14px;
+
+        &.title {
+          font-size: 25px;
+          font-weight: 600;
+          line-height: 1em;
+          height: 50%;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-content: center;
+          hyphens: none;
+        }
+        &.description {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.2em;
+          height: 50%;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-content: center;
+        }
+      }
+
+      &:hover {
+        background-color: lighten($darkColorBackground,35%);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+
+        &:nth-child(2n+2) {
+          background-color: lighten($darkColorBackground,35%);
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+        }
+
+        &.green:hover {
+          background-color: lighten($darkColorBackground,35%);
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+        }
+
+        span {
+          margin-top: -3px;
+          text-shadow: 0 3px 3px rgba(0,0,0,0.6);
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+        }
+      }
+
+      @media only screen and (min-width:$mobileBreakpoint) {
         width: 25%;
-        float: left;
+        padding-bottom: 25%;
+
+        &:nth-child(2n+2) {
+          background-color: inherit;
+        }
+        &.green {
+          background-color: darken($primaryColor,5%);
+        }
+        &.yellow {
+          background-color: darken($accentColor,5%);
+        }
+      }
+    }
+  }
+}
+
+#interscholastic {
+  background-image: url("/assets/img/helmet.png");
+  background-repeat: no-repeat;
+  background-size: 22% auto;
+  background-position: 8% 100%;
+
+  .sportsBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    float: right;
+    margin-bottom: 15px;
+    position: relative;
+
+    &.vertical {
+      flex-direction: column;
+    }
+
+    img {
+      height: 94px;
+    }
+    .title {
+      font-size: 25px;
+      line-height: 1em;
+      font-weight: 400;
+      text-transform: uppercase;
+      width: 100%;
+      display: block;
+      padding: 0 10px;
+    }
+    .details {
+      font-size: 10px;
+      line-height: 1.25em;
+      font-weight: 300;
+      width: 100%;
+      display: block;
+      padding: 0 10px;
+      margin-top: 3px;
+    }
+
+    .button-more {
+      font-size: 10px;
+      color: $primaryColorReverse;
+      background-color: $darkColorBackground;
+      padding: 2px 8px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      &.fix {
+        position: relative;
+        left: 0;
       }
     }
   }

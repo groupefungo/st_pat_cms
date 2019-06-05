@@ -108,12 +108,14 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-viewport {
-  max-height: 2000px;
+  //max-height: 2000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+
+  max-height: 75vh;
 }
 
 .loading .flex-viewport {
@@ -142,7 +144,7 @@ html[xmlns] .flexslider .slides {
   margin: -20px 0 0;
   position: absolute;
   top: 50%;
-  z-index: 10;
+  z-index: 9;
   overflow: hidden;
   opacity: 0;
   cursor: pointer;
@@ -210,7 +212,7 @@ html[xmlns] .flexslider .slides {
   bottom: 5px;
   left: 10px;
   opacity: 0.8;
-  z-index: 10;
+  z-index: 9;
   overflow: hidden;
   cursor: pointer;
   color: #000;

@@ -10,13 +10,44 @@ section.section {
     text-shadow: $textShadow;
     background-color: $darkColorBackground;
 
-    h1, h2 {
-      color: $primaryColor;
+    h1, h2, h4 {
+      color: $primaryColorReverse;
       text-shadow: none;
+      letter-spacing: 1px;
+
+      &.section-title {
+        font-size: 30px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 1px;
+
+        &:after {
+          content: "";
+          border-bottom: 3px solid $accentColor;
+          width: 82px;
+          position: absolute;
+          top: 60px;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 18px;
+      margin: 45px 0 55px 0;
     }
 
     .button {
       color: white;
+    }
+
+    &.features {
+      background-image: url("/assets/img/bkg-features.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
     }
   }
 
@@ -25,9 +56,33 @@ section.section {
     text-shadow: none;
     background-color: white;
 
-    h1, h2 {
-      color: $primaryColor;
+    h1, h2, h4 {
+      color: $darkColorBackground;
       text-shadow: none;
+      letter-spacing: 1px;
+
+      &.section-title {
+        font-size: 30px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 1px;
+
+        &:after {
+          content: "";
+          border-bottom: 3px solid $accentColor;
+          width: 82px;
+          position: absolute;
+          top: 60px;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 18px;
+      margin: 45px 0 55px 0;
     }
 
     .button {
@@ -74,7 +129,7 @@ section.section {
 // OVERRIDES DU SLIDER
 
 section.topSlider {
-  margin-top: 50px;
+  margin-top: 84px;
 
   .flexslider {
     margin: 0;
@@ -96,38 +151,38 @@ section.topSlider {
 
         .captionBox {
           position: absolute;
-          bottom: 22%;
-          right: 11%;
-          padding: 15px;
+          padding: 8px 10px;
           background-color: rgba(0, 0, 0, .75);
-          max-width: 248px;
+          top: 0;
+          left: 0;
+          width: 100%;
 
-          display: block;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
 
           p {
             color: #fff;
             float: left;
-            width: 100%;
 
             &.title {
-              font-size: 32px;
+              font-size: 22px;
               font-weight: 600;
-              margin: 0 0 10px 0;
+              margin: 0;
               line-height: 1em;
             }
 
             &.description {
-              font-size: 18px;
+              font-size: 14px;
               font-weight: 400;
-              margin: 8px 0 0 0;
+              margin: 0;
               line-height: 1.2em;
             }
           }
-
-          hr.yellow {
-            width: 40%;
-            border-bottom: 3px solid $accentColor;
-            float: left;
+          @media only screen and (min-width:$mobileBreakpoint) {
+            flex-direction: row;
+            padding: 12px 55px;
           }
         }
       }
@@ -160,6 +215,7 @@ section.topSlider {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding: 8px;
 
     a {
@@ -205,6 +261,22 @@ section.topSlider {
       min-height: 550px;
     }
   }
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media only screen and (min-width:$mobileBreakpoint) {
+    flex-direction: row;
+  }
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @import 'sections/punchline';
