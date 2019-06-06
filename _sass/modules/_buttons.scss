@@ -41,6 +41,17 @@ a.button, button.button{
       background-color: darken($accentColor, 10%);
     }
   }
+  &.button-action, &.button-action.visited, &.button-action.active {
+    background-color: $primaryColor;
+    color: $primaryColorReverse;
+    font-size: 1.6rem;
+    padding:0.8em 2.7em;
+    margin: 0 3px;
+    border: none;
+    &:hover{
+      background-color: darken($primaryColor, 10%);
+    }
+  }
   &.button-alert{
     background-color: #d32027;
     font-size: .6rem;

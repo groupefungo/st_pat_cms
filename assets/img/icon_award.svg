@@ -1,36 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="55px" height="78px" viewBox="0 0 55 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>icon_award</title>
-    <desc>Created with Sketch.</desc>
-    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="LANDING-PAGE" transform="translate(-694.000000, -3284.000000)" stroke="#FFFFFF" stroke-width="3.45599985">
-            <g id="Why-St-Pats" transform="translate(0.000000, 3033.000000)">
-                <g id="icon_award" transform="translate(696.000000, 253.000000)">
-                    <g id="Layer_1">
-                        <g id="Group">
-                            <ellipse id="Oval" cx="25.5477528" cy="48.3325297" rx="25.4414282" ry="25.6674703"></ellipse>
-                            <polygon id="Shape" points="25.5477528 33.71625 29.1433483 44.8825417 40.782809 44.8825417 31.3667191 51.7830417 34.9638427 62.9493333 25.5477528 56.0488333 16.1316629 62.9493333 19.7287865 51.7830417 10.3126966 44.8825417 21.9521573 44.8825417"></polygon>
-                            <g transform="translate(1.528090, 0.000000)" id="Shape">
-                                <path d="M48.0030337,0 L0.0821348315,0"></path>
-                                <polyline points="28.2646966 23.0201667 33.0017753 10.23975 36.7914382 0.00308333333 47.9464944 0.00308333333 37.9986292 26.88975"></polyline>
-                                <polyline points="10.0498652 26.8743333 0.0867191011 0.00308333333 11.2570562 0.00308333333 15.0467191 10.23975 19.7837978 23.0201667"></polyline>
-                                <path d="M32.9987191,10.2366667 L15.0528315,10.2366667"></path>
-                            </g>
-                        </g>
-                        <g id="Group">
-                            <ellipse id="Oval" cx="25.5477528" cy="48.3325297" rx="25.4414282" ry="25.6674703"></ellipse>
-                            <polygon id="Shape" points="25.5477528 33.71625 29.1433483 44.8825417 40.782809 44.8825417 31.3667191 51.7830417 34.9638427 62.9493333 25.5477528 56.0488333 16.1316629 62.9493333 19.7287865 51.7830417 10.3126966 44.8825417 21.9521573 44.8825417"></polygon>
-                            <g transform="translate(1.528090, 0.000000)" id="Shape">
-                                <path d="M48.0030337,0 L0.0821348315,0"></path>
-                                <polyline points="28.2646966 23.0201667 33.0017753 10.23975 36.7914382 0.00308333333 47.9464944 0.00308333333 37.9986292 26.88975"></polyline>
-                                <polyline points="10.0498652 26.8743333 0.0867191011 0.00308333333 11.2570562 0.00308333333 15.0467191 10.23975 19.7837978 23.0201667"></polyline>
-                                <path d="M32.9987191,10.2366667 L15.0528315,10.2366667"></path>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="78px" height="78px" viewBox="0 0 78 78" style="enable-background:new 0 0 78 78;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:3.456;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="v2">
+	<g id="LANDING-PAGE" transform="translate(-694.000000, -3284.000000)">
+		<g id="Why-St-Pats" transform="translate(0.000000, 3033.000000)">
+			<g id="icon_award" transform="translate(696.000000, 253.000000)">
+				<g>
+					<g id="Group">
+						<ellipse id="Oval" class="st0" cx="37" cy="48.3" rx="25.4" ry="25.7"/>
+						<polygon id="Shape" class="st0" points="37,33.7 40.6,44.9 52.3,44.9 42.9,51.8 46.5,62.9 37,56 27.6,62.9 31.2,51.8 
+							21.8,44.9 33.5,44.9 						"/>
+						<g transform="translate(1.528090, 0.000000)">
+							<path class="st0" d="M59.5,0H11.6"/>
+							<polyline class="st0" points="39.8,23 44.5,10.2 48.3,0 59.4,0 49.5,26.9 							"/>
+							<polyline class="st0" points="21.5,26.9 11.6,0 22.8,0 26.5,10.2 31.3,23 							"/>
+							<path class="st0" d="M44.5,10.2H26.6"/>
+						</g>
+					</g>
+					<g>
+						<ellipse class="st0" cx="37" cy="48.3" rx="25.4" ry="25.7"/>
+						<polygon class="st0" points="37,33.7 40.6,44.9 52.3,44.9 42.9,51.8 46.5,62.9 37,56 27.6,62.9 31.2,51.8 21.8,44.9 
+							33.5,44.9 						"/>
+						<g transform="translate(1.528090, 0.000000)">
+							<path class="st0" d="M59.5,0H11.6"/>
+							<polyline class="st0" points="39.8,23 44.5,10.2 48.3,0 59.4,0 49.5,26.9 							"/>
+							<polyline class="st0" points="21.5,26.9 11.6,0 22.8,0 26.5,10.2 31.3,23 							"/>
+							<path class="st0" d="M44.5,10.2H26.6"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

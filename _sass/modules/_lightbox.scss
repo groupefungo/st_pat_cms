@@ -14,6 +14,7 @@
   left:0;
   right:0;
   background:$lightboxCTAsecondaryBackground;
+  color: $primaryColorReverse;
   z-index:501;
   opacity:0;
   &:target {
@@ -56,6 +57,10 @@
   }
   p {
     margin-top: 25px;
+  }
+  span {
+    font-weight: 500;
+    margin: 12px 0;
   }
   &.lightBkg {
     color: $darkColorBackground;

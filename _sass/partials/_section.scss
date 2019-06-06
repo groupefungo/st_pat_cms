@@ -48,6 +48,8 @@ section.section {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top center;
+
+      padding-bottom: 13em;
     }
   }
 
@@ -180,7 +182,8 @@ section.topSlider {
               line-height: 1.2em;
             }
           }
-          @media only screen and (min-width:$mobileBreakpoint) {
+
+          @media only screen and (min-width: $mobileBreakpoint) {
             flex-direction: row;
             padding: 12px 55px;
           }
@@ -223,7 +226,7 @@ section.topSlider {
       font-weight: 400;
       text-decoration: none;
       text-align: center;
-      padding: 16px;
+      padding: 8px 16px;
       float: left;
       border-right: 1px solid $accentColor;
       width: 20%;
@@ -254,10 +257,10 @@ section.topSlider {
 .main {
   .section:first-of-type {
     margin-top: $headerHeightMobile;
-    height: calc( 100vh - #{$headerHeightMobile} );
-    @media only screen and (min-width:$mobileBreakpoint) {
+    height: calc(100vh - #{$headerHeightMobile});
+    @media only screen and (min-width: $mobileBreakpoint) {
       margin-top: $headerHeight;
-      height: calc( 100vh - #{$headerHeight} );
+      height: calc(100vh - #{$headerHeight});
       min-height: 550px;
     }
   }
@@ -268,7 +271,7 @@ section.topSlider {
   flex-direction: column;
   justify-content: space-between;
 
-  @media only screen and (min-width:$mobileBreakpoint) {
+  @media only screen and (min-width: $mobileBreakpoint) {
     flex-direction: row;
   }
 }

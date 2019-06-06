@@ -145,6 +145,61 @@
 </div>
 
 <!--------------------------------->
+<!-- Lightbox registration ------------>
+<!--------------------------------->
+
+<div class="lightbox-wrapper short-animate" id="r">
+    <form class="form" id="ctaForm3" action="">
+
+        <div class="lightbox-content page">
+            <div class="form-section">
+                <div class="form-error swing-top-right-bck"></div>
+                <h2>Registration / Information</h2>
+                <div class="form-group">
+                    <input type="text" name="nomutilisateur" data-req="required" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="telephone" data-req="required" data-type="phone"
+                           placeholder="418-123-4567">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="courriel" placeholder="Email" data-req="required" data-type="email">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" data-req="required" placeholder="Subject or Question">
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" cols="42" name="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="button button-action button-block" data-type="submit">Submit</button>
+                <span>You want to know if your child meets eligibility criteria to be admit at St.Patrick’s High School? Here’s some help for you.</span>
+                <button type="submit" class="button button-lightbox button-block" data-type="submit">Eligibility
+                    questionnary
+                </button>
+            </div>
+        </div>
+
+        <div class="lightbox-content page page-confirm" data-slide="hideRight">
+            <div class="wait">
+                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="message success">
+                <i class="fa fa-check-circle fa-4x" aria-hidden="true"></i>
+                <p>Votre message a été envoyé avec succès.<br> Nous vous contacterons prochainement. Merci !</p>
+            </div>
+            <div class="message error">
+                <i class="fa fa-exclamation-circle fa-4x" aria-hidden="true"></i>
+                <p>Désolé, une erreur s'est produite.<br> Votre message n'a pu être envoyé.<br> Veuillez nous contacter
+                    au <a
+                            href="tel:+XXXXX">XXXX</a>.</p>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<!--------------------------------->
 <!-- Lightbox profiles ------------>
 <!--------------------------------->
 
