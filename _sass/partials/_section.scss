@@ -16,7 +16,7 @@ section.section {
       letter-spacing: 1px;
 
       &.section-title {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 500;
         display: flex;
         flex-direction: column;
@@ -28,8 +28,8 @@ section.section {
           content: "";
           border-bottom: 3px solid $accentColor;
           width: 82px;
-          position: absolute;
-          top: 60px;
+          position: relative;
+          top: 20px;
         }
       }
     }
@@ -64,7 +64,7 @@ section.section {
       letter-spacing: 1px;
 
       &.section-title {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 500;
         display: flex;
         flex-direction: column;
@@ -76,8 +76,8 @@ section.section {
           content: "";
           border-bottom: 3px solid $accentColor;
           width: 82px;
-          position: absolute;
-          top: 60px;
+          position: relative;
+          top: 20px;
         }
       }
     }
@@ -103,13 +103,13 @@ section.section {
     }
 
     .h1 {
-      font-size: 28px;
+      font-size: 20px;
       font-weight: 400;
       text-transform: uppercase;
     }
 
     .h2 {
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 400;
       color: $accentColor;
       text-transform: uppercase;
@@ -118,12 +118,23 @@ section.section {
     }
 
     .h3 {
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 600;
     }
 
     .button {
       color: white;
+    }
+    @media only screen and (min-width: $mobileBreakpoint) {
+      .h1 {
+        font-size: 28px;
+      }
+      .h2 {
+        font-size: 26px;
+      }
+      .h3 {
+        font-size: 50px;
+      }
     }
   }
 }
@@ -169,18 +180,21 @@ section.topSlider {
             float: left;
 
             &.title {
-              font-size: 22px;
+              font-size: 18px;
               font-weight: 600;
               margin: 0;
               line-height: 1em;
             }
 
             &.description {
-              font-size: 14px;
+              font-size: 11px;
               font-weight: 400;
-              margin: 0;
+              margin: 10px 0;
               line-height: 1.2em;
             }
+          }
+          a.button.button-primary, button.button.button-primary {
+            padding: 0.5rem 3rem;
           }
 
           @media only screen and (min-width: $mobileBreakpoint) {
@@ -207,6 +221,10 @@ section.topSlider {
   position: absolute;
   width: 100%;
   margin-top: -88px;
+  z-index: 2;
+  transition: transform 0.5s linear;
+  transform: translateY(0);
+  display: none;
 
   .subMenu {
     width: 100%;
@@ -216,7 +234,7 @@ section.topSlider {
     z-index: 10000;
     float: left;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 8px;
@@ -226,19 +244,48 @@ section.topSlider {
       font-weight: 400;
       text-decoration: none;
       text-align: center;
-      padding: 8px 16px;
+      padding: 11px 16px;
       float: left;
-      border-right: 1px solid $accentColor;
-      width: 20%;
+      border-right: 0 solid $accentColor;
+      border-bottom: 1px solid $accentColor;
+      width: 100%;
 
       &:last-child {
-        border-right: 0px solid transparent;
+        border-right: 0 solid transparent;
+        border-bottom: 0 solid $accentColor;
       }
 
       &:hover {
         background-color: rgba(255, 255, 255, 0.15);
       }
     }
+    @media only screen and (min-width: $mobileBreakpoint) {
+      flex-direction: row;
+
+      a {
+        padding: 8px 43px;
+        border-right: 1px solid $accentColor;
+        border-bottom: 0 solid $accentColor;
+        width: 20%;
+      }
+    }
+  }
+
+  &.fixedToBottom {
+    position: fixed;
+    bottom: 0;
+    transition: transform 0.5s linear;
+    transform: translateY(55px);
+
+    .subMenu {
+      -webkit-box-shadow: 0 -8px 12px -6px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 -8px 12px -6px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 -8px 12px -6px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    display: block;
   }
 }
 

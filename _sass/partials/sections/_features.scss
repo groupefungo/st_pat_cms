@@ -98,78 +98,81 @@ section.section.section-features {
     }
   }
 
-  .newsBox {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.65);
-    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.65);
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.65);
-    min-height: 50px;
-    display: flex;
-    flex-direction: row;
+  &#news {
 
-    .mainNews {
-      width: 50%;
-      float: left;
-      height: auto;
-      overflow: hidden;
-      background-color: red;
-    }
+    .newsBox {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 1);
+      -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.65);
+      -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.65);
+      box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.65);
+      min-height: 50px;
+      display: flex;
+      flex-direction: row;
 
-    .secondaryNews {
-      width: 50%;
-      float: left;
+      .mainNews {
+        width: 50%;
+        float: left;
+        height: auto;
+        overflow: hidden;
+        background-color: red;
+      }
 
-      .singleNews {
-        background-color: rgba(255, 255, 255, 1);
-        position: relative;
-        width: 100%;
-        padding: 8px;
-        display: flex;
-        flex-direction: row;
-        min-height: 75px;
-        max-height: 28%;
-        border-bottom: 1px solid #eee;
+      .secondaryNews {
+        width: 50%;
+        float: left;
 
-        &:last-child {
-          border-bottom: 0px solid transparent;
-        }
-
-        .picture {
-          width: 25%;
-          min-height: 100%;
-          float: left;
-          overflow: hidden;
-          border: 1px solid rgba(0, 0, 0, 0.7);
-          margin-right: 8px;
-
-          img {
-            height: 100%;
-            width: auto;
-          }
-        }
-
-        .details {
+        .singleNews {
+          background-color: rgba(255, 255, 255, 1);
+          position: relative;
           width: 100%;
+          padding: 8px;
+          display: flex;
+          flex-direction: row;
+          min-height: 75px;
+          max-height: 28%;
+          border-bottom: 1px solid #eee;
 
-          p {
-            text-shadow: none;
-            color: #000000;
-            font-size: 12px;
-            margin: 0;
-            width: 80%;
+          &:last-child {
+            border-bottom: 0px solid transparent;
+          }
+
+          .picture {
+            width: 25%;
+            min-height: 100%;
             float: left;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            margin-right: 8px;
 
-            &.message {
-              text-overflow: ellipsis;
-              line-height: 1.2em;
+            img {
+              height: 100%;
+              width: auto;
             }
+          }
 
-            &.title {
-              font-size: 16px;
-              color: $primaryColor;
-              font-weight: 600;
-              line-height: 1em;
+          .details {
+            width: 100%;
+
+            p {
+              text-shadow: none;
+              color: #000000;
+              font-size: 12px;
+              margin: 0;
+              width: 80%;
+              float: left;
+
+              &.message {
+                text-overflow: ellipsis;
+                line-height: 1.2em;
+              }
+
+              &.title {
+                font-size: 16px;
+                color: $primaryColor;
+                font-weight: 600;
+                line-height: 1em;
+              }
             }
           }
         }
@@ -347,14 +350,15 @@ section.section.section-features {
 #interscholastic {
   background-image: url("/assets/img/helmet.png");
   background-repeat: no-repeat;
-  background-size: 22% auto;
+  background-size: 100% auto;
   background-position: 3% 100%;
+  padding-bottom: 24em;
 
   .sportsBox {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 90%;
+    width: 100%;
     float: right;
     margin-bottom: 15px;
     position: relative;
@@ -364,11 +368,12 @@ section.section.section-features {
     }
 
     img {
-      height: 94px;
+      height: 60px;
+      margin-bottom: 22px;
     }
 
     .title {
-      font-size: 25px;
+      font-size: 17px;
       line-height: 1em;
       font-weight: 400;
       text-transform: uppercase;
@@ -388,17 +393,48 @@ section.section.section-features {
     }
 
     .button-more {
-      font-size: 10px;
-      color: $primaryColorReverse;
-      background-color: $darkColorBackground;
+      font-size: 9px;
+      color: #fff;
+      background-color: #000;
       padding: 2px 8px;
       position: absolute;
-      bottom: 0;
-      right: 0;
+      top: 60px;
+      right: 78.25%;
 
       &.fix {
         position: relative;
         left: 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    padding-bottom: 4em;
+    background-size: 22% auto;
+
+    .sportsBox {
+      width: 90%;
+
+      img {
+        height: 94px;
+        margin-bottom: 0;
+      }
+
+      .title {
+        font-size: 25px;
+      }
+
+      .details {
+        font-size: 10px;
+      }
+
+      .button-more {
+        font-size: 10px;
+        color: $primaryColorReverse;
+        background-color: $darkColorBackground;
+        bottom: 0;
+        right: 0;
+        top: inherit;
       }
     }
   }

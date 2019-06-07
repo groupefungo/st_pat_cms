@@ -117,9 +117,63 @@
                 <!--<input type="text" name="telephone" data-req="required" data-type="phone" placeholder="418-123-4567">-->
                 <!--</div>-->
                 <div class="form-group">
-                    <textarea rows="4" cols="42" name="message" placeholder="Reason for the absence"></textarea>
+                    <textarea rows="4" cols="56" name="message" placeholder="Reason for the absence"></textarea>
                 </div>
                 <span>Before you submit this form, please note that we will do a personnalized verification with the parents.</span>
+                <button type="submit" class="button button-lightbox" data-type="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="lightbox-content page page-confirm" data-slide="hideRight">
+            <div class="wait">
+                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="message success">
+                <i class="fa fa-check-circle fa-4x" aria-hidden="true"></i>
+                <p>Votre message a été envoyé avec succès.<br> Nous vous contacterons prochainement. Merci !</p>
+            </div>
+            <div class="message error">
+                <i class="fa fa-exclamation-circle fa-4x" aria-hidden="true"></i>
+                <p>Désolé, une erreur s'est produite.<br> Votre message n'a pu être envoyé.<br> Veuillez nous contacter
+                    au <a
+                            href="tel:+XXXXX">XXXX</a>.</p>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<!--------------------------------->
+<!-- Lightbox absence form ------------>
+<!--------------------------------->
+<div class="lightbox-wrapper short-animate lightBkg" id="b">
+    <form class="form" id="ctaForm4" action="">
+
+        <div class="lightbox-content page">
+            <div class="form-section">
+                <div class="form-error swing-top-right-bck"></div>
+                <h2>Report a bully</h2>
+                <p>My child had been a victim of bullying.</p>
+                <div class="form-group">
+                    <input type="text" name="nomutilisateur" data-req="required" placeholder="Student's name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="group" data-req="required" placeholder="Group">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="parentname" data-req="required" placeholder="Parent's full name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="courriel" placeholder="Email" data-req="required" data-type="email">
+                </div>
+                <!--<div class="form-group">-->
+                <!--<input type="text" name="telephone" data-req="required" data-type="phone" placeholder="418-123-4567">-->
+                <!--</div>-->
+                <div class="form-group">
+                    <textarea rows="4" cols="56" name="message" placeholder="Please, feel free to give us a resume of the situation…"></textarea>
+                </div>
+                <span>This message is fully confidential, we take every case very seriously. We will contact you as soon as possible.</span>
                 <button type="submit" class="button button-lightbox" data-type="submit">Submit</button>
             </div>
         </div>
@@ -169,7 +223,7 @@
                     <input type="text" name="subject" data-req="required" placeholder="Subject or Question">
                 </div>
                 <div class="form-group">
-                    <textarea rows="4" cols="42" name="message" placeholder="Message"></textarea>
+                    <textarea rows="4" cols="56" name="message" placeholder="Message"></textarea>
                 </div>
                 <button type="submit" class="button button-action button-block" data-type="submit">Submit</button>
                 <span>You want to know if your child meets eligibility criteria to be admit at St.Patrick’s High School? Here’s some help for you.</span>
@@ -255,7 +309,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <h4>A passion for football is important for students interested in this profile.</h4>
                 </div>
             </div>
@@ -299,9 +353,9 @@
                 <div class="col-6 flexCol text-left">
                     <span class="title">Woodworking</span>
                     <span class="subtitle">Profile</span>
-                    <p>«Football is like Life, it requires perseverance, self-denial, hard work, sacrifice,
-                        dedication and respect for authority.»</p>
-                    <cite>— Vince Lombardi</cite>
+                    <p>«People love chopping wood. In this activity, one
+                        immediately sees results.»</p>
+                    <cite>— Albert Einstein</cite>
                 </div>
                 <div class="col-6">
                     <img src="/assets/img/profiles/profile_foot_2.png" alt="Football St Pats High School">
@@ -309,41 +363,24 @@
             </div>
             <div class="row">
                 <div class="col-12 text-left">
-                    <p>The Football Profile is intended for students who want to learn and perfect various
-                        individual skills and team tactics needed to play effective football. The student will also
-                        explore other aspects related to the practice of football.</p>
-                    <p>The aim of this profile is to
-                        help students acquire the elementary rules and skills specific to football as well as a few
-                        key principles that will help them play this team sport. Through progressive hands-on
-                        practices students will develop the skills required to play an offensive and/or a defensive
-                        position. They will also study diverse offensive and defensive systems used in football
-                        today.</p>
-                    <p>Students will be expected to frequently reflect upon their learning so that they
-                        become able to recognize their strengths and limitations, in order to improve and identify
-                        which position is better suited to their abilities.</p>
-                    <p>Students in the football Profile will
-                        learn how to work together, get along and play with other people, with one goal in mind: to
-                        be able to play team football.</p>
-                </div>
-            </div>
-            <div class="row flexRow">
-                <div class="col-6 flexCol">
-                    <img src="/assets/img/profiles/profile_foot_3.png" alt="Football St Pats High School">
-                </div>
-                <div class="col-6 flexCol text-left">
-                    <div class="mainFeatures">
-                        <h4>Students will be evaluated on the specific competencies set out by MELS:</h4>
-                        <ol>
-                            <li>Perform movement skills in football</li>
-                            <li>Interact with others in a team sport</li>
-                            <li>Adopt a healthy, ethical and active lifestyle</li>
-                        </ol>
-                    </div>
+                    <p>Woodworking is the art or craft that focuses on creating or fashioning objects out of wood. The
+                        materials can range from a rudimentary bench to intricate pieces of furniture.</p>
+                    <p>The Woodworking Profile will enable students to acquire the knowledge, skills and attitude
+                        essential to perform woodworking tasks. Students will learn how to manipulate and transform
+                        wood, as well as other materials. Through progressive hands-on activities students will develop
+                        their craftsmanship and study the different stages involved in the creation process. Students
+                        will be taught how to handle and use specific tools in a safe manner. Woodworking requires a
+                        lot of patience, creativity and dexterity and can sometimes be a physically challenging activity.</p>
+                    <p>Students will be expected to frequently reflect upon their learning so that they become able to
+                        recognize their strengths and limitations, and to expand their abilities. </p>
+                    <p>Students will work together with one goal in mind: <strong>to be able create a small project from start
+                        to finish</strong>.</p>
+                    <i>Additional material may be required.</i>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <h4>A passion for football is important for students interested in this profile.</h4>
+                <div class="col-12 text-center">
+                    <h4>A passion for hands-on work is important for students interested in this profile.</h4>
                 </div>
             </div>
             <div class="row">
@@ -351,24 +388,12 @@
                     <div class="notices">
                         <div class="where text-left">
                             <p class="title">Where?</p>
-                            <p class="details">Stade TELUS Université Laval</p>
+                            <p class="details">At St. Patrick’s High School</p>
                         </div>
                         <div class="when text-left">
                             <p class="title">When?</p>
-                            <p class="details">4 times per 10-day cycle from 8:00 a.m. to 9:50 a.m</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="notices">
-                        <div class="transportation text-center">
-                            <p class="title">Transportation</p>
-                            <p class="details">Parents are responsible to bring students to the PEPS for NO LATER
-                                than 7:45 a.m.</p>
-                            <img src="/assets/img/icon_bus.svg">
-                            <p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,
-                                338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>
-                            <p class="details">A bus will bring the students back to school from the PEPS</p>
+                            <p class="details">4 times per 10-day cycle from 8:40 a.m. to 10:15 a.m.</p>
+                            <cite>Maximum of 12 students (Cycle 1)</cite>
                         </div>
                     </div>
                 </div>
@@ -430,7 +455,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <h4>A passion for football is important for students interested in this profile.</h4>
                 </div>
             </div>
@@ -518,7 +543,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <h4>A passion for football is important for students interested in this profile.</h4>
                 </div>
             </div>
@@ -563,31 +588,69 @@
                 <div class="col-6 flexCol text-left">
                     <span class="title">Multi-Sports</span>
                     <span class="subtitle">Profile</span>
-                    <p>«Football is like Life, it requires perseverance, self-denial, hard work, sacrifice,
-                        dedication and respect for authority.»</p>
-                    <cite>— Vince Lombardi</cite>
+                    <p>«Sports do not build character. They reveal it.»</p>
+                    <cite>— Heywood Broun</cite>
                 </div>
                 <div class="col-6">
                     <img src="/assets/img/profiles/profile_foot_2.png" alt="Football St Pats High School">
                 </div>
             </div>
             <div class="row">
+                <div class="col-4">
+                    <h5>TERM 1</h5>
+                    <ul>
+                        <li>INTRO COOPER</li>
+                        <li>BEEP TEST</li>
+                        <li>Fitness Tests</li>
+                        <li>SOCCER</li>
+                        <li>Fitness Training</li>
+                        <li>Frisbee</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5>TERM 2</h5>
+                    <ul>
+                        <li>Capoeira</li>
+                        <li>SWIMMING</li>
+                        <li>KARATE</li>
+                        <li>BOWLING</li>
+                        <li>Cosom Hockey</li>
+                        <li>Circuit Training</li>
+                        <li>Basketball</li>
+                        <li>Snowshoes</li>
+                        <li>ACROGYM</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5>TERM 3</h5>
+                    <ul>
+                        <li>Volleyball</li>
+                        <li>Weight Training</li>
+                        <li>BEEP TEST</li>
+                        <li>Fitness Tests</li>
+                        <li>NOVA GYM<br><small>Kick Boxing / Wrestling / Jujitsu</small></li>
+                        <li>Rock Climbing</li>
+                        <li>Football</li>
+                        <li>Frisbee</li>
+                        <li>COOPER</li>
+                        <li>BOWLING</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12 text-left">
-                    <p>The Football Profile is intended for students who want to learn and perfect various
-                        individual skills and team tactics needed to play effective football. The student will also
-                        explore other aspects related to the practice of football.</p>
-                    <p>The aim of this profile is to
-                        help students acquire the elementary rules and skills specific to football as well as a few
-                        key principles that will help them play this team sport. Through progressive hands-on
-                        practices students will develop the skills required to play an offensive and/or a defensive
-                        position. They will also study diverse offensive and defensive systems used in football
-                        today.</p>
-                    <p>Students will be expected to frequently reflect upon their learning so that they
-                        become able to recognize their strengths and limitations, in order to improve and identify
-                        which position is better suited to their abilities.</p>
-                    <p>Students in the football Profile will
-                        learn how to work together, get along and play with other people, with one goal in mind: to
-                        be able to play team football.</p>
+                    <p>The Multisport Profile is intended for students who want to explore and to learn various individual skills
+                        and group skills involved in several individual and team activities. </p>
+                    <p>However, the availability of resources as well as the students’ needs and interest will determine the final
+                        list of learning activities offered. </p>
+                    <p>Students will learn some of the basic rules and skills specific to different sports offered, as well as a few
+                        key principles that will help them play individual and/or a team sport. Through progressive hands-on
+                        training, students will discover different facets of the sports involved, and acquire the skills necessary to
+                        their practice. </p>
+                    <p>They will also study different notions of physical fitness, such as cardiovascular endurance, strength,
+                        stamina, flexibility and relaxation.</p>
+                    <p>Students will be expected to frequently reflect upon their learning so that they become able to recognize
+                        their strengths and limitations, to improve and maintain their overall physical fitness. </p>
                 </div>
             </div>
             <div class="row flexRow">
@@ -598,16 +661,16 @@
                     <div class="mainFeatures">
                         <h4>Students will be evaluated on the specific competencies set out by MELS:</h4>
                         <ol>
-                            <li>Perform movement skills in football</li>
-                            <li>Interact with others in a team sport</li>
+                            <li>Perform movement skills</li>
+                            <li>Interact with others in a sport</li>
                             <li>Adopt a healthy, ethical and active lifestyle</li>
                         </ol>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <h4>A passion for football is important for students interested in this profile.</h4>
+                <div class="col-12 text-center">
+                    <h4>A passion for sports and fitness is important for students interested in this profile.</h4>
                 </div>
             </div>
             <div class="row">
@@ -615,11 +678,11 @@
                     <div class="notices">
                         <div class="where text-left">
                             <p class="title">Where?</p>
-                            <p class="details">Stade TELUS Université Laval</p>
+                            <p class="details">At St. Patrick’s High School and other sports facilities</p>
                         </div>
                         <div class="when text-left">
                             <p class="title">When?</p>
-                            <p class="details">4 times per 10-day cycle from 8:00 a.m. to 9:50 a.m</p>
+                            <p class="details">4 times per 10-day cycle from 8:40 a.m. to 10:05 a.m.</p>
                         </div>
                     </div>
                 </div>
@@ -627,12 +690,12 @@
                     <div class="notices">
                         <div class="transportation text-center">
                             <p class="title">Transportation</p>
-                            <p class="details">Parents are responsible to bring students to the PEPS for NO LATER
-                                than 7:45 a.m.</p>
-                            <img src="/assets/img/icon_bus.svg">
-                            <p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,
-                                338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>
-                            <p class="details">A bus will bring the students back to school from the PEPS</p>
+                            <p class="details"> (**at certain times From November 2017 to April 2018 a
+                                Yellow bus will leave school from 08:40am. Students must be at school on time)</p>
+                            <!--<img src="/assets/img/icon_bus.svg">-->
+                            <!--<p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,-->
+                                <!--338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>-->
+                            <!--<p class="details">A bus will bring the students back to school from the PEPS</p>-->
                         </div>
                     </div>
                 </div>
@@ -651,9 +714,7 @@
                 <div class="col-6 flexCol text-left">
                     <span class="title">Basketball</span>
                     <span class="subtitle">Profile</span>
-                    <p>«Football is like Life, it requires perseverance, self-denial, hard work, sacrifice,
-                        dedication and respect for authority.»</p>
-                    <cite>— Vince Lombardi</cite>
+                    <p>«Basketball teaches students lessons that they can’t learn in a classroom.»</p>
                 </div>
                 <div class="col-6">
                     <img src="/assets/img/profiles/profile_foot_2.png" alt="Football St Pats High School">
@@ -661,21 +722,13 @@
             </div>
             <div class="row">
                 <div class="col-12 text-left">
-                    <p>The Football Profile is intended for students who want to learn and perfect various
-                        individual skills and team tactics needed to play effective football. The student will also
-                        explore other aspects related to the practice of football.</p>
-                    <p>The aim of this profile is to
-                        help students acquire the elementary rules and skills specific to football as well as a few
-                        key principles that will help them play this team sport. Through progressive hands-on
-                        practices students will develop the skills required to play an offensive and/or a defensive
-                        position. They will also study diverse offensive and defensive systems used in football
-                        today.</p>
-                    <p>Students will be expected to frequently reflect upon their learning so that they
-                        become able to recognize their strengths and limitations, in order to improve and identify
-                        which position is better suited to their abilities.</p>
-                    <p>Students in the football Profile will
-                        learn how to work together, get along and play with other people, with one goal in mind: to
-                        be able to play team football.</p>
+                    <p>The Basketball Profile is intended for students who want to learn and perfect various individual skills and team tactics
+                        needed to play effective basketball. The student will also explore other aspects related to the practice of basketball.</p>
+                    <p>The aim of this profile is to help students acquire the rules and skills specific to basketball as well as a few key principles
+                        that will help them play this team sport. Through progressive hands-on practices students will develop the skills required
+                        to play on offense and defense.</p>
+                    <p>Students in the Basketball Profile will learn how to work together, get along and play with other people, with one goal in
+                        mind: <strong>to be able to play team basketball</strong>.</p>
                 </div>
             </div>
             <div class="row flexRow">
@@ -686,16 +739,17 @@
                     <div class="mainFeatures">
                         <h4>Students will be evaluated on the specific competencies set out by MELS:</h4>
                         <ol>
-                            <li>Perform movement skills in football</li>
-                            <li>Interact with others in a team sport</li>
-                            <li>Adopt a healthy, ethical and active lifestyle</li>
+                            <li>Perform movement skills and improvement in basketball</li>
+                            <li>Interact with others in a team sport (participation)</li>
+                            <li>Adopt a healthy, ethical and active lifestyle(effort)</li>
                         </ol>
+                        <small>Please note: Tryouts might be part of the selection process.</small>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <h4>A passion for football is important for students interested in this profile.</h4>
+                <div class="col-12 text-center">
+                    <h4>A passion for basketball is important for students interested in this profile.</h4>
                 </div>
             </div>
             <div class="row">
@@ -703,11 +757,12 @@
                     <div class="notices">
                         <div class="where text-left">
                             <p class="title">Where?</p>
-                            <p class="details">Stade TELUS Université Laval</p>
+                            <p class="details">Sept, Oct. Nov & Dec, April, May & June: at St. Patrick’s High School /4 times per 10-day cycle from 8:30 a.m. to
+                                10:00 a.m.</p>
                         </div>
                         <div class="when text-left">
-                            <p class="title">When?</p>
-                            <p class="details">4 times per 10-day cycle from 8:00 a.m. to 9:50 a.m</p>
+                            <p class="details">January, February & March at the PEPS / 4 times per 10-day cycle from 8:00 a.m. to 9:30 a.m. Students need to
+                                be at the PEPS no later than 7:30AM to be ready at 8:00AM in the GYM.</p>
                         </div>
                     </div>
                 </div>
@@ -715,8 +770,8 @@
                     <div class="notices">
                         <div class="transportation text-center">
                             <p class="title">Transportation</p>
-                            <p class="details">Parents are responsible to bring students to the PEPS for NO LATER
-                                than 7:45 a.m.</p>
+                            <p class="details">When Basketball profile will be held at the PEPS. Student will need to have transportation to the
+                                PEPS but will have transportation back to school after profile offered by St. Pat’s.</p>
                             <img src="/assets/img/icon_bus.svg">
                             <p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,
                                 338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>
@@ -739,9 +794,11 @@
                 <div class="col-6 flexCol text-left">
                     <span class="title">Drama Arts</span>
                     <span class="subtitle">Profile</span>
-                    <p>«Football is like Life, it requires perseverance, self-denial, hard work, sacrifice,
-                        dedication and respect for authority.»</p>
-                    <cite>— Vince Lombardi</cite>
+                    <p>«All the world's a stage, and all the men and women
+                        merely players: They have their exits and their
+                        entrances; and one man in his time plays many
+                        parts…»</p>
+                    <cite>— William Shakespeare’s As You Like It</cite>
                 </div>
                 <div class="col-6">
                     <img src="/assets/img/profiles/profile_foot_2.png" alt="Football St Pats High School">
@@ -749,21 +806,19 @@
             </div>
             <div class="row">
                 <div class="col-12 text-left">
-                    <p>The Football Profile is intended for students who want to learn and perfect various
-                        individual skills and team tactics needed to play effective football. The student will also
-                        explore other aspects related to the practice of football.</p>
-                    <p>The aim of this profile is to
-                        help students acquire the elementary rules and skills specific to football as well as a few
-                        key principles that will help them play this team sport. Through progressive hands-on
-                        practices students will develop the skills required to play an offensive and/or a defensive
-                        position. They will also study diverse offensive and defensive systems used in football
-                        today.</p>
-                    <p>Students will be expected to frequently reflect upon their learning so that they
-                        become able to recognize their strengths and limitations, in order to improve and identify
-                        which position is better suited to their abilities.</p>
-                    <p>Students in the football Profile will
-                        learn how to work together, get along and play with other people, with one goal in mind: to
-                        be able to play team football.</p>
+                    <p>The Drama Arts Profile will help students explore and develop the skills necessary to
+                        make their “exits and entrances” in their world.</p>
+                    <p>Drama involves creating and performing characters in order to foster creativity, improve
+                        cooperation, communication and develop identity. Through the use of their body, voice,
+                        imagination, sensibilities, knowledge and culture, students will learn to give concrete
+                        expression to their ideas, mental images and emotions, and develop aptitudes that are
+                        applicable to all aspects of life, e.g. emotional control, concentration, memorization,
+                        etc. In today’s technical world, employers are looking for candidates who are
+                        <strong>confident</strong>, <strong>creative</strong> and <strong>productive</strong>, and being at ease with public presentations and
+                        speaking engagements is considered an asset in several professional fields. These are
+                        the character traits developed by studying the dramatic arts.</p>
+                    <p>Students will work together with one goal in mind: <strong>the production of dramatic
+                        performances in front of an audience.</strong> (short & long)</p>
                 </div>
             </div>
             <div class="row flexRow">
@@ -774,16 +829,19 @@
                     <div class="mainFeatures">
                         <h4>Students will be evaluated on the specific competencies set out by MELS:</h4>
                         <ol>
-                            <li>Perform movement skills in football</li>
-                            <li>Interact with others in a team sport</li>
-                            <li>Adopt a healthy, ethical and active lifestyle</li>
+                            <li>Creation and Performance</li>
+                            <li>Appreciation</li>
                         </ol>
+                        <p><strong>Students will also study other features of dramatic production, including
+                            improvisation skit, costuming, publicity, front house management, etc.</strong> Whenever
+                            possible, guest speakers specializing in dramatic arts will be invited to speak to the
+                            students (including teachers).</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <h4>A passion for football is important for students interested in this profile.</h4>
+                <div class="col-12 text-center">
+                    <h4>A passion and an open-minded attitude are important for students interested in this profile.</h4>
                 </div>
             </div>
             <div class="row">
@@ -791,26 +849,26 @@
                     <div class="notices">
                         <div class="where text-left">
                             <p class="title">Where?</p>
-                            <p class="details">Stade TELUS Université Laval</p>
+                            <p class="details">At St. Patrick’s High School</p>
                         </div>
                         <div class="when text-left">
                             <p class="title">When?</p>
-                            <p class="details">4 times per 10-day cycle from 8:00 a.m. to 9:50 a.m</p>
+                            <p class="details">4 times per 10-day cycle from 8:40 to 10:15</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-8">
-                    <div class="notices">
-                        <div class="transportation text-center">
-                            <p class="title">Transportation</p>
-                            <p class="details">Parents are responsible to bring students to the PEPS for NO LATER
-                                than 7:45 a.m.</p>
-                            <img src="/assets/img/icon_bus.svg">
-                            <p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,
-                                338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>
-                            <p class="details">A bus will bring the students back to school from the PEPS</p>
-                        </div>
-                    </div>
+                    <!--<div class="notices">-->
+                        <!--<div class="transportation text-center">-->
+                            <!--<p class="title">Transportation</p>-->
+                            <!--<p class="details">Parents are responsible to bring students to the PEPS for NO LATER-->
+                                <!--than 7:45 a.m.</p>-->
+                            <!--<img src="/assets/img/icon_bus.svg">-->
+                            <!--<p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,-->
+                                <!--338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>-->
+                            <!--<p class="details">A bus will bring the students back to school from the PEPS</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -827,9 +885,10 @@
                 <div class="col-6 flexCol text-left">
                     <span class="title">Leadership</span>
                     <span class="subtitle">Profile</span>
-                    <p>«Football is like Life, it requires perseverance, self-denial, hard work, sacrifice,
-                        dedication and respect for authority.»</p>
-                    <cite>— Vince Lombardi</cite>
+                    <p>«The challenge of leadership is to be strong, but not rude; be kind, but not weak;
+                        be bold, but not bully; be thoughtful, but not lazy; be humble, but not timid; be
+                        proud, but not arrogant; have humor, but without folly.»</p>
+                    <cite>— Jim Rohn</cite>
                 </div>
                 <div class="col-6">
                     <img src="/assets/img/profiles/profile_foot_2.png" alt="Football St Pats High School">
@@ -837,41 +896,23 @@
             </div>
             <div class="row">
                 <div class="col-12 text-left">
-                    <p>The Football Profile is intended for students who want to learn and perfect various
-                        individual skills and team tactics needed to play effective football. The student will also
-                        explore other aspects related to the practice of football.</p>
-                    <p>The aim of this profile is to
-                        help students acquire the elementary rules and skills specific to football as well as a few
-                        key principles that will help them play this team sport. Through progressive hands-on
-                        practices students will develop the skills required to play an offensive and/or a defensive
-                        position. They will also study diverse offensive and defensive systems used in football
-                        today.</p>
-                    <p>Students will be expected to frequently reflect upon their learning so that they
-                        become able to recognize their strengths and limitations, in order to improve and identify
-                        which position is better suited to their abilities.</p>
-                    <p>Students in the football Profile will
-                        learn how to work together, get along and play with other people, with one goal in mind: to
-                        be able to play team football.</p>
-                </div>
-            </div>
-            <div class="row flexRow">
-                <div class="col-6 flexCol">
-                    <img src="/assets/img/profiles/profile_foot_3.png" alt="Football St Pats High School">
-                </div>
-                <div class="col-6 flexCol text-left">
-                    <div class="mainFeatures">
-                        <h4>Students will be evaluated on the specific competencies set out by MELS:</h4>
-                        <ol>
-                            <li>Perform movement skills in football</li>
-                            <li>Interact with others in a team sport</li>
-                            <li>Adopt a healthy, ethical and active lifestyle</li>
-                        </ol>
-                    </div>
+                    <p>This profile is intended for students who are interested in increasing their understanding
+                        of leadership and applying these concepts in the community and school.</p>
+                    <p><strong>Students will work on determining and developing their personal leadership attributes
+                        individually and in a group setting. Students will also develop their communication
+                        skills; how to speak to a group, discuss one on one and how to become an active
+                        listener.</strong></p>
+                    <p>Students will learn about human relationships and the impact that they, as leaders, have
+                        on their peers. They will identify, explain and interpret different leadership styles and
+                        look at the positives and negatives when it comes to adopting a leadership role.</p>
+                    <p>In using their awareness of their personal and group leadership skills, their strategies for
+                        decision making and their organizational skills; students will plan, organize and run an
+                        event for a group in the Quebec English Community.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <h4>A passion for football is important for students interested in this profile.</h4>
+                <div class="col-12 text-center">
+                    <h4>A passion and an open-minded attitude are important for students interested in this profile.</h4>
                 </div>
             </div>
             <div class="row">
@@ -879,27 +920,27 @@
                     <div class="notices">
                         <div class="where text-left">
                             <p class="title">Where?</p>
-                            <p class="details">Stade TELUS Université Laval</p>
+                            <p class="details">At St. Patrick’s High School</p>
                         </div>
                         <div class="when text-left">
                             <p class="title">When?</p>
-                            <p class="details">4 times per 10-day cycle from 8:00 a.m. to 9:50 a.m</p>
+                            <p class="details">4 times per 10-day cycle from 8:40 a.m. to 10:15 a.m.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
-                    <div class="notices">
-                        <div class="transportation text-center">
-                            <p class="title">Transportation</p>
-                            <p class="details">Parents are responsible to bring students to the PEPS for NO LATER
-                                than 7:45 a.m.</p>
-                            <img src="/assets/img/icon_bus.svg">
-                            <p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,
-                                338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>
-                            <p class="details">A bus will bring the students back to school from the PEPS</p>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="col-8">-->
+                    <!--<div class="notices">-->
+                        <!--<div class="transportation text-center">-->
+                            <!--<p class="title">Transportation</p>-->
+                            <!--<p class="details">Parents are responsible to bring students to the PEPS for NO LATER-->
+                                <!--than 7:45 a.m.</p>-->
+                            <!--<img src="/assets/img/icon_bus.svg">-->
+                            <!--<p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,-->
+                                <!--338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>-->
+                            <!--<p class="details">A bus will bring the students back to school from the PEPS</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
 
@@ -915,9 +956,8 @@
                 <div class="col-6 flexCol text-left">
                     <span class="title">Spanish</span>
                     <span class="subtitle">Profile</span>
-                    <p>«Football is like Life, it requires perseverance, self-denial, hard work, sacrifice,
-                        dedication and respect for authority.»</p>
-                    <cite>— Vince Lombardi</cite>
+                    <p>«If you want to learn Spanish, you are coming to the right
+                        place.»</p>
                 </div>
                 <div class="col-6">
                     <img src="/assets/img/profiles/profile_foot_2.png" alt="Football St Pats High School">
@@ -925,21 +965,22 @@
             </div>
             <div class="row">
                 <div class="col-12 text-left">
-                    <p>The Football Profile is intended for students who want to learn and perfect various
-                        individual skills and team tactics needed to play effective football. The student will also
-                        explore other aspects related to the practice of football.</p>
-                    <p>The aim of this profile is to
-                        help students acquire the elementary rules and skills specific to football as well as a few
-                        key principles that will help them play this team sport. Through progressive hands-on
-                        practices students will develop the skills required to play an offensive and/or a defensive
-                        position. They will also study diverse offensive and defensive systems used in football
-                        today.</p>
-                    <p>Students will be expected to frequently reflect upon their learning so that they
-                        become able to recognize their strengths and limitations, in order to improve and identify
-                        which position is better suited to their abilities.</p>
-                    <p>Students in the football Profile will
-                        learn how to work together, get along and play with other people, with one goal in mind: to
-                        be able to play team football.</p>
+                    <p>The Spanish Profile is intended for students who want to explore and to learn the Spanish
+                        language and culture. Spanish is one of the most-used languages in the world, and it is one that
+                        is relatively easy for French and/or English speakers to master.</p>
+                    <p>In the Spanish Profile, students will get to interact orally, understand, read, and produce a
+                        variety of texts in the Spanish language. These competencies are complementary and are
+                        developed in synergy.</p>
+                    <p>Students will learn through different class activities in a very dynamic and interactive approach.
+                        Learning will be done through role play, activities, use of technology, contextualization and
+                        educational outings among others. Students will get opportunities to explore the Spanish
+                        culture in presence of native speakers and organizations such as «Salsa sans Frontières».</p>
+                    <p>As students take responsibility for developing their own competencies, they are to participate
+                        actively in the learning process and become involved in interaction, comprehension and
+                        production tasks. They must take initiative and make an effort to communicate in Spanish as
+                        often as possible, as well as demonstrate creativity.</p>
+                    <p>Students will work together with one goal in mind: <strong>to be able to use the Spanish language in a
+                        real life context</strong>.</p>
                 </div>
             </div>
             <div class="row flexRow">
@@ -950,16 +991,16 @@
                     <div class="mainFeatures">
                         <h4>Students will be evaluated on the specific competencies set out by MELS:</h4>
                         <ol>
-                            <li>Perform movement skills in football</li>
-                            <li>Interact with others in a team sport</li>
-                            <li>Adopt a healthy, ethical and active lifestyle</li>
+                            <li>Interact in Spanish</li>
+                            <li>Understand texts in Spanish (oral and written)</li>
+                            <li>Produce texts in Spanish (oral and written)</li>
                         </ol>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <h4>A passion for football is important for students interested in this profile.</h4>
+                <div class="col-12 text-center">
+                    <h4>A passion for languages is important for students interested in the profile.</h4>
                 </div>
             </div>
             <div class="row">
@@ -967,24 +1008,11 @@
                     <div class="notices">
                         <div class="where text-left">
                             <p class="title">Where?</p>
-                            <p class="details">Stade TELUS Université Laval</p>
+                            <p class="details">At St. Patrick’s High School</p>
                         </div>
                         <div class="when text-left">
                             <p class="title">When?</p>
-                            <p class="details">4 times per 10-day cycle from 8:00 a.m. to 9:50 a.m</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="notices">
-                        <div class="transportation text-center">
-                            <p class="title">Transportation</p>
-                            <p class="details">Parents are responsible to bring students to the PEPS for NO LATER
-                                than 7:45 a.m.</p>
-                            <img src="/assets/img/icon_bus.svg">
-                            <p class="details">RTC busses are also available (north shore) 18, 87, 330, 336, 337,
-                                338, 350, 355, 358, 372, 374, 377, 380, 381, 382, 384.</p>
-                            <p class="details">A bus will bring the students back to school from the PEPS</p>
+                            <p class="details">4 times per 10-day cycle from 8:40 a.m. to 10:15 a.m.</p>
                         </div>
                     </div>
                 </div>
@@ -1046,7 +1074,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <h4>A passion for football is important for students interested in this profile.</h4>
                 </div>
             </div>
@@ -1134,7 +1162,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <h4>A passion for football is important for students interested in this profile.</h4>
                 </div>
             </div>
@@ -1222,7 +1250,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <h4>A passion for football is important for students interested in this profile.</h4>
                 </div>
             </div>

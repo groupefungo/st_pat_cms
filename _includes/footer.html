@@ -3,7 +3,7 @@
 <!--------------------------------->
 <footer class="footer" role="contentinfo">
 
-  <div class="sloganClipper">
+  <div class="sloganClipper text-center">
     <span class="schoolIdentity">ST.PATRICK’S HIGH SCHOOL</span>
     <span class="schoolSlogan">HOME OF THE FIGHTING IRISH!</span>
   </div>
@@ -74,5 +74,30 @@
     $('.flexslider').flexslider({
       animation: "slide"
     });
+  });
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 175) {
+      $(".floatingSection").addClass("fixedToBottom");
+    } else {
+      $(".floatingSection").removeClass("fixedToBottom");
+    }
+  });
+  $( document ).ready(function() {
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+              } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+              }
+          });
+      }
   });
 </script>

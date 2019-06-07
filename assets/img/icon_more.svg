@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_more</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MOBILE-LOOK-1" transform="translate(-317.000000, -537.000000)">
+            <g id="icon_more" transform="translate(317.000000, 537.000000)">
+                <g>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0" y="4" width="10" height="2"></rect>
+                    <g id="Group-4" transform="translate(4.000000, 0.000000)"></g>
+                </g>
+                <polygon id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" transform="translate(5.000000, 5.000000) rotate(-90.000000) translate(-5.000000, -5.000000) " points="0 4 10 4 10 6 0 6"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

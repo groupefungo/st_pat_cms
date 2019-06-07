@@ -1,0 +1,71 @@
+.collapsible {
+  background-color: $darkColorBackground;
+  color: white;
+  cursor: pointer;
+  padding: 6px 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+
+  &.active, &:hover {
+    background-color: $darkColorBackground;
+  }
+
+  &.active {
+    border-bottom: 1px solid $accentColor;
+
+    &:after {
+      content: "-";
+    }
+  }
+
+  &:after {
+    content: "+";
+    position: absolute;
+    color: #fff;
+    right: 10px;
+    top: 0;
+    font-size: 1.5em;
+  }
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: $primaryColorReverse;
+  background-color: $darkColorBackground;
+
+  ul {
+    padding: 0;
+    width: 100%;
+    margin-top: 0;
+
+    li {
+      list-style: none;
+      width: 100%;
+      padding: 3px 0;
+      border-bottom: 1px solid $accentColor;
+      float: left;
+
+      &:last-child {
+        border-bottom: 0 solid transparent;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #fff;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 7px 16px;
+        width: 100%;
+        float: left;
+      }
+    }
+  }
+}

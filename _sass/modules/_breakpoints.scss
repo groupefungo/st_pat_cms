@@ -33,7 +33,11 @@
 
             &.description {
               font-size: 20px;
+              margin: 0;
             }
+          }
+          a.button.button-primary, button.button.button-primary {
+             padding: 1rem 3rem;
           }
         }
       }

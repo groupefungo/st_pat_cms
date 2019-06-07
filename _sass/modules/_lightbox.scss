@@ -96,6 +96,7 @@
       width: 100%;
       position: relative;
       padding-bottom: 8px;
+      margin-top: 0;
 
       &:after {
         content: "";
@@ -146,6 +147,7 @@
       width: 100%;
       margin: 0;
       height: 100%;
+      margin-top: 15px;
 
       .where, .when, .transportation {
         padding: 14px;

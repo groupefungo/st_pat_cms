@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MOBILE-LOOK-1" transform="translate(-258.000000, -626.000000)" fill-rule="nonzero">
+            <g id="icon_facebook" transform="translate(258.000000, 626.000000)">
+                <circle id="Oval" fill="#006DA5" cx="22.5" cy="22.5" r="22.5"></circle>
+                <path d="M19.7198995,15.4545439 L19.7198995,18.621168 L17.3999404,18.621168 L17.3999404,22.4933888 L19.7198995,22.4933888 L19.7198995,34.0001611 L24.4855524,34.0001611 L24.4855524,22.4936444 L27.6836102,22.4936444 C27.6836102,22.4936444 27.9831246,20.6370126 28.1282818,18.6068567 L24.5036971,18.6068567 L24.5036971,15.9592718 C24.5036971,15.5636674 25.0232473,15.0313392 25.5369197,15.0313392 L28.133393,15.0313392 L28.133393,11.0001611 L24.6031093,11.0001611 C19.6020871,10.9999056 19.7198995,14.8759597 19.7198995,15.4545439" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

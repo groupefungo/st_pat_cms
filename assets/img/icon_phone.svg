@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_phone</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MOBILE-LOOK-1" transform="translate(-150.000000, -610.000000)">
+            <g id="icon_phone" transform="translate(153.000000, 613.000000)">
+                <g id="Group-6">
+                    <circle id="Oval" stroke="#000000" stroke-width="3" fill="#FFFFFF" fill-rule="nonzero" cx="31" cy="31" r="32.5"></circle>
+                    <g id="Group-2" transform="translate(14.000000, 14.000000)">
+                        <g id="Phone"></g>
+                    </g>
+                </g>
+                <path d="M33.6165863,33.6131566 C30.2516481,36.9752907 26.3531664,40.1929083 24.8120545,38.6521073 C22.6077331,36.4482305 21.2473033,34.527011 16.3837666,38.4353325 C11.5223557,42.3415288 15.2571607,44.9470764 17.3934607,47.0808202 C19.8592397,49.5461019 29.0506437,47.2125853 38.1357641,38.1314228 C47.2187588,29.0481351 49.5463692,19.8585852 47.0784645,17.3933036 C44.9421645,15.2553093 42.3488452,11.523383 38.4418608,16.3838133 C34.5327507,21.2442435 36.4522322,22.6043989 38.660805,24.810401 C40.1955398,26.351202 36.9793987,30.2488973 33.6165863,33.6131566 Z" id="Path" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>
