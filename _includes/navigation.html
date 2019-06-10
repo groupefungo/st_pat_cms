@@ -1,49 +1,132 @@
 <!--{% assign navurl = page.url | remove: 'index.html' %}-->
 <!--<ul>-->
 <!--{% for item in include.navigation %}-->
-  <!--<li>-->
-    <!--<a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>-->
-    <!--{% if item.subitems %}-->
-      <!--{% include navigation.html navigation=item.subitems %}-->
-    <!--{% endif %}-->
-  <!--</li>-->
+<!--<li>-->
+<!--<a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>-->
+<!--{% if item.subitems %}-->
+<!--{% include navigation.html navigation=item.subitems %}-->
+<!--{% endif %}-->
+<!--</li>-->
 <!--{% endfor %}-->
 <!--</ul>-->
 
 <div class="announcementBar">
-  <span>IMPORTANT  OPEN HOUSE ON OCTOBER 20<sup>TH</sup></span>
+    <span class="announce">IMPORTANT  OPEN HOUSE ON OCTOBER 20<sup>TH</sup></span>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">students</button>
+            <div class="dropdown-content">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#">Photo Gallery</a>
+                        <a href="#">CQSB Portal</a>
+                        <a href="#">Year Calendar</a>
+                        <a href="#">St. Patrick’s football</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">RSEQ (Sport Étudiant)</a>
+                        <a href="#">Office 365</a>
+                        <a href="#">Policies</a>
+                        <a href="#">Library Search</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">Digital Library Search</a>
+                        <a href="#">Remediation Schedule</a>
+                        <a href="#">Contacts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">parents</button>
+            <div class="dropdown-content">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#">Photo Gallery</a>
+                        <a href="#">CQSB Portal</a>
+                        <a href="#">Course Selection (per level)</a>
+                        <a href="#">Eligibility to English Education</a>
+                        <a href="#">Year Calendar</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">Alumni Foundation</a>
+                        <a href="#">St. Pat's Lockers Login</a>
+                        <a href="#">Policies</a>
+                        <a href="#">Special Needs</a>
+                        <a href="#">Governing Board</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">St. Patrick's Football</a>
+                        <a href="#">Remediation Schedule</a>
+                        <a href="#">Contacts</a>
+                        <a href="#">RSEQ (Sport Etudiant)</a>
+                        <a href="#">Foundation Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">teachers</button>
+            <div class="dropdown-content">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#">GPI Internet</a>
+                        <a href="#">Internet Student Monitoring</a>
+                        <a href="#">Board IEP</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">Office 365</a>
+                        <a href="#">LEARN</a>
+                        <a href="#">CQSB</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">CQSB Portal</a>
+                        <a href="#">MELS</a>
+                        <a href="#">Report it! (Safe Schools Alert)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <div class="logo">
-    <img src="/assets/img/logo_stpats.svg" alt="St. Patrick's High School">
-  </div>
+    <a href="#!">
+        <img src="/assets/img/logo_stpats.svg" alt="St. Patrick's High School">
+    </a>
+</div>
 
-  <!----------->
-  <!-- MENUS -->
-  <!----------->
-  <div class="menu">
+<!----------->
+<!-- MENUS -->
+<!----------->
+<div class="menu">
     <ul>
-      <li><a data-scroll class="scroll" href="#about">About</a></li>
-      <li><a data-scroll class="scroll" href="#foundation">The Foundation</a></li>
-      <li><a data-scroll class="scroll" href="#profiles">Profiles</a></li>
-      <li><a data-scroll class="scroll" href="#activities">Activities</a></li>
-      <li><a data-scroll class="scroll" href="#contact">Contact Us</a></li>
-      <li><a class="subscribe isd" href="#">
-        ISD
-        <br><small>INTERNATIONAL STUDENT’S PROGRAM</small></a>
-      </li>
-      <li><a class="subscribe" href="#r">
-        <small>INFORMATIONS OR</small>REGISTRATION</a>
-      </li>
-      <li>
+        <li><a data-scroll class="scroll" href="#about">About</a></li>
+        <li><a data-scroll class="scroll" href="#foundation">The Foundation</a></li>
+        <li><a data-scroll class="scroll" href="#profiles">Profiles</a></li>
+        <li><a data-scroll class="scroll" href="#activities">Activities</a></li>
+        <li><a data-scroll class="scroll" href="#contact">Contact Us</a></li>
+        <li><a class="subscribe isd" href="#">
+            ISD
+            <br>
+            <small>INTERNATIONAL STUDENT’S PROGRAM</small>
+        </a>
+        </li>
+        <li><a class="subscribe" href="#r">
+            <small>INFORMATIONS OR</small>
+            REGISTRATION</a>
+        </li>
+        <li>
         <span class="socialMedias"><a href="#" class="facebook" target="_blank"><img src="assets/img/facebook2.svg"
                                                                                      alt="Facebook"> </a><a href="#"
                                                                                                             class="twitter"
                                                                                                             target="_blank"><img
                 src="assets/img/twitter.svg" alt="Facebook"> </a> </span></li>
     </ul>
-  </div>
-  <div id="menuToggle">
+</div>
+<div id="menuToggle">
     <!--
     A fake / hidden checkbox is used as click reciever,
     so you can use the :checked selector on it.
@@ -63,24 +146,24 @@
     but hey, it's pure CSS magic.
     -->
     <ul id="menu">
-      <a data-scroll class="click-mobile scroll" href="#">
-        <li>Accueil</li>
-      </a> <a data-scroll class="click-mobile scroll" href="#about">
-      <li>About</li>
+        <a data-scroll class="click-mobile scroll" href="#">
+            <li>Accueil</li>
+        </a> <a data-scroll class="click-mobile scroll" href="#about">
+        <li>About</li>
     </a> <a data-scroll class="click-mobile scroll" href="#foundation">
-      <li>The Foundation</li>
+        <li>The Foundation</li>
     </a> <a data-scroll class="click-mobile scroll" href="#profiles">
-      <li>Profiles</li>
+        <li>Profiles</li>
     </a> <a data-scroll class="click-mobile scroll" href="#activities">
-      <li>Activities</li>
+        <li>Activities</li>
     </a> <a data-scroll class="click-mobile scroll" href="#contact">
-      <li>Contact Us</li>
+        <li>Contact Us</li>
     </a> <a class="click-mobile" href="#" target="_blank">
-      <li><img src="assets/img/facebook.svg"></li>
+        <li><img src="assets/img/facebook.svg"></li>
     </a>
     </ul>
-  </div>
-  <!-------------------->
-  <!-- CALL TO ACTION -->
-  <!-------------------->
-  <a href="#f" style="display: none;" class="button button-secondary button-cta">Call to action</a>
+</div>
+<!-------------------->
+<!-- CALL TO ACTION -->
+<!-------------------->
+<a href="#f" style="display: none;" class="button button-secondary button-cta">Call to action</a>

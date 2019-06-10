@@ -188,11 +188,16 @@
 }
 
 .quickNav {
+  display: block;
   position: fixed;
   bottom: 122px;
   left: 0;
   width: 100%;
   z-index: 9;
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    display: none;
+  }
 }
 
 .ctaBtn {
@@ -231,6 +236,10 @@
       color: $darkColorBackground;
       background-color: $accentColor;
     }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    display: none;
   }
 }
 

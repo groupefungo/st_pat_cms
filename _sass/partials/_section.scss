@@ -153,10 +153,18 @@ section.topSlider {
       min-height: 100%;
 
       img {
-        height: 430px;
         -moz-user-select: none;
-        width: auto;
         overflow: hidden;
+
+        height: auto;
+        width: 168%;
+        margin-top: 100px;
+
+        @media only screen and (min-width: $mobileBreakpoint) {
+          height: 430px;
+          width: auto;
+          margin-top: 0;
+        }
       }
 
       li {
@@ -206,7 +214,11 @@ section.topSlider {
     }
 
     .flex-control-nav {
-      bottom: 38px;
+      bottom: 10px;
+
+      @media only screen and (min-width: $mobileBreakpoint) {
+        bottom: 38px;
+      }
     }
 
     .flex-direction-nav a:before {

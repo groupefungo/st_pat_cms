@@ -31,7 +31,7 @@
       float: left;
 
       img {
-        height: 78px;
+        height: 72px;
       }
     }
     .button-cta {
@@ -49,8 +49,20 @@
   top: 0;
   left: 0;
   padding: 8px;
+  
+  span {
+    
+    &.announce {
+      display: none;
+    }
+  }
 
   @media only screen and (min-width: $mobileBreakpoint) {
+    span {
 
+      &.announce {
+        display: inline-block;
+      }
+    }
   }
 }
