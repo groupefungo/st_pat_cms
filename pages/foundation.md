@@ -2,7 +2,7 @@
 layout: page
 title: Welcome
 permalink: /
-section: home
+section: foundation
 intro_paragraph: >
   [Jekyll Netlify Boilerplate](https://github.com/danurbanowicz/jekyll-netlify-boilerplate)
   provides the basics to get a fast, static website deployed on Netlify.
