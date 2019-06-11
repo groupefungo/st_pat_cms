@@ -206,6 +206,27 @@
     margin-bottom: 13px;
     display: block;
   }
+  #coaches {
+
+    h3 {
+      font-size: 1.5em;
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+
+    h4 {
+      color: $accentColor;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    small {
+      font-size: 0.9em;
+      line-height: 1.25em;
+      margin-bottom: 8px;
+    }
+  }
 }
 #lightbox-controls {
   position:fixed;

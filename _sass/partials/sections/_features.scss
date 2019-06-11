@@ -267,7 +267,7 @@ section.section.section-features {
         padding: 5px 14px;
 
         &.title {
-          font-size: 25px;
+          font-size: 170%;
           font-weight: 600;
           line-height: 1em;
           height: 50%;
@@ -276,6 +276,7 @@ section.section.section-features {
           flex-direction: column;
           justify-content: flex-end;
           align-content: center;
+          align-items: center;
           hyphens: none;
         }
 
@@ -289,6 +290,17 @@ section.section.section-features {
           flex-direction: column;
           justify-content: flex-start;
           align-content: center;
+          align-items: center;
+        }
+
+        @media only screen and (min-width: 700px) and (max-width: 1024px) {
+          &.title {
+            font-size: 140%;
+          }
+
+          &.description {
+            font-size: 12px;
+          }
         }
       }
 
@@ -351,7 +363,7 @@ section.section.section-features {
   background-image: url("/assets/img/helmet.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: 3% 100%;
+  background-position: 0 100%;
   padding-bottom: 24em;
 
   .sportsBox {
@@ -409,7 +421,7 @@ section.section.section-features {
   }
 
   @media only screen and (min-width: $mobileBreakpoint) {
-    padding-bottom: 4em;
+    padding-bottom: 13em;
     background-size: 22% auto;
 
     .sportsBox {
@@ -437,5 +449,8 @@ section.section.section-features {
         top: inherit;
       }
     }
+  }
+  @media only screen and (min-width: 1390px) {
+    padding-bottom: 4em;
   }
 }
