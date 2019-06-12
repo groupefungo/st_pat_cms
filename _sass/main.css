@@ -1537,7 +1537,8 @@ form.form .form-group {
   form.form .form-group input[type=text], form.form .form-group input[type=email] {
     width: 100%;
     border: 1px solid #e8e8e8;
-    padding: 15px 30px; }
+    padding: 15px 30px;
+  }
   form.form .form-group input::-webkit-input-placeholder {
     color: #3b3c3c !important; }
   form.form .form-group input:-moz-placeholder {

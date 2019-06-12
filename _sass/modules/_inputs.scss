@@ -1,0 +1,9 @@
+form.form .form-group input[type=text], form.form .form-group input[type=email] {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  padding: 10px 11px !important;
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    padding: 15px 30px !important;
+  }
+}

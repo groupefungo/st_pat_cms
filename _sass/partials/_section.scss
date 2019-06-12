@@ -125,6 +125,7 @@ section.section {
     .button {
       color: white;
     }
+
     @media only screen and (min-width: $mobileBreakpoint) {
       .h1 {
         font-size: 28px;
@@ -205,6 +206,7 @@ section.topSlider#mainSlider {
               line-height: 1.2em;
             }
           }
+
           a.button.button-primary, button.button.button-primary {
             padding: 0.5rem 3rem;
           }
@@ -289,6 +291,7 @@ section.topSlider#eventSlider {
               margin: 0;
               line-height: 1em;
             }
+
             &.year {
               font-size: 22px;
               font-weight: 600;
@@ -297,6 +300,7 @@ section.topSlider#eventSlider {
               float: right;
             }
           }
+
           a.button.button-primary, button.button.button-primary {
             padding: 0.5rem 3rem;
           }
@@ -336,6 +340,7 @@ section.topSlider#eventSlider {
       opacity: 1;
       left: 0 !important;
     }
+
     .flex-next {
       opacity: 1;
       right: 0 !important;
@@ -345,6 +350,7 @@ section.topSlider#eventSlider {
       .flex-prev {
         left: 0 !important;
       }
+
       .flex-next {
         right: 0 !important;
       }
@@ -432,9 +438,9 @@ section.topSlider#eventSlider {
     width: 100%;
     margin-bottom: 4px;
     margin-left: 0;
-    -webkit-box-shadow: 0 3px 8px -10px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0 3px 8px -10px rgba(0,0,0,0.6);
-    box-shadow: 0 3px 8px -5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 3px 8px -10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 3px 8px -10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 3px 8px -5px rgba(0, 0, 0, 0.6);
 
     .eventDate {
       font-size: 30px;
@@ -465,6 +471,7 @@ section.topSlider#eventSlider {
         width: auto !important;
       }
     }
+
     .eventDetails {
       width: auto;
       padding: 4px 6px;
@@ -474,6 +481,7 @@ section.topSlider#eventSlider {
         font-weight: 600;
         color: $primaryColor;
       }
+
       .eventDesc {
         font-size: 10px;
         line-height: 1.1em;
@@ -481,6 +489,7 @@ section.topSlider#eventSlider {
         color: $darkColorBackground;
       }
     }
+
     @media only screen and (min-width: $mobileBreakpoint) {
       width: 95%;
       margin-bottom: 10px;
@@ -492,7 +501,7 @@ section.topSlider#eventSlider {
         width: 75px;
         height: 75px;
       }
-      
+
       .eventPict {
         display: flex;
       }
