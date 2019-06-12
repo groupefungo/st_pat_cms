@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>External</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SPECIAL-NEEDS" transform="translate(-750.000000, -489.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="External" transform="translate(750.000000, 489.000000)">
+                <path d="M0,0 L0,15 L15,15 L15,11.25 L13.125,11.25 L13.125,13.125 L1.875,13.125 L1.875,1.875 L3.75,1.875 L3.75,0 L0,0 Z M7.5,0 L10.3125,2.8125 L5.625,7.5 L7.5,9.375 L12.1875,4.6875 L15,7.5 L15,0 L7.5,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,3 +1,4 @@
+// COLLAPSIBLE MOBILE MENUS
 .collapsible {
   background-color: $darkColorBackground;
   color: white;
@@ -65,6 +66,108 @@
         padding: 7px 16px;
         width: 100%;
         float: left;
+      }
+    }
+  }
+}
+
+// COLLAPSIBLE STATIC PAGES
+.collapsible2 {
+  background-color: $primaryColorReverse;
+  color: $darkColorBackground;
+  cursor: pointer;
+  padding: 9px 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 !important;
+  border-top: 1px solid #979797;
+
+  &:hover {
+    background-color: darken($primaryColorReverse,4%);
+  }
+
+  &.active {
+
+    &:after {
+      content: "-";
+    }
+  }
+
+  &:after {
+    content: "+";
+    position: absolute;
+    color: $darkColorBackground;
+    right: 10px;
+    top: 0;
+    font-size: 1.5em;
+  }
+
+  &:first-child {
+    margin-top: 13px !important;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #979797;
+  }
+}
+
+.content2 {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: $darkColorBackground;
+  background-color: $primaryColorReverse;
+
+  ul {
+    padding: 0;
+    width: 100%;
+    margin-top: 0;
+
+    li {
+      font-weight: 300;
+      list-style: none;
+      width: 100%;
+      padding: 7px;
+      border-left: 1px solid #979797;
+      float: none;
+      position: relative;
+      margin: 9px 0 9px 15px;
+
+      &:before {
+        content: "";
+        background-image: url("/assets/img/icon_external.svg");
+        background-position: center center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -25px;
+        height: 100%;
+        width: 15px;
+        top: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      a {
+        color: $darkColorBackground;
+        font-weight: 500;
+        width: auto;
+        text-decoration: none;
+        float: none;
+        padding: 0;
+
+        &:hover {
+          color: lighten($darkColorBackground, 20%);
+        }
       }
     }
   }

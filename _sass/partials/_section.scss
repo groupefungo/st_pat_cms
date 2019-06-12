@@ -325,6 +325,48 @@ section.topSlider {
   }
 }
 
+#foundation {
+  .container {
+    max-width: 800px;
+  }
+}
+
+#foundation, #specialneeds {
+  padding: 10em 0 18em 0;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: none;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  a {
+    color: $darkColorBackground;
+    font-weight: 400;
+
+    &:hover {
+      color: lighten($darkColorBackground, 30%);
+    }
+  }
+
+  .flexCol {
+    align-items: flex-end;
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    padding: 13em 0 18em 0;
+  }
+}
+
 .flexRow {
   display: flex;
   flex-direction: column;
@@ -339,6 +381,8 @@ section.topSlider {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 @import 'sections/punchline';
