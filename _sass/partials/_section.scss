@@ -122,6 +122,11 @@ section.section {
       font-weight: 600;
     }
 
+    a {
+      color: $primaryColorReverse;
+      text-decoration: none;
+    }
+
     .button {
       color: white;
     }
