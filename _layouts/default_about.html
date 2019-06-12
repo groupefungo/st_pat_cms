@@ -11,15 +11,21 @@ layout: compress
 
 {% include header.html %}
 
+{% include aboutnavigation.html %}
+
+{% include floatingmenu.html %}
+
+{% include aboutheader.html %}
+
 <main class="main" role="main">
-    <section id="{{ page.sectionid }}">
+    <section id="{{ page.sectionid }}" class="section section-white">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="section-title">{{ page.title }}</h2>
                 </div>
             </div>
-            <div class="row flexRow">
+            <div class="row">
                 {{ content }}
             </div>
         </div>
