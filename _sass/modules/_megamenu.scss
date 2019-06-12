@@ -1,5 +1,5 @@
 .navbar {
-  overflow: hidden;
+  overflow: auto;
   background-color: $darkColorBackground;
   font-family: $titleFontFamily;
 
@@ -14,7 +14,7 @@
   color: white;
   text-align: left;
   //padding: 14px 16px;
-  padding: 4px 15px;
+  padding: 6px 15px;
   text-decoration: none;
   width: 100%;
 
