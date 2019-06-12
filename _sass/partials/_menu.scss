@@ -188,7 +188,7 @@
 //FLOATING MENU
 .navAbout {
   position: fixed;
-  top: 135px;
+  top: 84px;
   width: 100%;
   background-color: $darkColorBackground;
   height: auto;
@@ -206,22 +206,30 @@
     z-index: 10000;
     float: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 8px;
+    padding: 0;
     max-width: 1200px;
 
     a {
       color: #fff;
+      font-size: 10px;
       font-weight: 400;
+      line-height: 1.2em;
       text-decoration: none;
       text-align: center;
-      padding: 11px 16px;
+      padding: 10px 7px;
       float: left;
-      border-right: 0 solid $accentColor;
-      border-bottom: 1px solid $accentColor;
-      width: 100%;
+      border-right: 1px solid $accentColor;
+      border-bottom: 0 solid $accentColor;
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
 
       &:last-child {
         border-right: 0 solid transparent;
@@ -233,17 +241,21 @@
       }
     }
     @media only screen and (min-width: $mobileBreakpoint) {
-      flex-direction: row;
 
       a {
+        font-size: 13px;
         padding: 8px 43px;
-        border-right: 1px solid $accentColor;
-        border-bottom: 0 solid $accentColor;
         width: 25%;
+        height: auto;
       }
     }
   }
 
   @media only screen and (min-width: $mobileBreakpoint) {
+    top: 135px;
+
+    .subMenu {
+      padding: 8px;
+    }
   }
 }
