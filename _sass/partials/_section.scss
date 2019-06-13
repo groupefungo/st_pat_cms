@@ -442,6 +442,27 @@ section.topSlider#photoSlider {
   }
 }
 
+#contact {
+  .schoolContact {
+    display: block;
+    width: auto;
+    position: relative;
+
+    p {
+      margin: 3px 0;
+    }
+  }
+  .container {
+    max-width: 600px;
+  }
+  .button-lightbox {
+    margin: 18px 0;
+  }
+  .flexRow {
+    justify-content: center;
+  }
+}
+
 #foundation, #specialneeds, #ourschoolcrest, #history, #thismonthatstpats, #photogallery, #contact {
   padding: 10em 0 18em 0;
   overflow: visible;

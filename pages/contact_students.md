@@ -1,7 +1,7 @@
 ---
 layout: contact
 title: Contact Us
-permalink: /contact
+permalink: /contact_students
 section: contact
 sectionid: contact
 ---
@@ -15,5 +15,8 @@ sectionid: contact
         <p>Tel.: <strong>418-525-8421</strong></p>
         <p>Fax: 418-525-6366</p>
         <p>Email: <a href="mailto:stpatsqc@cqsb.qc.ca">stpatsqc@cqsb.qc.ca</a></p>
+        <br>
+        <p>Your teachers' email addresses are available through the Parent Portal</p>
+        <a class="button button-lightbox button-block" href="https://portailparents.ca/accueil/en/" target="_blank">Go to Portal</a>
     </div>
 </div>
