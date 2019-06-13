@@ -2,6 +2,15 @@
 
     'use strict';
 
+    // body overflow fixed on modal
+    jQuery(document).ready(function() {
+        if ($(".lightbox-wrapper:target").css('top') == '0%') {
+            $("body").css('overflow', 'hidden');
+        } else {
+            $("body").css('overflow', 'visible');
+        }
+    });
+
     // close menu on navigation click
     var toggleMenu = (function($) {
         jQuery('.click-mobile').click( function(){
