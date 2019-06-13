@@ -3,117 +3,117 @@
 <!--------------------------------->
 <footer class="footer" role="contentinfo">
 
-  <div class="sloganClipper text-center">
-    <span class="schoolIdentity">ST.PATRICK’S HIGH SCHOOL</span>
-    <span class="schoolSlogan">HOME OF THE FIGHTING IRISH!</span>
-  </div>
-  <div class="armors">
-    <img src="/assets/img/logo_armor.png" alt="St Pats High School">
-  </div>
-
-  <div class="container bordered">
-    <div class="row">
-      <div class="col-3">
-        <h3>Where academic, arts and sports meet.</h3>
-        <h4>75 Rue de Maisonneuve, Québec, QC G1R 2C4<br><strong>418.525.8421</strong></h4>
-      </div>
-      <div class="col-3">
-        <h5>Ressources</h5>
-        <ul>
-          <li><a href="#">Academic calendar</a></li>
-          <li><a href="#">Activities calendar</a></li>
-          <li><a href="#">Foundation Report</a></li>
-          <li><a href="#">Governing Board</a></li>
-          <li><a href="#">Eligibility to English School</a></li>
-          <li><a href="#">Remediation Schedule</a></li>
-        </ul>
-      </div>
-      <div class="col-3">
-        <h5>School Links</h5>
-        <ul>
-          <li><a href="#">Policies</a></li>
-          <li><a href="#">Library Search</a></li>
-          <li><a href="#">Digital Library Search</a></li>
-          <li><a href="#">St. Pat’s Lockers</a></li>
-        </ul>
-      </div>
-      <div class="col-3">
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="#">St. Pat’s Alumni Foundation</a></li>
-          <li><a href="#">St. Pat’s Football</a></li>
-          <li><a href="#">CQSD</a></li>
-          <li><a href="#">RSEQ (Sport Étudiant)</a></li>
-          <li><a href="#">LEARN</a></li>
-          <li><a href="#">MELS</a></li>
-          <li><a href="#">Voice of English Qc</a></li>
-        </ul>
-      </div>
+    <div class="sloganClipper text-center">
+        <span class="schoolIdentity">ST.PATRICK’S HIGH SCHOOL</span>
+        <span class="schoolSlogan">HOME OF THE FIGHTING IRISH!</span>
     </div>
-  </div>
+    <div class="armors">
+        <img src="/assets/img/logo_armor.png" alt="St Pats High School">
+    </div>
+
+    <div class="container bordered">
+        <div class="row">
+            <div class="col-3">
+                <h3>Where academic, arts and sports meet.</h3>
+                <h4>75 Rue de Maisonneuve, Québec, QC G1R 2C4<br><strong>418.525.8421</strong></h4>
+            </div>
+            <div class="col-3">
+                <h5>Ressources</h5>
+                <ul>
+                    <li><a href="#">Academic calendar</a></li>
+                    <li><a href="#">Activities calendar</a></li>
+                    <li><a href="#">Foundation Report</a></li>
+                    <li><a href="#">Governing Board</a></li>
+                    <li><a href="#">Eligibility to English School</a></li>
+                    <li><a href="#">Remediation Schedule</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h5>School Links</h5>
+                <ul>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Library Search</a></li>
+                    <li><a href="#">Digital Library Search</a></li>
+                    <li><a href="#">St. Pat’s Lockers</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">St. Pat’s Alumni Foundation</a></li>
+                    <li><a href="#">St. Pat’s Football</a></li>
+                    <li><a href="#">CQSD</a></li>
+                    <li><a href="#">RSEQ (Sport Étudiant)</a></li>
+                    <li><a href="#">LEARN</a></li>
+                    <li><a href="#">MELS</a></li>
+                    <li><a href="#">Voice of English Qc</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </footer>
 
 <script src="/assets/components/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
-  (function () {
-    emailjs.init("XXXXXXXX");
-  })();
+    (function () {
+        emailjs.init("XXXXXXXX");
+    })();
 </script>
 <script src="/assets/js/script.js"></script>
 <script src="/assets/js/smooth-scroll.js"></script>
 <script src="/assets/js/jquery.flexslider.js"></script>
 <script src="/assets/js/jquery.flexslider-min.js"></script>
 <script>
-  var scroll = new SmoothScroll('a.scroll');
+    var scroll = new SmoothScroll('a.scroll');
 </script>
 
 <script>
-  $(window).load(function () {
-    $('.flexslider').flexslider({
-      animation: "slide"
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
     });
-  });
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
 
-    if (scroll >= 175) {
-      $(".floatingSection").addClass("fixedToBottom");
-    } else {
-      $(".floatingSection").removeClass("fixedToBottom");
-    }
-  });
-  $( document ).ready(function() {
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var content = this.nextElementSibling;
-              if (content.style.maxHeight){
-                  content.style.maxHeight = null;
-              } else {
-                  content.style.maxHeight = content.scrollHeight + "px";
-              }
-          });
-      }
-  });
-  $( document ).ready(function() {
-    var coll = document.getElementsByClassName("collapsible2");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
+        if (scroll >= 175) {
+            $(".floatingSection").addClass("fixedToBottom");
         } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+            $(".floatingSection").removeClass("fixedToBottom");
         }
-      });
-    }
-  });
+    });
+    $(document).ready(function () {
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    });
+    $(document).ready(function () {
+        var coll = document.getElementsByClassName("collapsible2");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    });
 </script>

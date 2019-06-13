@@ -1,6 +1,6 @@
 ---
 layout: page_about
-title: About St. Patrick’s High School
+title: Part of Quebec City Since 1843
 permalink: /history
 section: home
 sectionid: history

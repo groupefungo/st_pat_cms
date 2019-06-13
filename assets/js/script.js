@@ -18,6 +18,13 @@
         });
     });
 
+    function ShowLocalDate(){
+        var dNow = new Date();
+        var localdate= 'Today' + ' ' + dNow.getDate() + '/' + (dNow.getMonth()+1) + '/' + dNow.getFullYear() + ' ' + dNow.getHours() + ':' + dNow.getMinutes();
+        $('#currentDate').html(localdate)
+    }
+    ShowLocalDate();
+
     var formCalltoAction = (function($) {
 
         var $form = $('form#ctaForm');
