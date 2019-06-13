@@ -463,7 +463,15 @@ section.topSlider#photoSlider {
   }
 }
 
-#foundation, #specialneeds, #ourschoolcrest, #history, #thismonthatstpats, #photogallery, #contact {
+#policies {
+  h4 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+}
+
+#foundation, #specialneeds, #ourschoolcrest, #history, #thismonthatstpats, #photogallery, #contact, #policies {
   padding: 10em 0 18em 0;
   overflow: visible;
 
@@ -500,7 +508,7 @@ section.topSlider#photoSlider {
   }
 }
 
-#thismonthatstpats, #photogallery, #ourschoolcrest, #history, #contact {
+#thismonthatstpats, #photogallery, #ourschoolcrest, #history, #contact, #policies {
 
   .event {
     display: flex;
