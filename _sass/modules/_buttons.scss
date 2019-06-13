@@ -40,6 +40,10 @@ a.button, button.button{
     &:hover{
       background-color: darken($accentColor, 10%);
     }
+    &.split {
+      width: 48%;
+      margin: 2px;
+    }
   }
   &.button-action, &.button-action.visited, &.button-action.active {
     background-color: $primaryColor;
