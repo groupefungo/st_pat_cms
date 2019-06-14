@@ -2,7 +2,7 @@
 <!-- Lightbox questionnaire ------------>
 <!--------------------------------->
 <div class="lightbox-wrapper short-animate" id="f">
-    <form class="form" id="ctaForm" action="">
+    <form class="form survey-form" id="ctaForm" action="">
 
         <div class="lightbox-content page page1">
             <div class="form-section">
@@ -20,8 +20,8 @@
                     </ol>
                 </div>
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -51,8 +51,8 @@
                 </ol>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -72,8 +72,8 @@
                 </ol>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -97,8 +97,8 @@
                 </ol>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -121,8 +121,8 @@
                 </ol>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -144,8 +144,8 @@
                 </ol>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -166,8 +166,8 @@
                 </ol>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -187,8 +187,8 @@
                 </ol>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -208,8 +208,8 @@
                 </ol>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Go to registration</button>
-                    <button class="button button-lightbox nextPage" type="button">Not Sure</button>
+                    <a class="button button-lightbox" href="#r" type="button">Go to registration</a>
+                    <a class="button button-lightbox nextPage" type="button">Not Sure</a>
                 </div>
             </div>
         </div>
@@ -225,7 +225,7 @@
                 <p>For births outside of Quebec one must contact the Division of Vital Statistics where the child was born.</p>
 
                 <div class="row flexRow">
-                    <button class="button button-lightbox" href="#r" type="button">Contact Us</button>
+                    <a class="button button-lightbox" href="#r" type="button">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -237,35 +237,34 @@
 <!-- Lightbox absence form ------------>
 <!--------------------------------->
 <div class="lightbox-wrapper short-animate lightBkg" id="a">
-    <form class="form" id="ctaForm2" action="">
+    <form class="form absence-form" id="ctaForm2" action="">
 
         <div class="lightbox-content page">
             <div class="form-section">
                 <div class="form-error swing-top-right-bck"></div>
                 <h2>Absence Form</h2>
                 <div class="form-group">
-                    <input type="text" name="nomutilisateur" data-req="required" placeholder="Student's name">
+                    <label>Student's name</label>
+                    <input type="text" name="student_name" data-req="required" placeholder="Student's name">
                 </div>
                 <div class="form-group">
-                    <input type="email" name="courriel" placeholder="Student's Email Address" data-type="email">
-                </div>
-                <!--<div class="form-group">-->
-                    <!--<input type="text" name="group" data-req="required" placeholder="Group">-->
-                <!--</div>-->
-                <div class="form-group">
-                    <input type="text" name="parentname" data-req="required" placeholder="Parent's full name">
+                    <label>Student's Email Address</label>
+                    <input type="email" name="student_email" placeholder="Student's Email Address" data-type="email">
                 </div>
                 <div class="form-group">
-                    <input type="email" name="courriel2" placeholder="Parent's Email Address" data-req="required" data-type="email">
+                    <label>Parent's full name</label>
+                    <input type="text" name="parent_name" data-req="required" placeholder="Parent's full name">
                 </div>
-                <!--<div class="form-group">-->
-                <!--<input type="text" name="telephone" data-req="required" data-type="phone" placeholder="418-123-4567">-->
-                <!--</div>-->
                 <div class="form-group">
-                    <textarea rows="4" name="message" placeholder="Reason for the absence"></textarea>
+                    <label>Parent's Email Address</label>
+                    <input type="email" name="parent_email" placeholder="Parent's Email Address" data-req="required" data-type="email">
+                </div>
+                <div class="form-group">
+                    <label>Reason for the absence</label>
+                    <textarea rows="4" name="absence_message" placeholder="Reason for the absence"></textarea>
                 </div>
                 <span>Please note that each absence will be verified by the school.</span>
-                <button type="submit" class="button button-lightbox" data-type="submit">Submit</button>
+                <button type="submit" class="button button-lightbox submit-absence" data-type="submit">Submit</button>
             </div>
         </div>
 
@@ -293,7 +292,7 @@
 <!-- Lightbox bullying form ------------>
 <!--------------------------------->
 <div class="lightbox-wrapper short-animate lightBkg" id="b">
-    <form class="form" id="ctaForm4" action="">
+    <form class="form report-bully" id="ctaForm4" action="">
 
         <div class="lightbox-content page">
             <div class="form-section">
@@ -301,26 +300,28 @@
                 <h2>Report a bully</h2>
                 <p>My child had been a victim of bullying.</p>
                 <div class="form-group">
-                    <input type="text" name="nomutilisateur" data-req="required" placeholder="Student's name">
+                    <label>Student's name</label>
+                    <input type="text" name="report_bully_student_name" data-req="required" placeholder="Student's name">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="group" data-req="required" placeholder="Group">
+                    <label>Student's Group</label>
+                    <input type="text" name="report_bully_group" data-req="required" placeholder="Group">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="parentname" data-req="required" placeholder="Parent's full name">
+                    <label>Parent's full name</label>
+                    <input type="text" name="report_bully_parent_name" data-req="required" placeholder="Parent's full name">
                 </div>
                 <div class="form-group">
-                    <input type="email" name="courriel" placeholder="Email" data-req="required" data-type="email">
+                    <label>Parent's Email Address</label>
+                    <input type="email" name="report_bully_parent_email" placeholder="Email" data-req="required" data-type="email">
                 </div>
-                <!--<div class="form-group">-->
-                <!--<input type="text" name="telephone" data-req="required" data-type="phone" placeholder="418-123-4567">-->
-                <!--</div>-->
                 <div class="form-group">
-                    <textarea rows="4" name="message"
+                    <label>Explain the situation</label>
+                    <textarea rows="4" name="report_bully_message"
                               placeholder="Please, feel free to give us a resume of the situation…"></textarea>
                 </div>
                 <span>This message is fully confidential, we take every case very seriously. We will contact you as soon as possible.</span>
-                <button type="submit" class="button button-lightbox" data-type="submit">Submit</button>
+                <button type="submit" class="button button-lightbox submit-bully-report" data-type="submit">Submit</button>
             </div>
         </div>
 
@@ -349,7 +350,7 @@
 <!--------------------------------->
 
 <div class="lightbox-wrapper short-animate" id="r">
-    <form class="form" id="ctaForm3" action="">
+    <form class="form register-form" id="ctaForm3" action="">
 
         <div class="lightbox-content page">
             <div class="form-section">
@@ -357,22 +358,18 @@
                 <h2>Registration / Information</h2>
                 <p>If your child is eligible for English Education, please fill out the following information and the secretariat will contact you.</p>
                 <div class="form-group">
-                    <input type="text" name="nomutilisateur" data-req="required" placeholder="Name">
-                </div>
-                <!--<div class="form-group">-->
-                    <!--<input type="text" name="telephone" data-req="required" data-type="phone"-->
-                           <!--placeholder="418-123-4567">-->
-                <!--</div>-->
-                <div class="form-group">
-                    <input type="email" name="courriel" placeholder="Email" data-req="required" data-type="email">
+                    <input type="text" name="register_name" data-req="required" placeholder="Name">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="subject" data-req="required" placeholder="Subject or Question">
+                    <input type="email" name="register_email" placeholder="Email" data-req="required" data-type="email">
                 </div>
                 <div class="form-group">
-                    <textarea rows="4" name="message" placeholder="Message"></textarea>
+                    <input type="text" name="register_subject" data-req="required" placeholder="Subject or Question">
                 </div>
-                <button type="submit" class="button button-action button-block" data-type="submit">Submit</button>
+                <div class="form-group">
+                    <textarea rows="4" name="register_message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="button button-action button-block submit-register" data-type="submit">Submit</button>
                 <span>You want to know if your child meets eligibility criteria to be admit at St.Patrick’s High School? Here’s some help for you.</span>
                 <a href="#f" class="button button-lightbox button-block">Eligibility
                     questionnary

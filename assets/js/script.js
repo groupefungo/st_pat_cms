@@ -2,16 +2,6 @@
 
     'use strict';
 
-    // body overflow fixed on modal
-    jQuery(document).ready(function() {
-        $(".open-lightbox").on("click",function(){
-            $("body,html").css('overflow', 'hidden');
-        })
-        $("#close-lightbox").on("click",function(){
-            $("body,html").css('overflow', 'initial');
-        })
-    });
-
     // close menu on navigation click
     var toggleMenu = (function($) {
         jQuery('.click-mobile').click( function(){
@@ -26,27 +16,28 @@
     }
     ShowLocalDate();
 
-    var formCalltoAction = (function($) {
+    //********************************************************
+    // ABSENCE FORM LIGHTBOX
 
-        var $form = $('form#ctaForm');
+    var formCalltoActionAbsence = (function($) {
 
+        var $form_absence = $('form.absence-form');
+
+        // show form error message
         var showFormError = function() {
-            $form.find('.form-error')
-                .html('Veuillez vérifier vos réponses, certains champs sont vides ou non valides').show();
+            $('form.absence-form .page .form-error')
+              .html('Veuillez vérifier vos réponses, certains champs sont vides ou non valides').show();
         };
 
+        // hide form error message
         var hideFormError = function() {
-            $form.find('.form-error').html('').hide();
+            $('form.absence-form .page .form-error').html('').hide();
         };
 
+        // validate email field
         var isEmail = function(email) {
             var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             return regex.test(email);
-        };
-
-        var isPhone = function(phone) {
-            var regex = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
-            return regex.test(phone);
         };
 
         // validate one field given its value and data type [email or phone]
@@ -60,13 +51,11 @@
             }
             if (dt === 'email' && !isEmail(v)) {
                 r.value = false;
-            } else if (dt === 'phone' && !isPhone(v)) {
-                r.value = false;
             }
             return r;
         };
 
-
+        // validate form andd call validate field
         var validatePage = function($page){
             var $inputGroup = $page.find('.form-group');
             var valid = true;
@@ -90,7 +79,7 @@
             return valid;
         };
 
-
+        // navigate to next page if form valid
         var navigateToNextPage = function(currentTarget) {
             var $currentPage = $(currentTarget).closest('.lightbox-content.page');
 
@@ -106,56 +95,55 @@
 
         };
 
+        // Handle send email with emailJS
         var sendEmail = function(currentTarget) {
             navigateToNextPage(currentTarget);
             var service_id = "default_service";
-            var template_id = "XXXXXXX";
-            var $pageConfirm = $form.find('.page-confirm');
-            emailjs.sendForm(service_id, template_id, 'ctaForm')
-                .then(function() {
-                    $pageConfirm.find('.wait').hide(function(){
-                        $pageConfirm.find('.message.success').show();
-                    });
-                }, function() {
-                    $pageConfirm.find('.wait').hide(function(){
-                        $pageConfirm.find('.message.error').show();
-                    });
-                });
+            var template_id = "template_absence_form";
+            var $pageConfirm = $('form.absence-form .page-confirm');
+
+            emailjs.sendForm(service_id, template_id, '#ctaForm2')
+              .then(function() {
+                  $pageConfirm.find('.wait').hide(function(){
+                      $pageConfirm.find('.message.success').show();
+                  });
+              }, function() {
+                  $pageConfirm.find('.wait').hide(function(){
+                      $pageConfirm.find('.message.error').show();
+                  });
+              });
         };
 
-        var datajs = function(key, value) {
-            return document.querySelectorAll('[data-' + key + '=' + value + ']');
-        };
-
+        // Validate form on submit
         var clickHandler = function(e) {
             e.preventDefault();
             var $currentPage = $(e.currentTarget).closest('.lightbox-content.page');
             if (validatePage($currentPage)){
+                // if form valid, send email
                 sendEmail(e.currentTarget);
             } else {
+                // show from error message
                 showFormError();
             }
         };
 
+        // Reset lightbox and form inputs and set slide position at 1
         var resetForm = function(){
             $('body').removeClass('no-overflow');
             setTimeout(function(){
-                $form.find('.page').attr('data-slide', 'hideRight');
-                $form.find('.page1').removeAttr('data-slide');
+                $form_absence[0].reset();
+                $form_absence.find('.page').attr('data-slide', 'hideRight');
+                $form_absence.find('.page1').removeAttr('data-slide');
             }, 300);
         };
 
-        var preventBodyScroll = function(){
-            $('body').addClass('no-overflow');
-        };
-
         var bindEvents = function() {
-            $(datajs('type', 'submit')).on('click', clickHandler);
-            $form.find('button.nextPage').on('click', function(e) {
-                navigateToNextPage(e.currentTarget);
-            });
+            // Submit form click handler
+            $('button.submit-absence').on('click', clickHandler);
+            // Form input OnChange event, remove error message
+            $('form.absence-form .page .form-group input').on('change', hideFormError);
+            // Close lightbox event
             $('#close-lightbox').on('click', resetForm);
-            $('a[href$="#f"]').on('click', preventBodyScroll);
         };
 
         var init = function() {
@@ -168,7 +156,352 @@
 
     })(jQuery);
 
-    formCalltoAction.init();
+    //********************************************************
+    // BULLYING FORM LIGHTBOX
+
+    var formCalltoActionBullying = (function($) {
+
+        var $form_bully = $('form.report-bully');
+
+        // show form error message
+        var showFormError = function() {
+            $('form.report-bully .page .form-error')
+              .html('Veuillez vérifier vos réponses, certains champs sont vides ou non valides').show();
+        };
+
+        // hide form error message
+        var hideFormError = function() {
+            $('form.report-bully .page .form-error').html('').hide();
+        };
+
+        // validate email field
+        var isEmail = function(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        };
+
+        // validate one field given its value and data type [email or phone]
+        var validateField = function(v, dt) {
+            var r = {
+                'value': true,
+                'message': ''
+            };
+            if (v === '') {
+                r.value = false;
+            }
+            if (dt === 'email' && !isEmail(v)) {
+                r.value = false;
+            }
+            return r;
+        };
+
+        // validate form andd call validate field
+        var validatePage = function($page){
+            var $inputGroup = $page.find('.form-group');
+            var valid = true;
+            $inputGroup.each(function(i, e){
+                var $e = $(e);
+                // Si checkbox ou radiobutton
+                if ($e.hasClass('form-checkbox-list')){
+                    if ($e.find('input:radio:checked').length === 0) {
+                        valid = false;
+                    }
+                } else {
+                    $e.find('input, select').each(function(index, element) {
+                        var $input = $(element);
+                        var validateResult = validateField($input.val(), $input.data('type'));
+                        if (!validateResult.value) {
+                            valid = false;
+                        }
+                    });
+                }
+            });
+            return valid;
+        };
+
+        // navigate to next page if form valid
+        var navigateToNextPage = function(currentTarget) {
+            var $currentPage = $(currentTarget).closest('.lightbox-content.page');
+
+            // Validate current page avant
+            if (validatePage($currentPage)){
+                hideFormError();
+                var $nextPage = $currentPage.next('.lightbox-content.page');
+                $currentPage.attr('data-slide', 'hideLeft');
+                $nextPage.attr('data-slide', 'show');
+            } else {
+                showFormError();
+            }
+
+        };
+
+        // Handle send email with emailJS
+        var sendEmail = function(currentTarget) {
+            navigateToNextPage(currentTarget);
+            var service_id = "default_service";
+            var template_id = "template_report_bully_form";
+            var $pageConfirm = $('form.report-bully .page-confirm');
+
+            emailjs.sendForm(service_id, template_id, '#ctaForm4')
+              .then(function() {
+                  $pageConfirm.find('.wait').hide(function(){
+                      $pageConfirm.find('.message.success').show();
+                  });
+              }, function() {
+                  $pageConfirm.find('.wait').hide(function(){
+                      $pageConfirm.find('.message.error').show();
+                  });
+              });
+        };
+
+        // Validate form on submit
+        var clickHandler = function(e) {
+            e.preventDefault();
+            var $currentPage = $(e.currentTarget).closest('.lightbox-content.page');
+            if (validatePage($currentPage)){
+                // if form valid, send email
+                sendEmail(e.currentTarget);
+            } else {
+                // show from error message
+                showFormError();
+            }
+        };
+
+        // Reset lightbox and form inputs and set slide position at 1
+        var resetForm = function(){
+            $('body').removeClass('no-overflow');
+            setTimeout(function(){
+                $form_bully[0].reset();
+                $form_bully.find('.page').attr('data-slide', 'hideRight');
+                $form_bully.find('.page1').removeAttr('data-slide');
+            }, 300);
+        };
+
+        var bindEvents = function() {
+            // Submit form click handler
+            $('button.submit-bully-report').on('click', clickHandler);
+            // Form input OnChange event, remove error message
+            $('form.report-bully .page .form-group input').on('change', hideFormError);
+            // Close lightbox event
+            $('#close-lightbox').on('click', resetForm);
+        };
+
+        var init = function() {
+            bindEvents();
+        };
+
+        return {
+            init: init
+        };
+
+    })(jQuery);
+
+    //********************************************************
+    // REGISTER FORM LIGHTBOX
+
+    var formCalltoActionRegister = (function($) {
+
+        var $form_register = $('form.register-form');
+
+        // show form error message
+        var showFormError = function() {
+            $('form.register-form .page .form-error')
+              .html('Veuillez vérifier vos réponses, certains champs sont vides ou non valides').show();
+        };
+
+        // hide form error message
+        var hideFormError = function() {
+            $('form.register-form .page .form-error').html('').hide();
+        };
+
+        // validate email field
+        var isEmail = function(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        };
+
+        // validate one field given its value and data type [email or phone]
+        var validateField = function(v, dt) {
+            var r = {
+                'value': true,
+                'message': ''
+            };
+            if (v === '') {
+                r.value = false;
+            }
+            if (dt === 'email' && !isEmail(v)) {
+                r.value = false;
+            }
+            return r;
+        };
+
+        // validate form andd call validate field
+        var validatePage = function($page){
+            var $inputGroup = $page.find('.form-group');
+            var valid = true;
+            $inputGroup.each(function(i, e){
+                var $e = $(e);
+                // Si checkbox ou radiobutton
+                if ($e.hasClass('form-checkbox-list')){
+                    if ($e.find('input:radio:checked').length === 0) {
+                        valid = false;
+                    }
+                } else {
+                    $e.find('input, select').each(function(index, element) {
+                        var $input = $(element);
+                        var validateResult = validateField($input.val(), $input.data('type'));
+                        if (!validateResult.value) {
+                            valid = false;
+                        }
+                    });
+                }
+            });
+            return valid;
+        };
+
+        // navigate to next page if form valid
+        var navigateToNextPage = function(currentTarget) {
+            var $currentPage = $(currentTarget).closest('.lightbox-content.page');
+
+            // Validate current page avant
+            if (validatePage($currentPage)){
+                hideFormError();
+                var $nextPage = $currentPage.next('.lightbox-content.page');
+                $currentPage.attr('data-slide', 'hideLeft');
+                $nextPage.attr('data-slide', 'show');
+            } else {
+                showFormError();
+            }
+
+        };
+
+        // Handle send email with emailJS
+        var sendEmail = function(currentTarget) {
+            navigateToNextPage(currentTarget);
+            var service_id = "default_service";
+            var template_id = "template_register_form";
+            var $pageConfirm = $('form.register-form .page-confirm');
+
+            emailjs.sendForm(service_id, template_id, '#ctaForm3')
+              .then(function() {
+                  $pageConfirm.find('.wait').hide(function(){
+                      $pageConfirm.find('.message.success').show();
+                  });
+              }, function() {
+                  $pageConfirm.find('.wait').hide(function(){
+                      $pageConfirm.find('.message.error').show();
+                  });
+              });
+        };
+
+        // Validate form on submit
+        var clickHandler = function(e) {
+            e.preventDefault();
+            var $currentPage = $(e.currentTarget).closest('.lightbox-content.page');
+            if (validatePage($currentPage)){
+                // if form valid, send email
+                sendEmail(e.currentTarget);
+            } else {
+                // show from error message
+                showFormError();
+            }
+        };
+
+        // Reset lightbox and form inputs and set slide position at 1
+        var resetForm = function(){
+            $('body').removeClass('no-overflow');
+            setTimeout(function(){
+                $form_register[0].reset();
+                $form_register.find('.page').attr('data-slide', 'hideRight');
+                $form_register.find('.page1').removeAttr('data-slide');
+            }, 300);
+        };
+
+        var bindEvents = function() {
+            // Submit form click handler
+            $('button.submit-register').on('click', clickHandler);
+            // Form input OnChange event, remove error message
+            $('form.register-form .page .form-group input').on('change', hideFormError);
+            // Close lightbox event
+            $('#close-lightbox').on('click', resetForm);
+        };
+
+        var init = function() {
+            bindEvents();
+        };
+
+        return {
+            init: init
+        };
+
+    })(jQuery);
+
+    //********************************************************
+    // SURVEY LIGHTBOX
+
+    var formCalltoActionSurvey = (function($) {
+        // Initialize our form variable
+        var $survey_form = $('form.survey-form');
+
+        // Navigate to next page
+        // no validation needed since we don't have a form
+        var navigateToNextPage = function(currentTarget) {
+            var $currentPage = $(currentTarget).closest('.lightbox-content.page');
+            var $nextPage = $currentPage.next('.lightbox-content.page');
+            $currentPage.attr('data-slide', 'hideLeft');
+            $nextPage.attr('data-slide', 'show');
+        };
+
+        // Reset lightbox and set slide position at 1
+        var resetForm = function(){
+            $('body').removeClass('no-overflow');
+            setTimeout(function(){
+                $survey_form.find('.page').attr('data-slide', 'hideRight');
+                $survey_form.find('.page1').removeAttr('data-slide');
+            }, 300);
+        };
+
+        // Manage form events
+        var bindEvents = function() {
+            // on link click go to Next Page
+            $('form.survey-form a.nextPage').on('click', function(e) {
+                navigateToNextPage(e.currentTarget);
+            });
+            // Close lightbox event
+            $('#close-lightbox').on('click', resetForm);
+        };
+
+        // Init form and bind event listeners
+        var init = function() {
+            bindEvents();
+        };
+
+        return {
+            init: init
+        };
+    })(jQuery);
+
     toggleMenu();
+
+    jQuery(document).ready(function() {
+        // body overflow fixed on modal
+        $(".open-lightbox").on("click",function(){
+            $("body,html").css('overflow', 'hidden');
+        });
+
+        // Close lightboxes and reinitialize body overflow to normal
+        $("#close-lightbox").on("click",function(){
+            $("body,html").css('overflow', 'initial');
+        });
+
+        // We need to call form.init on document ready
+        // otherwise the html is not all loaded and as we try to attach
+        // event listeners on element not yet ready or present
+        // they would execute
+        formCalltoActionSurvey.init();
+        formCalltoActionAbsence.init();
+        formCalltoActionBullying.init();
+        formCalltoActionRegister.init();
+    });
 
 })(jQuery, emailjs, window, document);
