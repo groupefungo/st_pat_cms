@@ -5,19 +5,15 @@ section.section {
     margin-top: 0;
   }
 
-  &.section-invert { // sections avec text clair sur fond foncé
-    color: white;
-    text-shadow: $textShadow;
-    background-color: $darkColorBackground;
-
-    h1, h2, h4 {
-      color: $primaryColorReverse;
+  &.section-invert, &.section-white {
+    h1, h2, h3, h4 {
       text-shadow: none;
       letter-spacing: 1px;
+      font-weight: 600;
 
       &.section-title {
         font-size: 28px;
-        font-weight: 500;
+        font-weight: 600;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -38,19 +34,38 @@ section.section {
       font-size: 18px;
       margin: 45px 0 55px 0;
     }
+    @media only screen and (min-width: $mobileBreakpoint) {
+      h1, h2, h3, h4 {
+        font-weight: 500;
 
-    .button {
-      color: white;
+        &.section-title {
+          font-weight: 500;
+        }
+      }
     }
+  }
 
-    &.features {
-      background-image: url("/assets/img/bkg-features.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top center;
+  &.section-invert { // sections avec text clair sur fond foncé
+    color: white;
+    text-shadow: $textShadow;
+    background-color: $darkColorBackground;
 
-      padding-bottom: 13em;
+    h1, h2, h4 {
+      color: $primaryColorReverse;
     }
+  }
+
+  .button {
+    color: white;
+  }
+
+  &.features {
+    background-image: url("/assets/img/bkg-features.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    padding-bottom: 13em;
   }
 
   &.section-white { // sections avec text clair sur fond foncé
@@ -60,31 +75,6 @@ section.section {
 
     h1, h2, h3, h4 {
       color: $darkColorBackground;
-      text-shadow: none;
-      letter-spacing: 1px;
-
-      &.section-title {
-        font-size: 28px;
-        font-weight: 500;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        letter-spacing: 1px;
-
-        &:after {
-          content: "";
-          border-bottom: 3px solid $accentColor;
-          width: 82px;
-          position: relative;
-          top: 20px;
-        }
-      }
-    }
-
-    h4 {
-      font-size: 18px;
-      margin: 45px 0 55px 0;
     }
 
     .button {
@@ -401,6 +391,7 @@ section.topSlider#photoSlider {
     &:hover .flex-direction-nav .flex-next:hover {
       opacity: 1;
     }
+
     ul.slides {
       img {
         width: 100%;
@@ -452,12 +443,15 @@ section.topSlider#photoSlider {
       margin: 3px 0;
     }
   }
+
   .container {
     max-width: 600px;
   }
+
   .button-lightbox {
     margin: 18px 0;
   }
+
   .flexRow {
     justify-content: center;
   }
@@ -477,7 +471,6 @@ section.topSlider#photoSlider {
 
   h2 {
     font-size: 40px;
-    font-weight: 500;
     text-transform: none;
   }
 
