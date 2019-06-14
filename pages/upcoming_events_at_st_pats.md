@@ -1,9 +1,9 @@
 ---
 layout: page_about
-title: This Month At St. Pat's
-permalink: /this_month_at_st_pats
+title: Upcoming events at St. Pat's
+permalink: /upcoming_events_at_st_pats
 section: home
-sectionid: thismonthatstpats
+sectionid: upcomingevents
 ---
 
 {{ $cols := split .row "||" }}

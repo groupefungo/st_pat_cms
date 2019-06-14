@@ -456,7 +456,7 @@ section.topSlider#photoSlider {
   }
 }
 
-#foundation, #specialneeds, #ourschoolcrest, #history, #thismonthatstpats, #photogallery, #contact, #policies {
+#foundation, #specialneeds, #ourschoolcrest, #history, #upcomingevents, #photogallery, #contact, #policies {
   padding: 5em 0 18em 0;
   overflow: visible;
 
@@ -504,7 +504,7 @@ section.topSlider#photoSlider {
   }
 }
 
-#thismonthatstpats, #photogallery, #ourschoolcrest, #history, #contact, #policies {
+#upcomingevents, #photogallery, #ourschoolcrest, #history, #contact, #policies {
 
   .event {
     display: flex;
@@ -521,7 +521,7 @@ section.topSlider#photoSlider {
 
     .eventDate {
       font-size: 30px;
-      font-weight: 500;
+      font-weight: 600;
       color: $primaryColorReverse;
       background-color: $darkColorBackground;
       width: 50px;
