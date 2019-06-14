@@ -260,7 +260,7 @@ section.topSlider#eventSlider, section.topSlider#photoSlider {
 
         .captionBox {
           position: absolute;
-          padding: 10px 0;
+          padding: 10px 3px;
           background-color: $primaryColorReverse;
           top: 0;
           left: 0;
@@ -297,7 +297,7 @@ section.topSlider#eventSlider, section.topSlider#photoSlider {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 28px;
+            padding: 12px 32px;
           }
         }
       }
