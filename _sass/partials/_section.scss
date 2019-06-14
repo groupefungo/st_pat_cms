@@ -472,7 +472,7 @@ section.topSlider#photoSlider {
 }
 
 #foundation, #specialneeds, #ourschoolcrest, #history, #thismonthatstpats, #photogallery, #contact, #policies {
-  padding: 10em 0 18em 0;
+  padding: 5em 0 18em 0;
   overflow: visible;
 
   h2 {
@@ -500,11 +500,23 @@ section.topSlider#photoSlider {
   }
 
   .flexCol {
-    align-items: flex-end;
+    align-items: center;
+  }
+
+  &:first-of-type {
+    min-height: 100vh;
+    height: 100%;
+    @media only screen and (min-width: $mobileBreakpoint) {
+      height: auto;
+    }
   }
 
   @media only screen and (min-width: $mobileBreakpoint) {
+    padding: 10em 0 18em 0;
 
+    .flexCol {
+      align-items: flex-end;
+    }
   }
 }
 
@@ -598,14 +610,6 @@ section.topSlider#photoSlider {
           font-size: 11px;
         }
       }
-    }
-  }
-
-  &:first-of-type {
-    min-height: 100vh;
-    height: 100%;
-    @media only screen and (min-width: $mobileBreakpoint) {
-      height: auto;
     }
   }
 }
