@@ -11,6 +11,15 @@ form#ctaForm, form#ctaForm2, form#ctaForm3, form#ctaForm4 {
     width: 100%;
     max-width: 497px;
     padding: 0 1em;
+
+    .form-group {
+      label {
+        padding: 0 0 5px 0;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
   }
 
   .button-primary {
@@ -43,13 +52,24 @@ form#ctaForm, form#ctaForm2, form#ctaForm3, form#ctaForm4 {
   }
 
   .page-confirm {
-    .fa {
-      color: white;
+    .fa.fa-check-circle {
+      color: #1f6d26;
     }
 
-    .message p {
+    .message.success p {
       padding: 0 1em;
-      color: white;
+      color: #225a27;
+      font-size: 1.2em;
+      line-height: 1.3em;
+    }
+
+    .fa.fa-exclamation-circle {
+      color: #c34444;
+    }
+
+    .message.error p {
+      padding: 0 1em;
+      color: #904141;
       font-size: 1.2em;
       line-height: 1.3em;
     }
