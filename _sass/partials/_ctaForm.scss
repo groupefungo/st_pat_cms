@@ -13,11 +13,22 @@ form#ctaForm, form#ctaForm2, form#ctaForm3, form#ctaForm4 {
     padding: 0 1em;
 
     .form-group {
+      position: relative;
+
       label {
-        padding: 0 0 5px 0;
+        color: lighten($darkColorBackground, 10%);
+        padding: 1px 10px;
         margin: 0;
-        font-size: 12px;
+        font-size: 9px;
         font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: -7px;
+        left: 9px;
+        background-color: white;
+        border-radius: 28px;
+        border: 1px solid #e8e8e8;
       }
     }
   }
