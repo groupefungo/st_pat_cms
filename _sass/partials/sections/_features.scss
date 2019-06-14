@@ -3,10 +3,13 @@ section.section.section-features {
   min-height: 40vh;
   text-align: center;
   padding-bottom: 4em;
-  background-image: url("/assets/img/bkg-features.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+
+  &.why-st-pats {
+    background-image: url("/assets/img/bkg-features.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
 
   .feature {
     display: flex;
@@ -173,7 +176,9 @@ section.section.section-features {
   }
 
   @media only screen and (min-width: $mobileBreakpoint) {
-    padding-bottom: 13em;
+    &.why-st-pats {
+      padding-bottom: 13em;
+    }
 
     i.fa {
       font-size: 4em;
@@ -188,6 +193,7 @@ section.section.section-features {
 }
 
 #profiles {
+  padding-bottom: 4em;
 
   .profiles {
     display: block;
@@ -455,8 +461,5 @@ section.section.section-features {
         top: inherit;
       }
     }
-  }
-  @media only screen and (min-width: 1390px) {
-    padding-bottom: 4em;
   }
 }
