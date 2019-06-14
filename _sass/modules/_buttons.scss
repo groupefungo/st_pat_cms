@@ -29,6 +29,10 @@ a.button, button.button{
     &:hover{
       background-color: lighten($buttonPrimaryBackground, 5%);
     }
+    &.disabled {
+      background-color: transparent;
+      color: transparent;
+    }
   }
   &.button-lightbox, &.button-lightbox.visited, &.button-lightbox.active {
     background-color: $accentColor;
