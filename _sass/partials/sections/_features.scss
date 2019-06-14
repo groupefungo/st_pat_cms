@@ -3,6 +3,10 @@ section.section.section-features {
   min-height: 40vh;
   text-align: center;
   padding-bottom: 4em;
+  background-image: url("/assets/img/bkg-features.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 
   .feature {
     display: flex;
@@ -38,18 +42,6 @@ section.section.section-features {
     font-size: 1.2em;
     text-transform: uppercase;
     margin-top: 0.5em;
-  }
-
-  @media only screen and (min-width: $mobileBreakpoint) {
-    i.fa {
-      font-size: 4em;
-    }
-    .description {
-      max-width: 300px;
-      margin-top: 0;
-      margin-left: 1em;
-      font-size: 1.3em;
-    }
   }
 
   .smallNewsBox {
@@ -177,6 +169,20 @@ section.section.section-features {
           }
         }
       }
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    padding-bottom: 13em;
+
+    i.fa {
+      font-size: 4em;
+    }
+    .description {
+      max-width: 300px;
+      margin-top: 0;
+      margin-left: 1em;
+      font-size: 1.3em;
     }
   }
 }

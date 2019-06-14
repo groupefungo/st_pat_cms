@@ -59,15 +59,6 @@ section.section {
     color: white;
   }
 
-  &.features {
-    background-image: url("/assets/img/bkg-features.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-
-    padding-bottom: 13em;
-  }
-
   &.section-white { // sections avec text clair sur fond foncé
     color: black;
     text-shadow: none;
