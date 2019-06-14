@@ -1,66 +1,79 @@
-a.button, button.button{
+a.button, button.button {
   color: $generalFontColor;
   text-decoration: none;
   transition: background-color 0.3s;
   text-transform: uppercase;
   cursor: pointer;
-  &.button-primary{
+
+  &.button-primary {
     color: $buttonTextColor;
     background-color: $buttonPrimaryBackground;
     border: solid 3px white;
     padding: 1rem 3rem;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
       background-color: $buttonPrimaryBackgroundHover;
     }
   }
-  &.button-secondary{
+
+  &.button-secondary {
     background-color: $buttonSecondaryBackground;
     font-size: 1.6rem;
-    padding:0.8em 2em;
-    &:hover{
+    padding: 0.8em 2em;
+
+    &:hover {
       background-color: lighten($buttonSecondaryBackground, 5%);
     }
   }
-  &.button-third{
+
+  &.button-third {
     background-color: $buttonPrimaryBackground;
     font-size: 1.6rem;
-    padding:0.8em 2em;
-    &:hover{
+    padding: 0.8em 2em;
+
+    &:hover {
       background-color: lighten($buttonPrimaryBackground, 5%);
     }
+
     &.disabled {
       background-color: transparent;
       color: transparent;
     }
   }
+
   &.button-lightbox, &.button-lightbox.visited, &.button-lightbox.active {
     background-color: $accentColor;
     color: $darkColorBackground;
     font-size: 1.6rem;
-    padding:0.8em 2.7em;
+    padding: 0.8em 2.7em;
     margin: 0 3px;
     border: none;
-    &:hover{
+
+    &:hover {
       background-color: darken($accentColor, 10%);
     }
+
     &.split {
       width: 48%;
       margin: 2px;
     }
   }
+
   &.button-action, &.button-action.visited, &.button-action.active {
     background-color: $primaryColor;
     color: $primaryColorReverse;
     font-size: 1.6rem;
-    padding:0.8em 2.7em;
+    padding: 0.8em 2.7em;
     margin: 0 3px;
     border: none;
-    &:hover{
+
+    &:hover {
       background-color: darken($primaryColor, 10%);
     }
   }
-  &.button-alert{
+
+  &.button-alert {
     background-color: #d32027;
     font-size: .6rem;
     padding: .5em 0.8em;
@@ -71,10 +84,11 @@ a.button, button.button{
     right: 5px;
     bottom: 5px;
 
-    &:hover{
+    &:hover {
       background-color: darken(#d32027, 5%);
     }
   }
+
   &.button-block {
     display: inline-block;
     width: 100%;
