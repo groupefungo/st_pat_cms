@@ -53,15 +53,14 @@
 
 }
 @media only screen and (min-width:1140px) {
-
-}
-@media only screen and (min-width:1280px) {
   .menu {
     display: block;
   }
   #menuToggle {
     display: none;
   }
+}
+@media only screen and (min-width:1280px) {
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 

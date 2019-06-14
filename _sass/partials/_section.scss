@@ -418,7 +418,7 @@ section.topSlider#photoSlider {
   }
 }
 
-#foundation, #ourschoolcrest {
+#foundation, #ourschoolcrest, #governingboard {
   .container {
     max-width: 800px;
   }
@@ -456,7 +456,20 @@ section.topSlider#photoSlider {
   }
 }
 
-#foundation, #specialneeds, #ourschoolcrest, #history, #upcomingevents, #photogallery, #contact, #policies {
+#foundation {
+  h4 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 0;
+  }
+  table {
+    th, td {
+      padding: 3px 0;
+    }
+  }
+}
+
+#foundation, #specialneeds, #ourschoolcrest, #history, #upcomingevents, #photogallery, #contact, #policies, #governingboard {
   padding: 5em 0 18em 0;
   overflow: visible;
 
@@ -504,7 +517,7 @@ section.topSlider#photoSlider {
   }
 }
 
-#upcomingevents, #photogallery, #ourschoolcrest, #history, #contact, #policies {
+#upcomingevents, #photogallery, #ourschoolcrest, #history, #contact, #policies, #governingboard {
 
   .event {
     display: flex;
