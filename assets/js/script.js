@@ -131,7 +131,6 @@
         var resetForm = function(){
             $('body').removeClass('no-overflow');
             setTimeout(function(){
-                $form_absence[0].reset();
                 $form_absence.find('.page').attr('data-slide', 'hideRight');
                 $form_absence.find('.page1').removeAttr('data-slide');
             }, 300);
@@ -271,7 +270,6 @@
         var resetForm = function(){
             $('body').removeClass('no-overflow');
             setTimeout(function(){
-                $form_bully[0].reset();
                 $form_bully.find('.page').attr('data-slide', 'hideRight');
                 $form_bully.find('.page1').removeAttr('data-slide');
             }, 300);
@@ -411,7 +409,6 @@
         var resetForm = function(){
             $('body').removeClass('no-overflow');
             setTimeout(function(){
-                $form_register[0].reset();
                 $form_register.find('.page').attr('data-slide', 'hideRight');
                 $form_register.find('.page1').removeAttr('data-slide');
             }, 300);
