@@ -6,10 +6,7 @@ section: home
 sectionid: specialneeds
 ---
 
-{{ $cols := split .row "||" }}
-
-{{ range $cols }}
-   <div class="col-6 text-center">
+<div class="col-6 text-center">
       <p>Support services for students with special needs are designed to help students with learning difficulties to maximize their potential for academic, social and vocational success. Support services can take the form of small group instruction, individual tutorials and in-class support. In addition, St. Patrick's maintains the services of Special Education Technicians that may work individually with students.</p>
       <p>The Central Quebec School Board <a href="https://www.cqsb.qc.ca/en/commitees/special-needs-committee" target="_blank">Special Needs Advisory Committee</a> is a strong believer in inclusion. The regular class is available to all special needs students.</p>
       <p>Parents with students of special needs are stongly encouraged to mark on their registration forms for their child the need for special need services. This allows time for a dossier to be compiled that must be submitted to the Ministry of Education for approval. Without such a dossier, and its subsequent approval our ability to offer services to your child will be limited. Please contact the guidance counselor Sandra Hughes (525-8421) for further information.</p>
@@ -76,4 +73,3 @@ sectionid: specialneeds
             </ul>
         </div>
    </div>
-{{ end }}

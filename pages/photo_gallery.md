@@ -6,8 +6,4 @@ section: home
 sectionid: photogallery
 ---
 
-{{ $cols := split .row "||" }}
-
-{{ range $cols }}
-   {% include photo_slider.html %}
-{{ end }}
+{% include photo_slider.html %}

@@ -6,8 +6,4 @@ section: home
 sectionid: upcomingevents
 ---
 
-{{ $cols := split .row "||" }}
-
-{{ range $cols }}
-   {% include event_slider.html %}
-{{ end }}
+{% include event_slider.html %}
