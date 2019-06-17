@@ -144,6 +144,7 @@
             $('form.absence-form .page .form-group input').on('change', hideFormError);
             // Close lightbox event
             $('#close-lightbox').on('click', resetForm);
+            $('#closeDown').on('click', resetForm);
         };
 
         var init = function () {
