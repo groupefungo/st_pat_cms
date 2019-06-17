@@ -147,6 +147,20 @@
             $('#closeDown').on('click', resetForm);
         };
 
+        //Add active class on About menu
+        $(function() {
+            $('.subMenu a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+        });
+        $(document).ready(function () {
+            var subabout = $('.subMenu a');
+            var activeabout = $('.menu a.onAbout');
+            if (subabout.hasClass('active')) {
+                activeabout.addClass('active');
+            } else {
+                activeabout.removeClass('active');
+            }
+        });
+
         var init = function () {
             bindEvents();
         };
