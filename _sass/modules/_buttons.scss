@@ -53,10 +53,19 @@ a.button, button.button {
     &:hover {
       background-color: darken($accentColor, 10%);
     }
+  }
 
-    &.split {
-      width: 48%;
-      margin: 2px;
+  &.button-lightbox-action, &.button-lightbox-action.visited, &.button-lightbox-action.active {
+    background-color: rgba(0,0,0,0);
+    color: $primaryColorReverse;
+    font-size: 1.6rem;
+    padding: 0.8em 2.7em;
+    margin: 15px 3px;
+    border: solid 3px white;
+    display: inline-block;
+
+    &:hover {
+      background-color: rgba(0,0,0,0.2);
     }
   }
 
