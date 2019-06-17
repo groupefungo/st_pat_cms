@@ -47,11 +47,21 @@ a.button, button.button {
     color: $darkColorBackground;
     font-size: 1.6rem;
     padding: 0.8em 2.7em;
-    margin: 0 3px;
+    margin: 3px;
     border: none;
+    width: -webkit-fill-available;
 
     &:hover {
       background-color: darken($accentColor, 10%);
+    }
+
+    &.go {
+      color: $primaryColorReverse;
+      background-color: $primaryColor;
+
+      &:hover {
+        background-color: darken($primaryColor, 10%);
+      }
     }
   }
 
