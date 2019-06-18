@@ -50,6 +50,9 @@ a.button, button.button {
     margin: 3px;
     border: none;
     width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &:hover {
       background-color: darken($accentColor, 10%);
