@@ -39,6 +39,7 @@ a.button, button.button {
     &.disabled {
       background-color: transparent;
       color: transparent;
+      cursor: default;
     }
   }
 
