@@ -32,6 +32,14 @@
     }
   }
 
+  .flexRow {
+    margin-bottom: 75px;
+
+    @media only screen and (min-width: $mobileBreakpoint) {
+      margin-bottom: inherit;
+    }
+  }
+
   h2 {
     font-size: 2em;
     color: #fff;
