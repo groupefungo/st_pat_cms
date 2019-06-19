@@ -12,6 +12,7 @@
   font-weight: 600;
   position: relative;
   text-transform: uppercase;
+  min-height: 40px;
 
   &.active, &:hover {
     background-color: $darkColorBackground;
@@ -30,7 +31,7 @@
     position: absolute;
     color: #fff;
     right: 10px;
-    top: 0;
+    top: 2px;
     font-size: 1.5em;
   }
 }
