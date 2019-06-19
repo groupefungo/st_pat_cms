@@ -526,4 +526,12 @@
         });
     });
 
+    jQuery(document).ready(function() {
+        var inputUrl = window.location.pathname;
+        // Conditions
+        if (inputUrl != "/index.html") {
+            $(".floatingSection").addClass("fixedToBottom");
+        }
+    });
+
     })(jQuery, emailjs, window, document);
