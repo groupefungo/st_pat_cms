@@ -526,6 +526,7 @@
         });
     });
 
+    // FIXED BOTTOM MENU FIXED EVERYWHERE EXCEPT LANDING
     jQuery(document).ready(function() {
         var inputUrl = window.location.pathname;
         // Conditions
@@ -539,6 +540,8 @@
             animation: "slide"
         });
     });
+
+    // CHANGE LOWER MENU POSITION TO FIXED
     $(window).scroll(function () {
         var inputUrl = window.location.pathname;
 
@@ -552,6 +555,22 @@
             }
         }
     });
+
+    // CHANGE LOWER FRENCH NOTE POSITION TO FIXED
+    $(window).scroll(function () {
+        var inputUrl = window.location.pathname;
+
+        if (inputUrl == "/index.html") {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 175) {
+                $(".frenchNoteLg").addClass("fixedToBottom");
+            } else {
+                $(".frenchNoteLg").removeClass("fixedToBottom");
+            }
+        }
+    });
+
     jQuery(document).ready(function () {
         var coll = document.getElementsByClassName("collapsible");
         var i;
