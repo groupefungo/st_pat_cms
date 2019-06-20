@@ -424,15 +424,18 @@ section.section.section-features {
       display: block;
       padding: 0 10px;
       margin-top: 3px;
+      float: left;
     }
 
     .categories {
       position: relative;
-      display: flex;
+      display: block;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
       padding: 10px;
+      float: left;
+      width: 100%;
 
       .bubble {
         font-size: 12px;
@@ -443,6 +446,8 @@ section.section.section-features {
         background-color: $darkColorBackground;
         width: 40px;
         height: 40px;
+        max-width: 40px;
+        min-width: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -452,6 +457,7 @@ section.section.section-features {
         -moz-border-radius: 100%;
         border-radius: 100%;
         margin: 1px;
+        float: left;
 
         &.boys { background-color: #006da5; }
         &.girls { background-color: hotpink; }
@@ -466,6 +472,9 @@ section.section.section-features {
           text-align: center;
         }
       }
+    }
+    @media only screen and (min-width: $mobileBreakpoint) {
+      display: flex;
     }
   }
 
