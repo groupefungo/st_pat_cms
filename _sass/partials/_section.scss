@@ -198,6 +198,7 @@ section.topSlider#mainSlider {
           }
 
           @media only screen and (min-width: $mobileBreakpoint) {
+            display: flex;
             flex-direction: row;
             padding: 12px 55px;
             top: 0;
