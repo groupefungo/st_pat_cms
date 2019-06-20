@@ -265,6 +265,30 @@
     margin-top: -33px;
   }
 
+  span {
+    width: 108px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    a.icons {
+
+      img {
+        width: 50px;
+      }
+    }
+    &.social {
+      a.icons {
+        img {
+          width: 35px;
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+
   @media only screen and (min-width: $mobileBreakpoint) {
     display: none;
   }
