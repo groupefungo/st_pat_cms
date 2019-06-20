@@ -198,8 +198,36 @@
   width: 100%;
   z-index: 9;
 
+  .frenchNote {
+    display: block;
+    font-size: 11px;
+    line-height: 1.2em;
+    padding: 8px;
+    background-color: $accentColor;
+    color: $darkColorBackground;
+
+    -webkit-box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.4);
+
+    a {
+      color: $darkColorBackground;
+      text-decoration: underline;
+    }
+
+    &.activeUp {
+      -webkit-box-shadow: 0 -4px 10px 0 rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 0 -4px 10px 0 rgba(0, 0, 0, 0.35);
+      box-shadow: 0 -4px 10px 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+
   @media only screen and (min-width: $mobileBreakpoint) {
     display: none;
+
+    .frenchNote {
+      display: none;
+    }
   }
 }
 
@@ -279,6 +307,7 @@
         width: 50px;
       }
     }
+
     &.social {
       a.icons {
         img {
