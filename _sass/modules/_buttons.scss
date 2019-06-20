@@ -4,6 +4,7 @@ a.button, button.button {
   transition: background-color 0.3s;
   text-transform: uppercase;
   cursor: pointer;
+  display: inline-block;
 
   &.button-primary {
     color: $buttonTextColor;
@@ -18,6 +19,7 @@ a.button, button.button {
   }
 
   &.button-secondary {
+    color: $primaryColorReverse;
     background-color: $buttonSecondaryBackground;
     font-size: 1.6rem;
     padding: 0.8em 2em;
