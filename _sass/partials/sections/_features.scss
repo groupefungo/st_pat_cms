@@ -426,18 +426,45 @@ section.section.section-features {
       margin-top: 3px;
     }
 
-    .button-more {
-      font-size: 9px;
-      color: #fff;
-      background-color: #000;
-      padding: 2px 8px;
-      position: absolute;
-      top: 60px;
-      right: 78.25%;
+    .categories {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px;
 
-      &.fix {
-        position: relative;
-        left: 0;
+      .bubble {
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $primaryColorReverse;
+        background-color: $darkColorBackground;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        margin: 1px;
+
+        &.boys { background-color: #006da5; }
+        &.girls { background-color: hotpink; }
+
+        small {
+          font-size: 6px;
+          line-height: 1em;
+          font-weight: 500;
+          text-transform: uppercase;
+          width: 100%;
+          display: block;
+          text-align: center;
+        }
       }
     }
   }
@@ -447,7 +474,7 @@ section.section.section-features {
     background-size: 22% auto;
 
     .sportsBox {
-      width: 90%;
+      width: 100%;
 
       img {
         height: 94px;
