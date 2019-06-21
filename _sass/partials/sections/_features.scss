@@ -396,6 +396,10 @@ section.section.section-features {
     float: right;
     margin-bottom: 15px;
     position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    box-sizing: border-box;
 
     &.vertical {
       flex-direction: column;
@@ -404,6 +408,7 @@ section.section.section-features {
     img {
       height: 60px;
       margin-bottom: 22px;
+      flex: 1 0 auto;
     }
 
     .title {
@@ -438,16 +443,16 @@ section.section.section-features {
       width: 100%;
 
       .bubble {
-        font-size: 12px;
-        line-height: 1.2em;
+        font-size: 0.7em;
+        line-height: 1.1em;
         font-weight: 600;
         text-transform: uppercase;
         color: $primaryColorReverse;
         background-color: $darkColorBackground;
-        width: 40px;
-        height: 40px;
-        max-width: 40px;
-        min-width: 40px;
+        width: 32px;
+        height: 32px;
+        max-width: 32px;
+        min-width: 32px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -463,7 +468,7 @@ section.section.section-features {
         &.girls { background-color: hotpink; }
 
         small {
-          font-size: 6px;
+          font-size: 0.3em;
           line-height: 1em;
           font-weight: 600;
           text-transform: uppercase;
