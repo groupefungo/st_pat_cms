@@ -396,10 +396,6 @@ section.section.section-features {
     float: right;
     margin-bottom: 15px;
     position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-
-    box-sizing: border-box;
 
     &.vertical {
       flex-direction: column;
@@ -483,12 +479,13 @@ section.section.section-features {
     }
   }
 
-  @media only screen and (min-width: $mobileBreakpoint) {
+  @media only screen and (min-width: 720px) {
     padding-bottom: 13em;
     background-size: 22% auto;
 
     .sportsBox {
       width: 100%;
+      min-height: 260px;
 
       img {
         height: 94px;
@@ -496,7 +493,7 @@ section.section.section-features {
       }
 
       .title {
-        font-size: 25px;
+        font-size: 24px;
       }
 
       .details {
@@ -511,6 +508,16 @@ section.section.section-features {
         right: 0;
         top: inherit;
       }
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .sportsBox {
+      min-height: 230px;
+    }
+  }
+  @media only screen and (min-width: 1139px) {
+    .sportsBox {
+      min-height: 170px;
     }
   }
 }
