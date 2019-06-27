@@ -541,6 +541,7 @@ section.topSlider#photoSlider {
       color: $primaryColorReverse;
       background-color: $darkColorBackground;
       width: 50px;
+      min-width: 50px;
       height: 50px;
       display: flex;
       flex-direction: column;
@@ -551,7 +552,8 @@ section.topSlider#photoSlider {
 
     .eventPict {
       height: 75px;
-      width: 100px;
+      width: 75px;
+      min-width: 75px;
       overflow: hidden;
       display: none;
       flex-direction: column;
@@ -577,7 +579,7 @@ section.topSlider#photoSlider {
 
       .eventDesc {
         font-size: 10px;
-        line-height: 1.1em;
+        line-height: 1.15em;
         font-weight: 400;
         color: $darkColorBackground;
       }
@@ -593,6 +595,7 @@ section.topSlider#photoSlider {
         font-size: 42px;
         width: 75px;
         height: 75px;
+        min-width: 75px;
       }
 
       .eventPict {
@@ -603,7 +606,7 @@ section.topSlider#photoSlider {
         padding: 8px;
 
         .eventTitle {
-          font-size: 16px;
+          font-size: 14px;
         }
 
         .eventDesc {
