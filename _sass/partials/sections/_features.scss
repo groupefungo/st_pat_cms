@@ -90,6 +90,11 @@ section.section.section-features {
         flex-direction: column;
         justify-content: flex-start;
 
+        span {
+          margin-top: 8px;
+          text-transform: none;
+        }
+
         small {
           font-size: 11px;
           line-height: 1.2em;

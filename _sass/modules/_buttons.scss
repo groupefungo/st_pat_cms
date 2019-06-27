@@ -122,3 +122,31 @@ a.button, button.button {
     margin-top: 15px;
   }
 }
+
+// TEMPORARY BUTTONS
+.split-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .button-third {
+    background-color: $buttonPrimaryBackground;
+
+    &:hover {
+      background-color: lighten($buttonPrimaryBackground, 5%);
+    }
+
+    &.disabled {
+      background-color: transparent;
+      color: transparent;
+      cursor: default;
+    }
+
+    &.split {
+      width: 49.5%;
+      margin: 15px 0 0 0;
+      font-size: 1.1rem;
+      padding: 1.5em 0.5em;
+    }
+  }
+}
