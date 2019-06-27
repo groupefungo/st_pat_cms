@@ -374,7 +374,8 @@ section.topSlider#photoSlider {
 
     &:hover .flex-direction-nav .flex-prev {
       opacity: 0.7;
-      left: 10px !important;
+      // SI SLIDER ORIGINAL DÉCOMMENTER left: 10px !important;
+      left: -30px !important;
     }
 
     &:hover .flex-direction-nav .flex-prev:hover {
@@ -383,7 +384,8 @@ section.topSlider#photoSlider {
 
     &:hover .flex-direction-nav .flex-next {
       opacity: 0.7;
-      right: 10px !important;
+      // SI SLIDER ORIGINAL DÉCOMMENTER right: 10px !important;
+      right: -30px !important;
     }
 
     &:hover .flex-direction-nav .flex-next:hover {
