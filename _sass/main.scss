@@ -24,8 +24,8 @@
 @import 'partials/_section.scss';
 @import 'partials/_footer.scss';
 @import 'partials/_ctaForm.scss';
-@import 'partials/menumobile';
-@import 'partials/menu';
+@import 'partials/menumobile.scss';
+@import 'partials/menu.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES
@@ -42,10 +42,9 @@
 @import 'modules/_misc.scss';
 @import 'modules/_app.scss';
 @import 'modules/_helpers.scss';
-@import 'modules/flexslider';
-@import 'modules/megamenu';
-@import 'modules/collapsible';
-@import 'modules/yearcalendar';
+@import 'modules/flexslider.scss';
+@import 'modules/megamenu.scss';
+@import 'modules/collapsible.scss';
 
 // Enhancement modules
 @import 'modules/_breakpoints.scss';
