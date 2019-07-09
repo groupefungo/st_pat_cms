@@ -9,13 +9,8 @@
         });
     });
 
-    function ShowLocalDate() {
-        var dNow = new Date();
-        var localdate = 'Today' + ' ' + dNow.getDate() + '/' + (dNow.getMonth() + 1) + '/' + dNow.getFullYear() + ' ' + dNow.getHours() + ':' + dNow.getMinutes();
-        $('#currentDate').html(localdate)
-    }
-
-    ShowLocalDate();
+    var d = new Date();
+    document.getElementById("clock").innerHTML = d.toISOString().split('T')[0];
 
     //********************************************************
     // ABSENCE FORM LIGHTBOX
