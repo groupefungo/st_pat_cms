@@ -522,10 +522,10 @@
     });
 
     // FIXED BOTTOM MENU FIXED EVERYWHERE EXCEPT LANDING
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
         var inputUrl = window.location.pathname;
         // Conditions
-        if (inputUrl != "/index.html") {
+        if ((inputUrl !== "/index.html") && (inputUrl !== "www.stpatrickshighschool.com")) {
             $(".floatingSection").addClass("fixedToBottom");
         }
     });
@@ -540,7 +540,16 @@
     $(window).scroll(function () {
         var inputUrl = window.location.pathname;
 
-        if (inputUrl == "/index.html") {
+        if (inputUrl === "/index.html") {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 175) {
+                $(".floatingSection").addClass("fixedToBottom");
+            } else {
+                $(".floatingSection").removeClass("fixedToBottom");
+            }
+        }
+        if (inputUrl === "www.stpatrickshighschool.com") {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 175) {
