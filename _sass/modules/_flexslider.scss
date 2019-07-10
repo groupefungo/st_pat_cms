@@ -321,3 +321,13 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
+
+// FUNGO ADD
+.preloader {
+  position: absolute;
+  width: 100%;
+  margin-top: 135px;
+  z-index: -1;
+  min-height: 81.1vh;
+  background-image: url('/assets/img/slider/slide_5.jpg');
+}
