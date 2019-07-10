@@ -525,7 +525,7 @@
     jQuery(document).ready(function () {
         var inputUrl = window.location.pathname;
         // Conditions
-        if ((inputUrl !== "/index.html") && (inputUrl !== "www.stpatrickshighschool.com")) {
+        if ((inputUrl !== "/index.html") && (inputUrl !== "https://www.stpatrickshighschool.com/")) {
             $(".floatingSection").addClass("fixedToBottom");
         }
     });
@@ -549,7 +549,7 @@
                 $(".floatingSection").removeClass("fixedToBottom");
             }
         }
-        if (inputUrl === "www.stpatrickshighschool.com") {
+        if (inputUrl === "https://www.stpatrickshighschool.com/") {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 175) {
