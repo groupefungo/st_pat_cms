@@ -2380,7 +2380,8 @@ html[xmlns] .flexslider .slides {
 
   .flexslider .slides img {
     height: auto !important;
-    width: 100% !important; }
+    /* width: 100% !important; */
+  }
   .flexslider .slides li .captionBox {
     padding: 15px;
     top: 0;
