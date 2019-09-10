@@ -121,6 +121,11 @@ a.button, button.button {
     text-align: center;
     margin-top: 15px;
   }
+
+  &.buttonNews {
+    margin: 0;
+    padding: 12px;
+  }
 }
 
 // TEMPORARY BUTTONS

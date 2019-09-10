@@ -9,24 +9,28 @@
             <div class="col-12">
                 <div class="newsBox">
                     <div class="mainNews">
-                        <span class="picture"></span>
+                        {% assign author = site.data.authors[page.author] %}
+                        {% assign lastNews = site.news.last %}
+                        <span class="floatpicture"><img src="{{ lastNews.thumbnail }}"></span>
                         <div class="details">
-                            <p class="title">{{ news.title }}</p>
-                            <a class="button button-alert pull-right" href="{{ news.url }}">Read More</a>
-                            <p class="message">{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
+                            <p class="title">{{ lastNews.title }}</p>
+                            <p class="description">{{ lastNews.intro_paragraph | strip_newlines | truncate: 200 }}</p>
                         </div>
+                        <a class="button button-alert pull-left" href="{{ lastNews.url }}">Read More</a>
                     </div>
                     <div class="secondaryNews">
-                        {% for post in site.posts %}
+                        {% for oneNews in site.news %}
+                        {% assign author = site.data.authors[page.author] %}
                         <div class="singleNews text-left">
-                            <span class="picture"></span>
+                            <span class="picture"><img src="{{ oneNews.thumbnail }}"></span>
                             <div class="details">
-                                <p class="title">{{ news.title }}</p>
-                                <a class="button button-alert pull-right" href="{{ news.url }}">Read More</a>
-                                <p class="message">{{ news.intro_paragraph | strip_newlines | truncate: 180 }}</p>
+                                <p class="title">{{ oneNews.title }}</p>
+                                <p class="description">{{ oneNews.intro_paragraph | strip_newlines | truncate: 60 }}</p>
+                                <a class="button button-alert pull-right" href="{{ oneNews.url }}">Read More</a>
                             </div>
                         </div>
                         {% endfor %}
+                        <a class="button button-block buttonNews" href="./all_news.html">MORE NEWS</a>
                     </div>
                 </div>
 

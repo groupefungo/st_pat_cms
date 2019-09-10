@@ -108,7 +108,7 @@ section.section.section-features {
     }
   }
 
-  &#news {
+  &#news, &#allnews {
 
     .newsBox {
       width: 100%;
@@ -125,7 +125,34 @@ section.section.section-features {
         float: left;
         height: auto;
         overflow: hidden;
-        background-color: red;
+        background-color: black;
+        position: relative;
+
+        .floatpicture {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            height: 100%;
+            width: auto;
+            overflow: hidden;
+          }
+        }
+
+        .details {
+          position: relative;
+          z-index: 1;
+        }
       }
 
       .secondaryNews {
@@ -154,6 +181,7 @@ section.section.section-features {
             overflow: hidden;
             border: 1px solid rgba(0, 0, 0, 0.7);
             margin-right: 8px;
+            max-height: 58px;
 
             img {
               height: 100%;
@@ -184,6 +212,61 @@ section.section.section-features {
                 line-height: 1em;
               }
             }
+          }
+        }
+      }
+    }
+    .singleAllNews {
+      background-color: rgba(255, 255, 255, 1);
+      position: relative;
+      width: 100%;
+      padding: 8px;
+      display: flex;
+      flex-direction: row;
+      min-height: 75px;
+      max-height: 28%;
+      border-bottom: 1px solid #eee;
+
+      &:last-child {
+        border-bottom: 0px solid transparent;
+      }
+
+      .picture {
+        width: 25%;
+        min-height: 100%;
+        float: left;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.7);
+        margin-right: 8px;
+        max-height: 58px;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .details {
+        width: 100%;
+
+        p {
+          text-shadow: none;
+          color: #000000;
+          font-size: 12px;
+          margin: 0;
+          width: 80%;
+          float: left;
+
+          &.message {
+            text-overflow: ellipsis;
+            line-height: 1.2em;
+          }
+
+          &.title {
+            font-size: 16px;
+            color: $primaryColor;
+            font-weight: 600;
+            line-height: 1em;
           }
         }
       }
@@ -465,8 +548,13 @@ section.section.section-features {
         margin: 1px;
         float: left;
 
-        &.boys { background-color: #006da5; }
-        &.girls { background-color: hotpink; }
+        &.boys {
+          background-color: #006da5;
+        }
+
+        &.girls {
+          background-color: hotpink;
+        }
 
         small {
           font-size: 0.3em;
@@ -479,6 +567,7 @@ section.section.section-features {
         }
       }
     }
+
     @media only screen and (min-width: $mobileBreakpoint) {
       display: flex;
     }
