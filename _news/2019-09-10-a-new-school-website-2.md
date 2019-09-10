@@ -1,11 +1,13 @@
 ---
 layout: post
 title: A New School Website! 2
-thumbnail: /assets/img/uploads/ped_day.jpg
-featuredpict: /assets/img/uploads/ped_day.jpg
+thumbnail: /assets/img/uploads/news_1.jpg
+featuredpict: /assets/img/uploads/screen-shot-2019-09-10-at-2.22.10-pm.png
 author: direction
 date: '2019-09-09 00:09:00'
 shortdate: '2019-09-09'
-intro_paragraph: test
+intro_paragraph: >-
+  St. Patrick's High School is proud to present to you it's new webpage. We hope
+  that you find it visually interesting and easier to use.
 ---
-test
+
