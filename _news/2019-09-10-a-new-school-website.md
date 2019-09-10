@@ -2,7 +2,7 @@
 layout: post
 title: A New School Website!
 thumbnail: /assets/img/uploads/news_1.jpg
-featuredpict: /assets/img/uploads/slide_4.png
+featuredpict: /assets/img/uploads/screen-shot-2019-09-10-at-2.22.10-pm.png
 author: student_life
 date: '2019-09-11 10:09:58'
 intro_paragraph: >-
