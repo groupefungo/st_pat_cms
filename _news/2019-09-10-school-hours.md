@@ -1,7 +1,8 @@
 ---
 layout: post
 title: School Hours
-author: marc_litalien
+thumbnail: /assets/img/uploads/news_2.jpg
+author: direction
 date: '2019-09-10 10:09:41'
 intro_paragraph: |-
   MONDAY TO FRIDAY
