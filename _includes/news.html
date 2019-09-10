@@ -5,7 +5,8 @@
                 <h2 class="h1">The Latest Information from St. Patrick's High School</h2>
             </div>
         </div>
-        <div class="row flexRow">
+        {% include news_post.html %}
+        <div style="display: none;" class="row flexRow">
             <div class="col-4">
                 <div class="smallNewsBox">
                     <img src="/assets/img/uploads/news_1.jpg" alt="St Pats High School">
@@ -45,7 +46,15 @@
             <div class="col-12">
                 <div class="newsBox">
                     <div class="mainNews">
-
+                        <span class="picture"></span>
+                        <div class="details">
+                            <p class="title">Titre de l'article</p>
+                            <a class="button button-alert pull-right">Read More</a>
+                            <p class="message">Texte de l'article qui devrait être couper quelque part Texte de
+                                l'article qui
+                                devrait être couper quelque part Texte de l'article qui devrait être couper quelque
+                                part</p>
+                        </div>
                     </div>
                     <div class="secondaryNews">
                         <div class="singleNews text-left">

@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<section style="display: none;">
+
+    <h3>Posts</h3>
+
+    <ul>
+        {% for post in site.posts %}
+        {% assign author = site.data.authors[post.author] %}
+        <li>
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <time datetime="{{ post.date }}">
+                <small>
+                    <strong>{{ post.date | date_to_string }}</strong>
+                    {% if author %}
+                    by {{ author.name }}
+                    {% endif %}
+                </small>
+            </time>
+            {{ post.excerpt | strip_newlines | truncate: 180 }}
+        </li>
+        {% endfor %}
+    </ul>
+
+</section>
+
+<section id="news" class="section section-features section-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h1">The Latest Information from St. Patrick's High School</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="newsBox">
+                    {% for post in site.posts %}
+                    {% assign author = site.data.authors[post.author] %}
+                    <div class="mainNews">
+                        <span class="picture"></span>
+                        <div class="details">
+                            <p class="title">{{ event.title }}</p>
+                            <a class="button button-alert pull-right" href="{{ event.url }}">Read More</a>
+                            <p class="message">{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
+                        </div>
+                    </div>
+                    <li>
+                        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                        <time datetime="{{ post.date }}">
+                            <small>
+                                <strong>{{ post.date | date_to_string }}</strong>
+                                {% if author %}
+                                by {{ author.name }}
+                                {% endif %}
+                            </small>
+                        </time>
+                        {{ post.excerpt | strip_newlines | truncate: 180 }}
+                    </li>
+                    {% endfor %}
+                    <div class="secondaryNews">
+                        {% for post in site.posts %}
+                        {% assign author = site.data.authors[post.author] %}
+                        <div class="singleNews text-left">
+                            <span class="picture"></span>
+                            <div class="details">
+                                <p class="title">Titre de l'article</p>
+                                <a class="button button-alert pull-right">Read More</a>
+                                <p class="message">Texte de l'article qui devrait être couper quelque part Texte de
+                                    l'article qui
+                                    devrait être couper quelque part Texte de l'article qui devrait être couper quelque
+                                    part</p>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2">Where academic, arts and sports meet.</h2>
+                <h2 class="h3"><a href="tel:+14185258421"> 418.525.8421</a></h2>
+            </div>
+        </div>
+    </div>
+</section>
