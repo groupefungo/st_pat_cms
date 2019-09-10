@@ -12,11 +12,11 @@
                         {% assign author = site.data.authors[page.author] %}
                         {% assign lastNews = site.news.last %}
                         <span class="floatpicture"><img src="{{ lastNews.thumbnail }}"></span>
-                        <div class="details">
-                            <p class="title">{{ lastNews.title }}</p>
+                        <div class="details text-left">
+                            <p class="title"><span>{{ lastNews.date }}</span><br>{{ lastNews.title }}</p>
                             <p class="description">{{ lastNews.intro_paragraph | strip_newlines | truncate: 200 }}</p>
+                            <a class="button button-alert pull-left" href="{{ lastNews.url }}">Read More</a>
                         </div>
-                        <a class="button button-alert pull-left" href="{{ lastNews.url }}">Read More</a>
                     </div>
                     <div class="secondaryNews">
                         {% for oneNews in site.news %}
@@ -25,7 +25,7 @@
                             <span class="picture"><img src="{{ oneNews.thumbnail }}"></span>
                             <div class="details">
                                 <p class="title">{{ oneNews.title }}</p>
-                                <p class="description">{{ oneNews.intro_paragraph | strip_newlines | truncate: 60 }}</p>
+                                <p class="description">{{ oneNews.intro_paragraph | strip_newlines | truncate: 78 }}</p>
                                 <a class="button button-alert pull-right" href="{{ oneNews.url }}">Read More</a>
                             </div>
                         </div>
