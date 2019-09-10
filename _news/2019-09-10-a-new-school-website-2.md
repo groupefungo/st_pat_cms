@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A New School Website! 2
+title: A New School Website!
 thumbnail: /assets/img/uploads/news_1.jpg
 featuredpict: /assets/img/uploads/screen-shot-2019-09-10-at-2.22.10-pm.png
 author: direction
