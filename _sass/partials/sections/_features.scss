@@ -271,6 +271,10 @@ section.section.section-features {
         }
       }
     }
+
+    .description {
+      text-transform: none;
+    }
   }
 
   @media only screen and (min-width: $mobileBreakpoint) {
