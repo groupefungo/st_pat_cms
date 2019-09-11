@@ -20,6 +20,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Thumbnail Image", name: "thumbnail", widget: "image"}
       - {label: "Featured Image", name: "featuredpict", widget: "image", required: false}
       - label: "Author"
@@ -30,7 +31,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Short Publish Date", name: "shortdate", widget: "datetime", format: "YYYY-MM-DD", required: false}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
   # EVENTS OF THE MONTH
@@ -46,15 +46,15 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Month", name: "event_month", widget: "select", options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], required: true}
       - {label: "Date", name: "event_date", widget: "number", required: false}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Thumbnail Image", name: "thumbnail", widget: "image"}
       - label: "Author"
         name: "author"
         widget: "select"
         options:
-          - { label: "Marc Litalien", value: "marc_litalien" }
-          - { label: "Rémi Gagnon", value: "remi_gagnon" }
+          - { label: "Direction", value: "direction" }
+          - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
