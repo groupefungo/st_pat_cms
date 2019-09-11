@@ -31,7 +31,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Short Publish Date", name: "shortdate", widget: "datetime", format: "YYYY-MM-DD", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
   # EVENTS OF THE MONTH
   - name: "event" # Used in routes, ie.: /admin/collections/:slug/edit
