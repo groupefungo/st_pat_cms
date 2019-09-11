@@ -11,8 +11,6 @@ intro_paragraph: |-
 
   From 7h30am until 3h30pm
 ---
-Monday to Friday  
+Monday to Friday<br>
 
-From 7h30am until 3h30pm  
-
-555
+From 7h30am until 3h30pm
