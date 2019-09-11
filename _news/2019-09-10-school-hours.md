@@ -9,8 +9,12 @@ shortdate: '2019-09-11'
 intro_paragraph: |-
   Monday to Friday  
 
-  From 7h30am until 3h30pm
+  From 7h30am until 3h30pm  
+
+  555
 ---
 Monday to Friday  
 
-From 7h30am until 3h30pm
+From 7h30am until 3h30pm  
+
+555
