@@ -55,7 +55,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Rémi Gagnon", value: "remi_gagnon" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
