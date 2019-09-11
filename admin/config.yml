@@ -18,10 +18,10 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Thumbnail Image", name: "thumbnail", widget: "image"}
-      - {label: "Featured Image", name: "featuredpict", widget: "image"}
+      - {label: "Featured Image", name: "featuredpict", widget: "image", required: false}
       - label: "Author"
         name: "author"
         widget: "select"
@@ -29,7 +29,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Direction", value: "direction" }
           - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
-      - {label: "Short Publish Date", name: "shortdate", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Short Publish Date", name: "shortdate", widget: "datetime", format: "YYYY-MM-DD", required: false}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
@@ -41,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - label: "Author"
         name: "author"

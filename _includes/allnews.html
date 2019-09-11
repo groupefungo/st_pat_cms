@@ -1,4 +1,4 @@
-<section id="news" class="section section-features section-color">
+<section id="news" class="section section-features section-white">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -10,7 +10,18 @@
             {% assign author = site.data.authors[page.author] %}
             <div class="col-6">
                 <div class="singleAllNews text-left">
-                    <span class="picture"><img src="{{ oneNews.thumbnail }}"></span>
+                    <span class="picture">
+                        {% if oneNews.shortdate != nil %}
+                        <span>{{ oneNews.shortdate }}</span>
+                        {% else %}
+                        <span style="display: none;"></span>
+                        {% endif %}
+                        {% if oneNews.shortdate != nil %}
+                        <img src="{{ oneNews.featuredpict }}">
+                        {% else %}
+                        <img src="{{ oneNews.thumbnail }}">
+                        {% endif %}
+                    </span>
                     <div class="details">
                         <p class="title">{{ oneNews.title }}</p>
                         <p class="description">{{ oneNews.intro_paragraph | strip_newlines | truncate: 100 }}</p>
