@@ -7,6 +7,6 @@ title: Official Student Population Count
 intro_paragraph: ''
 thumbnail: /assets/img/uploads/sports.jpg
 author: direction
-date: '2019-09-09 00:09:00'
+date: '2019-09-08 00:09:00'
 ---
 
