@@ -9,7 +9,8 @@ shortdate: '2019-09-11'
 intro_paragraph: |-
   Monday to Friday  
 
-    \
   From 7h30am until 3h30pm
 ---
+Monday to Friday  
 
+From 7h30am until 3h30pm
