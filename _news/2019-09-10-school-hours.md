@@ -8,9 +8,11 @@ date: '2019-09-10 10:09:41'
 shortdate: '2019-09-11'
 intro_paragraph: |-
   Monday to Friday  
-    
+
   From 7H30am until 3H30pm  
 
-  TEST
+  TEST  
+  Monday to Friday  
+  From 7h30am until 3h300pm
 ---
 
