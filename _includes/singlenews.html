@@ -3,18 +3,19 @@
         {% assign author = site.data.authors[page.author] %}
         <div class="singleNewsPage">
             <div class="singleNewsImg">
-                {% if oneNews.shortdate !=nil %}
+                {% if news.featuredpict != nil %}
                 <img src="{{ page.featuredpict }}">
                 {% else %}
                 <img src="{{ page.thumbnail }}">
                 {% endif %}
             </div>
             <div class="singleNewsContent">
-                {% assign author = site.data.authors[page.author] %}
                 <div class="details">
-                    <p class="description">{{ page.intro_paragraph | html }}</p>
+                    <p class="description">{{ page.intro_paragraph }}</p>
+                    <p class="description">{{ page.body }}</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<hr>

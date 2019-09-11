@@ -127,6 +127,7 @@ a.button, button.button {
   &.buttonNews {
     margin: 0;
     padding: 12px;
+    color: white !important;
     background-color: $darkColorBackground;
 
     &:hover {

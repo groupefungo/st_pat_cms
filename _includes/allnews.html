@@ -1,4 +1,4 @@
-<section id="news" class="section section-features section-white">
+<section id="fullnews" class="section section-features section-white">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -16,7 +16,7 @@
                         {% else %}
                         <span style="display: none;"></span>
                         {% endif %}
-                        {% if oneNews.shortdate != nil %}
+                        {% if page.featuredpict != nil %}
                         <img src="{{ oneNews.featuredpict }}">
                         {% else %}
                         <img src="{{ oneNews.thumbnail }}">
