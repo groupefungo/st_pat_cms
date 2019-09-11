@@ -137,12 +137,15 @@ section.section.section-features {
         }
       }
       .singleNewsContent {
-        padding: 0 18px;
+        padding: 0 23px;
         min-width: 50%;
+        max-width: 50%;
 
         .details {
           .title, .description {
             margin: 0;
+            width: 100%;
+            max-width: 100%;
           }
 
           .title {
