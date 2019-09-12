@@ -6,140 +6,218 @@
                 <div class="flex-viewport" style="overflow: hidden; position: relative;">
                     <ul class="slides"
                         style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px);">
+                        {% for eventsByMonth in site.events %}
                         <li class="clone" aria-hidden="true"
                             style="width: 602px; margin-right: 0px; float: left; display: block;">
+                            {% if post.event_month == september %}
                             <div class="captionBox">
-                                <p class="title"> September </p>
-                                <p class="year"> 2019 </p>
+                                <p class="title"> {{ eventsByMonth.event_month }} </p>
+                                <p class="year"> {{ eventsByMonth.event_year }} </p>
                             </div>
                             <div class="row">
+                                {% if event.event_date != nil %}
                                 <div class="col-12">
                                     <div class="event">
                                         <div class="eventPict">
-                                            <img src="/assets/img/uploads/terryfox.jpg">
+                                            <img src="{{ eventsByMonth.thumbnail }}">
                                         </div>
                                         <div class="eventDetails">
-                                            <div class="eventTitle">St. Pat's Supports Terry Fox!</div>
-                                            <div class="eventDesc">We will be participating in this year's Terry Fox School  Walk/Run for cancer research. We are proud to continue the legacy of one of our country’s greatest heroes. We hope you will join us and support this wonderful cause by donating to our <a href="https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1" target="_blank">Terry Fox School Run fundraising page</a>, thank you. The future of cancer research has never looked brighter! Terry's dreams lives on at St. Pat's!!!!</div>
+                                            <div class="eventTitle">{{ eventsByMonth.title }}</div>
+                                            <div class="eventDesc">
+                                                {{ eventsByMonth.intro_paragraph }}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                {% else %}
                                 <div class="col-6">
                                     <div class="event">
-                                        <div class="eventDate">3</div>
+                                        <div class="eventDate">{{ eventsByMonth.event_date }}</div>
                                         <div class="eventPict">
-                                            <img src="/assets/img/uploads/opus_card.jpg">
+                                            <img src="{{ eventsByMonth.thumbnail }}">
                                         </div>
                                         <div class="eventDetails">
-                                            <div class="eventTitle">OPUS Card</div>
-                                            <div class="eventDesc">OPUS card for secondary 1 & 3 students, as well as for the new students</div>
+                                            <div class="eventTitle">{{ eventsByMonth.title }}</div>
+                                            <div class="eventDesc">
+                                                {{ eventsByMonth.intro_paragraph }}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="event">
-                                        <div class="eventDate">13</div>
-                                        <div class="eventPict">
-                                            <img src="/assets/img/uploads/color_clash.jpg">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">Color Clash</div>
-                                            <div class="eventDesc">2019 Colour Clash edition</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="event">
-                                        <div class="eventDate">27</div>
-                                        <div class="eventPict">
-                                            <img src="/assets/img/uploads/ped_day.jpg">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">Ped Day</div>
-                                            <div class="eventDesc"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="event">
-                                        <div class="eventDate">30</div>
-                                        <div class="eventPict">
-                                            <img src="/assets/img/uploads/sports.jpg">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">Official Student Population Count</div>
-                                            <div class="eventDesc"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {% endif %}
                             </div>
+                            {% else %}
+                            <h1>BANANA</h1>
+                            {% endif %}
                         </li>
-                        <li style="width: 602px; margin-right: 0px; float: left; display: block;" class=""
-                            data-thumb-alt="">
-                            <div class="captionBox">
-                                <p class="title"> October </p>
-                                <p class="year"> 2019 </p>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="event">
-                                        <div class="eventPict">
-                                            <img src="/assets/img/uploads/terryfox.jpg">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">St. Pat's Supports Terry Fox!</div>
-                                            <div class="eventDesc">We will be participating in this year's Terry Fox School  Walk/Run for cancer research. We are proud to continue the legacy of one of our country’s greatest heroes. We hope you will join us and support this wonderful cause by donating to our <a href="https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1" target="_blank">Terry Fox School Run fundraising page</a>, thank you. The future of cancer research has never looked brighter! Terry's dreams lives on at St. Pat's!!!!</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="event">
-                                        <div class="eventDate">4</div>
-                                        <div class="eventPict">
-                                            <img src="/assets/img/uploads/communication.jpg">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">First Communication to parents</div>
-                                            <div class="eventDesc"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="width: 602px; margin-right: 0px; float: left; display: block;" class=""
-                            data-thumb-alt="">
-                            <div class="captionBox">
-                                <p class="title"> November </p>
-                                <p class="year"> 2019 </p>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="event">
-                                        <div class="eventPict">
-                                            <img src="/assets/img/uploads/terryfox.jpg">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">St. Pat's Supports Terry Fox!</div>
-                                            <div class="eventDesc">We will be participating in this year's Terry Fox School  Walk/Run for cancer research. We are proud to continue the legacy of one of our country’s greatest heroes. We hope you will join us and support this wonderful cause by donating to our <a href="https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1" target="_blank">Terry Fox School Run fundraising page</a>, thank you. The future of cancer research has never looked brighter! Terry's dreams lives on at St. Pat's!!!!</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="col-6">
-                                    <div class="event">
-                                        <div class="eventDate">16</div>
-                                        <div class="eventPict">
-                                            <img src="/assets/img/uploads/openhouse.jpg">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">Open House / Portes Ouvertes</div>
-                                            <div class="eventDesc">From 10am to 12pm / De 10h00 à 12h00</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
+
+                <!--                <div class="flex-viewport" style="display: none !important; overflow: hidden; position: relative;">-->
+                <!--                    <ul class="slides"-->
+                <!--                        style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px);">-->
+                <!--                        <li class="clone" aria-hidden="true"-->
+                <!--                            style="width: 602px; margin-right: 0px; float: left; display: block;">-->
+                <!--                            <div class="captionBox">-->
+                <!--                                <p class="title"> September </p>-->
+                <!--                                <p class="year"> 2019 </p>-->
+                <!--                            </div>-->
+                <!--                            <div class="row">-->
+                <!--                                <div class="col-12">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/terryfox.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">St. Pat's Supports Terry Fox!</div>-->
+                <!--                                            <div class="eventDesc">We will be participating in this year's Terry Fox-->
+                <!--                                                School Walk/Run for cancer research. We are proud to continue the legacy-->
+                <!--                                                of one of our country’s greatest heroes. We hope you will join us and-->
+                <!--                                                support this wonderful cause by donating to our <a-->
+                <!--                                                        href="https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1"-->
+                <!--                                                        target="_blank">Terry Fox School Run fundraising page</a>, thank-->
+                <!--                                                you. The future of cancer research has never looked brighter! Terry's-->
+                <!--                                                dreams lives on at St. Pat's!!!!-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="col-6">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventDate">3</div>-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/opus_card.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">OPUS Card</div>-->
+                <!--                                            <div class="eventDesc">OPUS card for secondary 1 & 3 students, as well as-->
+                <!--                                                for the new students-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="col-6">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventDate">13</div>-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/color_clash.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">Color Clash</div>-->
+                <!--                                            <div class="eventDesc">2019 Colour Clash edition</div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="col-6">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventDate">27</div>-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/ped_day.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">Ped Day</div>-->
+                <!--                                            <div class="eventDesc"></div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="col-6">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventDate">30</div>-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/sports.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">Official Student Population Count</div>-->
+                <!--                                            <div class="eventDesc"></div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </li>-->
+                <!--                        <li style="width: 602px; margin-right: 0px; float: left; display: block;" class=""-->
+                <!--                            data-thumb-alt="">-->
+                <!--                            <div class="captionBox">-->
+                <!--                                <p class="title"> October </p>-->
+                <!--                                <p class="year"> 2019 </p>-->
+                <!--                            </div>-->
+                <!--                            <div class="row">-->
+                <!--                                <div class="col-12">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/terryfox.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">St. Pat's Supports Terry Fox!</div>-->
+                <!--                                            <div class="eventDesc">We will be participating in this year's Terry Fox-->
+                <!--                                                School Walk/Run for cancer research. We are proud to continue the legacy-->
+                <!--                                                of one of our country’s greatest heroes. We hope you will join us and-->
+                <!--                                                support this wonderful cause by donating to our <a-->
+                <!--                                                        href="https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1"-->
+                <!--                                                        target="_blank">Terry Fox School Run fundraising page</a>, thank-->
+                <!--                                                you. The future of cancer research has never looked brighter! Terry's-->
+                <!--                                                dreams lives on at St. Pat's!!!!-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="col-6">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventDate">4</div>-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/communication.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">First Communication to parents</div>-->
+                <!--                                            <div class="eventDesc"></div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </li>-->
+                <!--                        <li style="width: 602px; margin-right: 0px; float: left; display: block;" class=""-->
+                <!--                            data-thumb-alt="">-->
+                <!--                            <div class="captionBox">-->
+                <!--                                <p class="title"> November </p>-->
+                <!--                                <p class="year"> 2019 </p>-->
+                <!--                            </div>-->
+                <!--                            <div class="row">-->
+                <!--                                <div class="col-12">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/terryfox.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">St. Pat's Supports Terry Fox!</div>-->
+                <!--                                            <div class="eventDesc">We will be participating in this year's Terry Fox-->
+                <!--                                                School Walk/Run for cancer research. We are proud to continue the legacy-->
+                <!--                                                of one of our country’s greatest heroes. We hope you will join us and-->
+                <!--                                                support this wonderful cause by donating to our <a-->
+                <!--                                                        href="https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1"-->
+                <!--                                                        target="_blank">Terry Fox School Run fundraising page</a>, thank-->
+                <!--                                                you. The future of cancer research has never looked brighter! Terry's-->
+                <!--                                                dreams lives on at St. Pat's!!!!-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="col-6">-->
+                <!--                                    <div class="event">-->
+                <!--                                        <div class="eventDate">16</div>-->
+                <!--                                        <div class="eventPict">-->
+                <!--                                            <img src="/assets/img/uploads/openhouse.jpg">-->
+                <!--                                        </div>-->
+                <!--                                        <div class="eventDetails">-->
+                <!--                                            <div class="eventTitle">Open House / Portes Ouvertes</div>-->
+                <!--                                            <div class="eventDesc">From 10am to 12pm / De 10h00 à 12h00</div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+
                 <ol class="flex-control-nav flex-control-paging">
 
                 </ol>
