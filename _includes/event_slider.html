@@ -18,7 +18,7 @@
                 {% assign element = element | append: "</div>" %}
                 {% assign element = element | append: "<div class='row'>" %}
                 {% if event.event_date != nil %}
-                {% assign element = element | append: "<div class='col-12'>" %}
+                {% assign element = element | append: "<div class='col-6'>" %}
                     {% assign element = element | append: "<div class='event'>" %}
                         {% assign element = element | append: "<div class='eventPict'>" %}
                             {% assign element = element | append: "<img src='{{event.thumbnail}}' />" %}
