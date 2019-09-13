@@ -3,54 +3,60 @@
         <section class="slider">
             <div class="flexslider">
 
+
+                {% assign all_months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: ',' %}
+                {% assign parent_element = ""  %}
+                {% assign element = ""  %}
+
+                {% for month in all_months %}
+                {% assign element = ""  %}
+                {% for event in site.events %}
+                {% if month == event.event_month %}
+                {% assign element = "<div class='captionBox'>" %}
+                {% assign element = element | append: "<p class='title'>" | append: event.event_month | append: "</p>" %}
+                {% assign element = element | append: "<p class='year'>" | append: event.event_year | append: "</p>" %}
+                {% assign element = element | append: "</div>" %}
+                {% assign element = element | append: "<div class='row'>" %}
+                {% if event.event_date != nil %}
+                {% assign element = element | append: "<div class='col-12'>" %}
+                    {% assign element = element | append: "<div class='event'>" %}
+                        {% assign element = element | append: "<div class='eventPict'>" %}
+                            {% assign element = element | append: "<img src='{{event.thumbnail}}' />" %}
+                        {% assign element = element | append: "</div>" %}
+                        {% assign element = element | append: "<div class='eventDetails'>" %}
+                            {% assign element = element | append: "<div class='eventTitle'>" | append: event.title | append: "</div>" %}
+                            {% assign element = element | append: "<div class='eventDesc'>" | append: event.intro_paragraph | append: "</div>" %}
+                            {% assign element = element | append: "</div>" %}
+                        {% assign element = element | append: "</div>" %}
+                    {% assign element = element | append: "</div>" %}
+                {% else %}
+                {% assign element = element | append: "<div class='col-6'>" %}
+                    {% assign element = element | append: "<div class='event'>" %}
+                        {% assign element = element | append: "<div class='eventDate'>" | append: event.event_date | append: "</div>" %}
+                        {% assign element = element | append: "<div class='eventPict'>" %}
+                            {% assign element = element | append: "<img src='{{event.thumbnail}}' />" %}
+                        {% assign element = element | append: "</div>" %}
+                        {% assign element = element | append: "<div class='eventDetails'>" %}
+                            {% assign element = element | append: "<div class='eventTitle'>" | append: event.title | append: "</div>" %}
+                            {% assign element = element | append: "<div class='eventDesc'>" | append: event.intro_paragraph | append: "</div>" %}
+                            {% assign element = element | append: "</div>" %}
+                        {% assign element = element | append: "</div>" %}
+                    {% assign element = element | append: "</div>" %}
+                {% endif %}
+                {% assign element = element | append: "</div>" %}
+                {% endif %}
+                {% endfor %}
+                {% if element != blank %}
+                {% assign parent_element = parent_element | append: "<li class='clone' aria-hidden='true' style='width: 602px; margin-right: 0px; float: left; display: block;'>"  %}
+                {% assign parent_element = parent_element | append: element  %}
+                {% assign parent_element = parent_element | append: "</li>"  %}
+                {% endif %}
+                {% endfor %}
+
                 <div class="flex-viewport" style="overflow: hidden; position: relative;">
                     <ul class="slides"
                         style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px);">
-                        {% for eventsByMonth in site.events %}
-                        <li class="clone" aria-hidden="true"
-                            style="width: 602px; margin-right: 0px; float: left; display: block;">
-                            {% if post.event_month == september %}
-                            <div class="captionBox">
-                                <p class="title"> {{ eventsByMonth.event_month }} </p>
-                                <p class="year"> {{ eventsByMonth.event_year }} </p>
-                            </div>
-                            <div class="row">
-                                {% if event.event_date != nil %}
-                                <div class="col-12">
-                                    <div class="event">
-                                        <div class="eventPict">
-                                            <img src="{{ eventsByMonth.thumbnail }}">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">{{ eventsByMonth.title }}</div>
-                                            <div class="eventDesc">
-                                                {{ eventsByMonth.intro_paragraph }}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {% else %}
-                                <div class="col-6">
-                                    <div class="event">
-                                        <div class="eventDate">{{ eventsByMonth.event_date }}</div>
-                                        <div class="eventPict">
-                                            <img src="{{ eventsByMonth.thumbnail }}">
-                                        </div>
-                                        <div class="eventDetails">
-                                            <div class="eventTitle">{{ eventsByMonth.title }}</div>
-                                            <div class="eventDesc">
-                                                {{ eventsByMonth.intro_paragraph }}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {% endif %}
-                            </div>
-                            {% else %}
-                            <h1>BANANA</h1>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
+                        {{parent_element}}
                     </ul>
                 </div>
 
