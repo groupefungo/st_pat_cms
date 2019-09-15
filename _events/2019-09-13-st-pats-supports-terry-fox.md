@@ -8,8 +8,8 @@ intro_paragraph: >-
   We will be participating in this year's Terry Fox School Walk/Run for cancer
   research. We are proud to continue the legacy of one of our country’s greatest
   heroes. We hope you will join us and support this wonderful cause by donating
-  to our [Terry Fox School Run fundraising
-  page](https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1),
+  to our <a href="https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1" target="_blank">Terry Fox School Run fundraising
+  page</a>,
   thank you. The future of cancer research has never looked brighter! Terry's
   dreams lives on at St. Pat's!!!!
 thumbnail: /assets/img/uploads/terryfox.jpg
