@@ -1,77 +1,125 @@
-<!-- Declare Months array and variables -->
-{% assign all_months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: ',' %}
+{% comment %}
+1)
+Declare all variables
+Set Months array
+Set Dates array
+Set Events array
+
+2)
+Loop all Events
+Get all Years as comma-separated string
+Set Years array and sort it and remove duplicate
+
+3)
+Loop all Years
+Set All Events per Year array
+
+4)
+Loop all Months
+Buid CaptionBox HTML
+Set All Events per Month array from the current Year Event array
+If the array is not empty, set All Events with no Dates in an array
+
+5)
+Loop All Events with no Dates and build HTML
+
+6)
+Loop all Dates
+Set individual Event according to the current Date as an array from the current Month Event array
+
+7)
+Loop Date Events array
+Build HTML
+
+8)
+Build LI container HTML and append all remaining HTML
+Reninit and empty HTML variables for next loop
+{% endcomment %}
+
 {% assign parent_element = ""  %}
 {% assign element = ""  %}
 {% assign caption_box = ""  %}
+{% assign all_months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: ',' %}
+{% assign all_dates = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31" | split: ',' %}
+{% assign site_events = site.events %}
 
-{% comment %}
-Loop through all months
-Empty and Reinitialize element variable on each pass
-Loop through all Events
-Check if current month equals current event month
-Create top caption box HTML as string
-Check if current event has a Date
-Create Single Event item HTML as string
-Capture methods helps us create the IMG tag since there is no image filter like in Shopify
-Check if element variable is not empty
-Create Slide LI tag which will contain all grouped Events by month
-Add top caption box
-Add bootstrap row div
-Add all grouped events by month
-Empty and Reinitialize caption box
-{% endcomment %}
-
-{% for month in all_months %}
-{% assign element = "" %}
-
-{% for event in site.events %}
-{% if month == event.event_month %}
-    {% assign caption_box = caption_box | append: "<div class='captionBox'>" %}
-        {% assign caption_box = caption_box | append: "<p class='title'>" | append: event.event_month | append: "</p>" %}
-        {% assign caption_box = caption_box | append: "<p class='year'>" | append: event.event_year | append: "</p>" %}
-    {% assign caption_box = caption_box | append: "</div>" %}
-
-    {% if event.event_date == '' %}
-    {% assign element = element | append: "<div class='col-12'>" %}
-        {% assign element = element | append: "<div class='event'>" %}
-            {% assign element = element | append: "<div class='eventPict'>" %}
-                {% capture image_tag %} <img src="{{event.thumbnail}}" /> {% endcapture %}
-                {% assign element = element | append: image_tag %}
-            {% assign element = element | append: "</div>" %}
-            {% assign element = element | append: "<div class='eventDetails'>" %}
-                {% assign element = element | append: "<div class='eventTitle'>" | append: event.title | append: "</div>" %}
-                {% assign element = element | append: "<div class='eventDesc'>" | append: event.intro_paragraph | append: "</div>" %}
-            {% assign element = element | append: "</div>" %}
-        {% assign element = element | append: "</div>" %}
-    {% assign element = element | append: "</div>" %}
-    {% else %}
-    {% assign element = element | append: "<div class='col-6'>" %}
-        {% assign element = element | append: "<div class='event'>" %}
-            {% assign element = element | append: "<div class='eventDate'>" | append: event.event_date | append: "</div>" %}
-            {% assign element = element | append: "<div class='eventPict'>" %}
-                {% capture image_tag %} <img src="{{event.thumbnail}}" /> {% endcapture %}
-                {% assign element = element | append: image_tag %}
-            {% assign element = element | append: "</div>" %}
-            {% assign element = element | append: "<div class='eventDetails'>" %}
-                {% assign element = element | append: "<div class='eventTitle'>" | append: event.title | append: "</div>" %}
-                {% assign element = element | append: "<div class='eventDesc'>" | append: event.intro_paragraph | append: "</div>" %}
-            {% assign element = element | append: "</div>" %}
-        {% assign element = element | append: "</div>" %}
-    {% assign element = element | append: "</div>" %}
-    {% endif %}
+{% assign all_years = '' %}
+{% for s_e in site_events %}
+{% if forloop.last %}
+{% assign all_years = all_years | append: s_e.event_year %}
+{% else %}
+{% assign all_years = all_years | append: s_e.event_year | append: ',' %}
 {% endif %}
 {% endfor %}
+{% assign all_years = all_years | split: ',' | sort | uniq %}
 
-{% if element != "" %}
-{% assign parent_element = parent_element | append: "<li>" %}
-    {% assign parent_element = parent_element | append: caption_box %}
-    {% assign parent_element = parent_element | append: "<div class='row'>" %}
-        {% assign parent_element = parent_element | append: element %}
-    {% assign parent_element = parent_element | append: "</div>" %}
-{% assign parent_element = parent_element | append: "</li>" %}
+{% for year in all_years %}
+    {% assign all_events_per_year = site_events | where: 'event_year', year %}
 
-{% assign caption_box = ""  %}
-{% endif %}
+    {% for month in all_months %}
+        {% assign all_events_per_month = all_events_per_year | where: 'event_month', month %}
+
+        {% if all_events_per_month.size > 0 %}
+            {% assign month_event_no_date = all_events_per_month | where: 'event_date', '' %}
+
+            {% assign caption_box = caption_box | append: "<div class='captionBox'>" %}
+                {% assign caption_box = caption_box | append: "<p class='title'>" | append: month | append: "</p>" %}
+                {% assign caption_box = caption_box | append: "<p class='year'>" | append: year | append: "</p>" %}
+            {% assign caption_box = caption_box | append: "</div>" %}
+
+            {% if month_event_no_date.size > 0 %}
+                {% for mend in month_event_no_date %}
+                    {% assign element = element | append: "<div class='col-12'>" %}
+                        {% assign element = element | append: "<div class='event'>" %}
+                            {% assign element = element | append: "<div class='eventPict'>" %}
+                                {% capture image_tag %} <img src="{{mend.thumbnail}}" /> {% endcapture %}
+                                {% assign element = element | append: image_tag %}
+                            {% assign element = element | append: "</div>" %}
+                            {% assign element = element | append: "<div class='eventDetails'>" %}
+                                {% assign element = element | append: "<div class='eventTitle'>" | append: mend.title | append: "</div>" %}
+                                {% assign element = element | append: "<div class='eventDesc'>" | append: mend.intro_paragraph | append: "</div>" %}
+                            {% assign element = element | append: "</div>" %}
+                        {% assign element = element | append: "</div>" %}
+                    {% assign element = element | append: "</div>" %}
+                {% endfor %}
+            {% endif %}
+
+            {% for date in all_dates %}
+                {% assign month_event_according_to_date = all_events_per_month | where: 'event_date', date %}
+
+                {% if month_event_according_to_date.size > 0 %}
+                    {% for meatd in month_event_according_to_date %}
+                        {% assign element = element | append: "<div class='col-6'>" %}
+                            {% assign element = element | append: "<div class='event'>" %}
+                                {% assign element = element | append: "<div class='eventDate'>" | append: meatd.event_date | append: "</div>" %}
+                                {% assign element = element | append: "<div class='eventPict'>" %}
+                                    {% capture image_tag %} <img src="{{meatd.thumbnail}}" /> {% endcapture %}
+                                    {% assign element = element | append: image_tag %}
+                                {% assign element = element | append: "</div>" %}
+                                {% assign element = element | append: "<div class='eventDetails'>" %}
+                                    {% assign element = element | append: "<div class='eventTitle'>" | append: meatd.title | append: "</div>" %}
+                                    {% assign element = element | append: "<div class='eventDesc'>" | append: meatd.intro_paragraph | append: "</div>" %}
+                                {% assign element = element | append: "</div>" %}
+                            {% assign element = element | append: "</div>" %}
+                        {% assign element = element | append: "</div>" %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+
+            {% if element != "" %}
+                {% assign parent_element = parent_element | append: "<li>" %}
+                    {% assign parent_element = parent_element | append: caption_box %}
+                    {% assign parent_element = parent_element | append: "<div class='row'>" %}
+                        {% assign parent_element = parent_element | append: element %}
+                    {% assign parent_element = parent_element | append: "</div>" %}
+                {% assign parent_element = parent_element | append: "</li>" %}
+            {% endif %}
+
+        {% endif %}
+
+        {% assign caption_box = ""  %}
+        {% assign element = ""  %}
+    {% endfor %}
 {% endfor %}
 
 <section id="eventSlider" class="topSlider">
