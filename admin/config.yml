@@ -41,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-      - {label: "Year", name: "event_year", widget: "select", options: ["2019", "2020", "2021", "2022", "2023", "2024", "2025"], required: true}
+      - {label: "Year", name: "event_year", widget: "string", required: true}
       - {label: "Month", name: "event_month", widget: "select", options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], required: true}
       - {label: "Date", name: "event_date", widget: "number", required: false}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}

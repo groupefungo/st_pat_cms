@@ -1,6 +1,6 @@
 ---
 layout: home
-event_year: '2019'
+event_year: 2019
 event_month: October
 event_date: 4
 title: First Communication to parents
