@@ -15,7 +15,7 @@
                                 <p class="title">{{ unitslides.title }}</p>
                                 <p class="description">{{ unitslides.intro_paragraph | strip_newlines | truncate: 200 }}</p>
                                 <a class="button button-primary" href="{{ unitslides.url }}"
-                                   target="_blank">More Details</a>
+                                   target="_blank">{{ unitslides.buttonlabel }}</a>
                             </div>
                         </li>
                         {% endfor %}
