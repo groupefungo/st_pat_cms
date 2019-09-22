@@ -4,10 +4,10 @@
             <div class="flexslider">
                 <div class="preloader"></div>
                 <div class="flex-viewport" style="overflow: hidden; position: relative;">
-                    {% for unitslides in site.slider %}
-                    {% assign author = site.data.authors[page.author] %}
                     <ul class="slides"
                         style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px);">
+                        {% for unitslides in site.slider %}
+                        {% assign author = site.data.authors[page.author] %}
                         <li class="clone" aria-hidden="true"
                             style="width: 602px; margin-right: 0px; float: left; display: block;">
                             <img src="{{ unitslides.featuredpict }}" draggable="false">
@@ -18,6 +18,7 @@
                                    target="_blank">{{ unitslides.buttonlabel }}</a>
                             </div>
                         </li>
+                        {% endfor %}
                     </ul>
                     <ul class="slides"
                         style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px); display: none;">
@@ -50,7 +51,6 @@
                             </div>
                         </li>
                     </ul>
-                    {% endfor %}
                 </div>
                 <ol class="flex-control-nav flex-control-paging">
 
