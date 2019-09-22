@@ -4,8 +4,33 @@
             <div class="flexslider">
                 <div class="preloader"></div>
                 <div class="flex-viewport" style="overflow: hidden; position: relative;">
+
                     <ul class="slides"
                         style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px);">
+                        {% for unitslides in site.slider %}
+                        {% assign author = site.data.authors[page.author] %}
+                        <li class="clone" aria-hidden="true"
+                            style="width: 602px; margin-right: 0px; float: left; display: block;">
+                            <img src="{{ unitslides.featuredpict }}" draggable="false">
+                            <div class="captionBox">
+                                <p class="title">{{ unitslides.title }}</p>
+                                <p class="description">{{ unitslides.intro_paragraph }</p>
+                                <a class="button button-primary" href="{{ unitslides.url }}"
+                                   target="_blank">More Details</a>
+                            </div>
+                        </li>
+                        <div class="singleNews text-left">
+                            <span class="picture"><img src="{{ oneNews.thumbnail }}"></span>
+                            <div class="details">
+                                <p class="title">{{ oneNews.title }}</p>
+                                <p class="description">{{ oneNews.intro_paragraph | strip_newlines | truncate: 78 }}</p>
+                                <a class="button button-alert pull-right" href="{{ oneNews.url }}">Read More</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </ul>
+                    <ul class="slides"
+                        style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px); display: none;">
                         <li class="clone" aria-hidden="true"
                             style="width: 602px; margin-right: 0px; float: left; display: block;">
                             <img src="assets/img/slider/slide_5.jpg" draggable="false">
