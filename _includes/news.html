@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="secondaryNews">
-                        {% for oneNews in site.news %}
+                        {% for oneNews in site.news limit:4 %}
                         {% assign author = site.data.authors[page.author] %}
                         <div class="singleNews text-left">
                             <span class="picture"><img src="{{ oneNews.thumbnail }}"></span>
