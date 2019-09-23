@@ -83,6 +83,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
           - { label: "Steven Dopheide", value: "steven_dopheide" }
           - { label: "Student's Life", value: "student_life" }
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Featured Image (1920 x 978 / 72DPI to 96DPI)", name: "featuredpict", widget: "image"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
