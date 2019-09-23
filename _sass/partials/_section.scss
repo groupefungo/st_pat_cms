@@ -586,6 +586,12 @@ section.topSlider#photoSlider {
         line-height: 1.15em;
         font-weight: 400;
         color: $darkColorBackground;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        max-width: 97%;
       }
     }
 

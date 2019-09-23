@@ -21,13 +21,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Thumbnail Image", name: "thumbnail", widget: "image"}
-      - {label: "Featured Image", name: "featuredpict", widget: "image", required: false}
+      - {label: "Thumbnail Image (92 x 60 / 72DPI to 96DPI)", name: "thumbnail", widget: "image"}
+      - {label: "Featured Image (500 x 333 / 72DPI to 96DPI)", name: "featuredpict", widget: "image", required: false}
       - label: "Author"
         name: "author"
         widget: "select"
         options:
           - { label: "Direction", value: "direction" }
+          - { label: "Stephanie Duquet", value: "stephanie_duquet" }
+          - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
+          - { label: "Steven Dopheide", value: "steven_dopheide" }
           - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Short Publish Date", name: "shortdate", widget: "datetime", format: "YYYY-MM-DD", required: false}
@@ -46,12 +49,15 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Date", name: "event_date", widget: "number", required: false}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Thumbnail Image", name: "thumbnail", widget: "image"}
+      - {label: "Thumbnail Image (80 x 80 / 72DPI to 96DPI)", name: "thumbnail", widget: "image"}
       - label: "Author"
         name: "author"
         widget: "select"
         options:
           - { label: "Direction", value: "direction" }
+          - { label: "Stephanie Duquet", value: "stephanie_duquet" }
+          - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
+          - { label: "Steven Dopheide", value: "steven_dopheide" }
           - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
@@ -65,15 +71,18 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Button Label", name: "buttonlabel", widget: "string"}
+      - {label: "Intro Paragraph (Middle text)", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Button Label (text on button)", name: "buttonlabel", widget: "string"}
       - {label: "Button URL", name: "url", widget: "string"}
       - label: "Author"
         name: "author"
         widget: "select"
         options:
           - { label: "Direction", value: "direction" }
+          - { label: "Stephanie Duquet", value: "stephanie_duquet" }
+          - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
+          - { label: "Steven Dopheide", value: "steven_dopheide" }
           - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
-      - {label: "Featured Image (1200px x 800px)", name: "featuredpict", widget: "image"}
+      - {label: "Featured Image (1920 x 978 / 72DPI to 96DPI)", name: "featuredpict", widget: "image"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
