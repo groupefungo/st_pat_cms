@@ -196,10 +196,10 @@ section.section.section-features {
       box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.65);
       min-height: 50px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
 
       .mainNews {
-        width: 50%;
+        width: 100%;
         float: left;
         height: auto;
         overflow: hidden;
@@ -238,6 +238,8 @@ section.section.section-features {
 
           .title, .description {
             margin: 0;
+            float: left;
+            clear: right;
           }
 
           .title {
@@ -261,8 +263,6 @@ section.section.section-features {
             background-color: rgba(0, 0, 0, 0.8);
             display: inline-block;
             padding: 12px;
-            float: left;
-            clear: right;
           }
 
           a.button.button-alert, button.button.button-alert {
@@ -276,10 +276,13 @@ section.section.section-features {
             margin-top: 20px;
           }
         }
+        @media only screen and (min-width: $mobileBreakpoint) {
+          width: 50%;
+        }
       }
 
       .secondaryNews {
-        width: 50%;
+        width: 100%;
         float: left;
 
         .singleNews {
@@ -309,6 +312,7 @@ section.section.section-features {
             img {
               height: 100%;
               width: auto;
+              min-width: 100%;
             }
           }
 
@@ -337,6 +341,13 @@ section.section.section-features {
             }
           }
         }
+        @media only screen and (min-width: $mobileBreakpoint) {
+          width: 50%;
+        }
+      }
+
+      @media only screen and (min-width: $mobileBreakpoint) {
+        flex-direction: row;
       }
     }
 
