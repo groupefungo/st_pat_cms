@@ -6,7 +6,7 @@ intro_paragraph: >-
   that you find it visually interesting and easier to use.
 thumbnail: /assets/img/uploads/news_1.jpg
 featuredpict: /assets/img/uploads/screen-shot-2019-09-10-at-2.22.10-pm.png
-author: direction
+author: marc_andre_daigle
 date: '2019-09-09 00:09:00'
 shortdate: Invalid date
 ---
