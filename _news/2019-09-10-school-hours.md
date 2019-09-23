@@ -8,7 +8,7 @@ intro_paragraph: |-
 thumbnail: /assets/img/uploads/news_2.jpg
 featuredpict: ''
 author: direction
-date: '2019-09-10 10:09:41'
+date: '2019-08-08 10:08:41'
 shortdate: Invalid date
 ---
 
