@@ -20,7 +20,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Full Text", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Thumbnail Image (92 x 60 / 72DPI to 96DPI)", name: "thumbnail", widget: "image"}
       - {label: "Featured Image (500 x 333 / 72DPI to 96DPI)", name: "featuredpict", widget: "image", required: false}
       - label: "Author"
@@ -48,7 +48,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Month", name: "event_month", widget: "select", options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], required: true}
       - {label: "Date", name: "event_date", widget: "number", required: false}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Small Description", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Thumbnail Image (80 x 80 / 72DPI to 96DPI)", name: "thumbnail", widget: "image"}
       - label: "Author"
         name: "author"
@@ -71,7 +71,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Intro Paragraph (Middle text)", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Middle small text", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Button Label (text on button)", name: "buttonlabel", widget: "string"}
       - {label: "Button URL", name: "url", widget: "string"}
       - label: "Author"
