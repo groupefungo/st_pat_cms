@@ -534,6 +534,13 @@
         $('.flexslider').flexslider({
             animation: "slide"
         });
+
+        // Set active slide according to current month
+        if ($('.flexslider .active_month').length > 0) {
+            var lis = $('ul.slides li:not(.clone)');
+            var index = lis.index($('.active_month'));
+            $('.flexslider').flexslider(index);
+        }
     });
 
     // CHANGE LOWER MENU POSITION TO FIXED
