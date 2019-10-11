@@ -2,6 +2,7 @@
 layout: home
 event_year: '2019'
 event_month: April
+event_date: 30
 title: TEST sans url
 intro_paragraph: dsfsdfdsf
 thumbnail: /assets/img/uploads/class2.jpg
