@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Test de slide
+title: Test de slide test
 intro_paragraph: Test de texte
 buttonlabel: READ MORE
 url: '#'
