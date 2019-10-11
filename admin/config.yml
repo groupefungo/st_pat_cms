@@ -50,7 +50,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Small Description", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Thumbnail Image (80 x 80 / 72DPI to 96DPI)", name: "thumbnail", widget: "image"}
-      - {label: "URL of the event", name: "url", widget: "string"}
+      - {label: "URL of the event", name: "url", widget: "string", required: false}
       - label: "Author"
         name: "author"
         widget: "select"
