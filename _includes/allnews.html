@@ -1,0 +1,35 @@
+<section id="fullnews" class="section section-features section-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h1">All the news</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for oneNews in site.news %}
+            {% assign author = site.data.authors[page.author] %}
+            <div class="col-6">
+                <div class="singleAllNews text-left">
+                    <span class="picture">
+                        {% if oneNews.shortdate != nil %}
+                        <span>{{ oneNews.shortdate }}</span>
+                        {% else %}
+                        <span style="display: none;"></span>
+                        {% endif %}
+                        {% if page.featuredpict != nil %}
+                        <img src="{{ oneNews.featuredpict }}">
+                        {% else %}
+                        <img src="{{ oneNews.thumbnail }}">
+                        {% endif %}
+                    </span>
+                    <div class="details">
+                        <p class="title">{{ oneNews.title }}</p>
+                        <p class="description">{{ oneNews.intro_paragraph | strip_newlines | truncate: 100 }}</p>
+                        <a class="button button-alert pull-right" href="{{ oneNews.url }}">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,325 @@
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  margin-bottom: $ctaFooterHeight;
+  color: $darkColorBackground;
+  background-color: $footerBackground;
+  float: left;
+  width: 100%;
+  padding-bottom: 125px;
+
+  h3 {
+    font-weight: 400;
+    font-size: 2.3em;
+    line-height: 1em;
+    margin: 8px 0;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin: 13px 0;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  h5 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 16px 0 8px 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 15px;
+
+    li {
+      margin: 3px 0;
+      font-size: 1em;
+      font-weight: 400;
+
+      &:hover {
+        color: lighten($darkColorBackground, 60%);
+      }
+
+      a {
+        color: $darkColorBackground;
+        text-decoration: none;
+
+        &:hover {
+          color: lighten($darkColorBackground, 40%);
+        }
+      }
+    }
+  }
+
+  .logo {
+    float: left;
+
+    img {
+      height: 20px;
+    }
+  }
+
+  .logo-sec {
+    .mention {
+      display: inline-block;
+      float: left;
+      margin-left: 12px;
+      position: relative;
+      bottom: -6px;
+    }
+
+    a {
+      float: left;
+    }
+
+    img {
+      height: 28px;
+    }
+
+    @media only screen and (min-width: $mobileBreakpoint) {
+      display: flex;
+      align-items: center;
+      .mention {
+        bottom: 2px;
+        margin-left: 0;
+      }
+      img {
+        height: 35px;
+      }
+    }
+  }
+
+  .list-social-links {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    line-height: 1em;
+
+    a {
+      margin-left: 1em;
+      font-size: 1.4em;
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    padding: 20px 0;
+    margin-bottom: 0;
+    .logo {
+      img {
+        height: 50px;
+      }
+    }
+    .list-social-links {
+      font-size: 1.4em;
+    }
+  }
+
+  .sloganClipper {
+    -webkit-clip-path: polygon(100% 10%, 100% 60%, 50% 50%, 0% 60%, 0 10%, 50% 0);
+    clip-path: polygon(100% 10%, 100% 60%, 50% 50%, 0% 60%, 0 10%, 50% 0);
+
+    background-image: url("/assets/img/bkg_fightingirish.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 15%;
+    width: 100%;
+    height: 40rem;
+    margin-top: -190px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+
+      &.schoolIdentity {
+        color: $accentColor;
+        font-size: 18px;
+        margin-top: -65px;
+      }
+
+      &.schoolSlogan {
+        color: $primaryColorReverse;
+        font-size: 30px;
+        margin-bottom: 100px;
+      }
+    }
+
+    @media only screen and (min-width: $mobileBreakpoint) {
+      -webkit-clip-path: polygon(100% 30%, 100% 100%, 50% 70%, 0% 100%, 0 30%, 50% 0);
+      clip-path: polygon(100% 30%, 100% 100%, 50% 70%, 0% 100%, 0 30%, 50% 0);
+
+      height: 55rem;
+
+      span {
+
+        &.schoolIdentity {
+          font-size: 28px;
+          margin-top: 5px;
+        }
+
+        &.schoolSlogan {
+          font-size: 48px;
+          margin-bottom: 130px;
+        }
+      }
+    }
+  }
+
+  .armors {
+    margin-top: -150px;
+    margin-bottom: 30px;
+
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  .bordered {
+    border-top: 1px solid #a0a0a0;
+    margin-bottom: 100px;
+  }
+}
+
+.quickNav {
+  display: block;
+  position: fixed;
+  bottom: 122px;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+
+  .frenchNote {
+    display: block;
+    font-size: 11px;
+    line-height: 1.2em;
+    padding: 8px;
+    background-color: $accentColor;
+    color: $darkColorBackground;
+
+    -webkit-box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.4);
+
+    a {
+      color: $darkColorBackground;
+      text-decoration: underline;
+    }
+
+    &.activeUp {
+      -webkit-box-shadow: 0 -4px 10px 0 rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 0 -4px 10px 0 rgba(0, 0, 0, 0.35);
+      box-shadow: 0 -4px 10px 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    display: none;
+
+    .frenchNote {
+      display: none;
+    }
+  }
+}
+
+.ctaBtn {
+  position: fixed;
+  bottom: $ctaFooterHeight;
+  left: 0;
+  width: 100%;
+
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  .buttonMobile {
+    width: 50%;
+    float: left;
+    padding: 12px;
+    min-height: 55px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.2em;
+    line-height: 1.05em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &.green {
+      color: $primaryColorReverse;
+      background-color: $primaryColor;
+    }
+
+    &.yellow {
+      color: $darkColorBackground;
+      background-color: $accentColor;
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    display: none;
+  }
+}
+
+.cta-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  height: $ctaFooterHeight;
+  padding: 20px 0;
+  width: 100%;
+  background-color: $darkColorBackground;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+
+  a.icons {
+    margin-top: -33px;
+  }
+
+  span {
+    width: 108px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    a.icons {
+
+      img {
+        width: 50px;
+      }
+    }
+
+    &.social {
+      a.icons {
+        img {
+          width: 35px;
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    display: none;
+  }
+}

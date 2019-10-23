@@ -1,0 +1,165 @@
+a.button, button.button {
+  color: $generalFontColor;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+
+  &.button-primary {
+    color: $buttonTextColor;
+    background-color: $buttonPrimaryBackground;
+    border: solid 3px white;
+    padding: 1rem 3rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $buttonPrimaryBackgroundHover;
+    }
+  }
+
+  &.button-secondary {
+    color: $primaryColorReverse;
+    background-color: $buttonSecondaryBackground;
+    font-size: 1.6rem;
+    padding: 0.8em 2em;
+
+    &:hover {
+      background-color: lighten($buttonSecondaryBackground, 5%);
+    }
+  }
+
+  &.button-third {
+    background-color: $buttonPrimaryBackground;
+    font-size: 1.6rem;
+    padding: 0.8em 2em;
+
+    &:hover {
+      background-color: lighten($buttonPrimaryBackground, 5%);
+    }
+
+    &.disabled {
+      background-color: transparent;
+      color: transparent;
+      cursor: default;
+    }
+  }
+
+  &.button-lightbox, &.button-lightbox.visited, &.button-lightbox.active {
+    background-color: $accentColor;
+    color: $darkColorBackground;
+    font-size: 1.6rem;
+    padding: 0.8em 2.7em;
+    margin: 3px;
+    border: none;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: darken($accentColor, 10%);
+    }
+
+    &.go {
+      color: $primaryColorReverse;
+      background-color: $primaryColor;
+
+      &:hover {
+        background-color: darken($primaryColor, 10%);
+      }
+    }
+  }
+
+  &.button-lightbox-action, &.button-lightbox-action.visited, &.button-lightbox-action.active {
+    background-color: rgba(0,0,0,0);
+    color: $primaryColorReverse;
+    font-size: 1.6rem;
+    padding: 0.8em 2.7em;
+    margin: 15px 3px;
+    border: solid 3px white;
+    display: inline-block;
+
+    &:hover {
+      background-color: rgba(0,0,0,0.2);
+    }
+  }
+
+  &.button-action, &.button-action.visited, &.button-action.active {
+    background-color: $primaryColor;
+    color: $primaryColorReverse;
+    font-size: 1.6rem;
+    padding: 0.8em 2.7em;
+    margin: 0 3px;
+    border: none;
+
+    &:hover {
+      background-color: darken($primaryColor, 10%);
+    }
+  }
+
+  &.button-alert {
+    color: white !important;
+    background-color: #d32027;
+    font-size: .8rem;
+    padding: .5em 0.8em;
+    font-weight: 400;
+    position: absolute;
+    width: auto;
+    text-align: center;
+    right: 5px;
+    bottom: 5px;
+    text-shadow: none;
+
+    &:hover {
+      background-color: darken(#d32027, 5%);
+    }
+  }
+
+  &.button-block {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  &.buttonNews {
+    margin: 0;
+    padding: 12px;
+    color: white !important;
+    background-color: $darkColorBackground;
+
+    &:hover {
+      background-color: $buttonSpecialBackground;
+    }
+  }
+}
+
+// TEMPORARY BUTTONS
+.split-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .button-third {
+    background-color: $buttonPrimaryBackground;
+
+    &:hover {
+      background-color: lighten($buttonPrimaryBackground, 5%);
+    }
+
+    &.disabled {
+      background-color: transparent;
+      color: transparent;
+      cursor: default;
+    }
+
+    &.split {
+      width: 49.5%;
+      margin: 15px 0 0 0;
+      font-size: 1.1rem;
+      padding: 1.5em 0.5em;
+    }
+  }
+}

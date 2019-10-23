@@ -1,0 +1,44 @@
+
+// Couleurs
+$primaryColor: #0c8a43; // Vert
+$primaryColorReverse: white;
+$accentColor: #FFC80A;
+$darkColorBackground: #000000; // Gris foncé
+
+// Fontes
+$titleFontFamily: 'Montserrat', sans-serif;
+$generalFontFamily: $titleFontFamily;
+$generalFontColor: #000000;
+$textShadow: 0 0 7px rgba(12, 12, 12, 0.58);
+
+// $Header
+$headerBackground: white;
+$headerHeight: 100px;
+$headerHeightMobile: 50px;
+
+// button
+$buttonTextColor: white;
+$buttonPrimaryBackground: rgba(67, 67, 67, 0.76);
+$buttonPrimaryBackgroundHover: rgba(47, 47, 47, 0.8);
+$buttonSecondaryBackground: $primaryColor;
+$buttonSpecialBackground: $accentColor;
+
+// form
+$inputPlaceholder: #3b3c3c;
+
+// $Footer
+$footerBackground: $primaryColorReverse;
+$footerFontColor: white;
+$ctaFooterBackground: $headerBackground;
+$ctaFooterHeight: 66px;
+
+// #LightboxCTA
+$lightboxCTAbackground: rgba(12, 138, 67,.97);
+$lightboxCTAsecondaryBackground: rgba(0, 0, 0,.97);
+
+// Sections
+// - Secion punch
+$sectionPunchOverlayBackground: rgba(0, 0, 0, 0.29);
+
+// Mobile breakooint
+$mobileBreakpoint: 700px;

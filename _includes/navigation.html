@@ -1,11 +1,95 @@
-{% assign navurl = page.url | remove: 'index.html' %}
-<ul>
-{% for item in include.navigation %}
-  <li>
-    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
-    {% if item.subitems %}
-      {% include navigation.html navigation=item.subitems %}
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
+<!--{% assign navurl = page.url | remove: 'index.html' %}-->
+<!--<ul>-->
+<!--{% for item in include.navigation %}-->
+<!--<li>-->
+<!--<a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>-->
+<!--{% if item.subitems %}-->
+<!--{% include navigation.html navigation=item.subitems %}-->
+<!--{% endif %}-->
+<!--</li>-->
+<!--{% endfor %}-->
+<!--</ul>-->
+
+{% include top_bar.html %}
+
+<div class="logo">
+    <a href="/index.html">
+        <img src="/assets/img/logo_stpats.svg" alt="St. Patrick's High School">
+    </a>
+</div>
+
+<!----------->
+<!-- MENUS -->
+<!----------->
+<div class="menu">
+    <ul>
+        <li><a data-scroll class="scroll onAbout" href="/history">About</a></li>
+        <li><a data-scroll class="scroll" href="/foundation">The Foundation</a></li>
+        <li><a data-scroll class="scroll" href="index.html#profiles">Profiles</a></li>
+        <!--<li><a data-scroll class="scroll" href="/upcoming_events_at_st_pats">Activities</a></li>-->
+        <li><a data-scroll class="scroll" href="/contact">Contact Us</a></li>
+        <li><a class="subscribe isd" href="https://www.cqsb.qc.ca/en/isp/programs" target="_blank">
+            ISP
+            <br>
+            <small>INTERNATIONAL STUDENT’S PROGRAM</small>
+        </a>
+        </li>
+        <li><a class="subscribe open-lightbox" href="#r">
+            <small>INFORMATION FOR</small>
+            REGISTRATION</a>
+        </li>
+        <li>
+        <span class="socialMedias"><a
+                href="https://www.facebook.com/St-Patricks-High-School-Quebec-City-182469591913603/" class="facebook"
+                target="_blank"><img src="../assets/img/facebook2.svg"
+                                     alt="Facebook"> </a><a href="https://twitter.com/StPatsHighQc"
+                                                            class="twitter"
+                                                            target="_blank"><img
+                src="../assets/img/twitter.svg" alt="Facebook"> </a> </span></li>
+    </ul>
+</div>
+<div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input id="js-closeMenu" type="checkbox"/>
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span> <span></span> <span></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+        <a data-scroll class="click-mobile scroll" href="index.html">
+            <li>Home</li>
+        </a> <a data-scroll class="click-mobile scroll" href="/history">
+        <li>About</li>
+    </a> <a data-scroll class="click-mobile scroll" href="/foundation">
+        <li>The Foundation</li>
+    </a> <a data-scroll class="click-mobile scroll" href="index.html#profiles">
+        <li>Profiles</li>
+        <!--</a> <a data-scroll class="click-mobile scroll" href="/upcoming_events_at_st_pats">-->
+        <!--<li>Activities</li></a>-->
+        <a data-scroll class="click-mobile scroll" href="#r">
+            <li>Contact Us</li>
+        </a> <a data-scroll class="click-mobile scroll" href="#">
+        <li>ISP : INTERNATIONAL STUDENT’S PROGRAM</li>
+    </a> <a data-scroll class="click-mobile scroll" href="#r">
+        <li>INFORMATION FOR REGISTRATION</li>
+    </a> <a class="click-mobile" href="#" target="_blank">
+        <li><img src="assets/img/facebook.svg"></li>
+    </a>
+    </ul>
+</div>
+<!-------------------->
+<!-- CALL TO ACTION -->
+<!-------------------->
+<a href="#f" style="display: none;" class="button button-secondary button-cta">Call to action</a>

@@ -1,0 +1,15 @@
+section.section.section-punch{
+  @include sectionFlex();
+  flex-direction: column;
+  text-align: center;
+  background-image:
+          linear-gradient($sectionPunchOverlayBackground, $sectionPunchOverlayBackground),
+          url("http://placehold.it/1024x1024");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  border-bottom: solid 44px $darkColorBackground;
+  h1{
+    color:white;
+    text-shadow: $textShadow;
+  }
+}

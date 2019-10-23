@@ -11,13 +11,17 @@ layout: compress
 
     {% include header.html %}
 
-    <main>
+    <main class="main" role="main">
 
       {{ content }}
 
     </main>
 
     {% include footer.html %}
+
+    {% include cta-footer.html %}
+
+    {% include lightbox.html %}
 
   </body>
 

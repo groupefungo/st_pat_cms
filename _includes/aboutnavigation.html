@@ -1,0 +1,20 @@
+<!--{% assign navurl = page.url | remove: 'index.html' %}-->
+<!--<ul>-->
+<!--{% for item in include.navigation %}-->
+<!--<li>-->
+<!--<a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>-->
+<!--{% if item.subitems %}-->
+<!--{% include navigation.html navigation=item.subitems %}-->
+<!--{% endif %}-->
+<!--</li>-->
+<!--{% endfor %}-->
+<!--</ul>-->
+
+<section class="navAbout">
+    <div class="subMenu">
+        <a data-scroll class="scroll" href="/upcoming_events_at_st_pats">UPcoming events at st. pat's</a>
+        <a data-scroll class="scroll" href="/photo_gallery">PHOTO GALLERY</a>
+        <a data-scroll class="scroll" href="/history">HISTORY</a>
+        <a data-scroll class="scroll" href="/our_school_crest">OUR SCHOOL CREST</a>
+    </div>
+</section>

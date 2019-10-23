@@ -1,0 +1,43 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html data-current="{{ page.section }}" lang="en">
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+{% include aboutnavigation.html %}
+
+{% include floatingmenu.html %}
+
+{% include aboutheader.html %}
+
+<main class="main" role="main">
+    <section id="{{ page.sectionid }}" class="section section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">{{ page.title }}</h2>
+                </div>
+            </div>
+            <div class="row" style="z-index: 0;">
+                {{ content }}
+            </div>
+        </div>
+    </section>
+</main>
+
+{% include footer.html %}
+
+{% include cta-footer.html %}
+
+{% include lightbox.html %}
+
+</body>
+
+</html>

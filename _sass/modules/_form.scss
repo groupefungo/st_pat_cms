@@ -1,0 +1,50 @@
+form.form{
+  label{
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.25em;
+    margin-bottom: 1.5em;
+    text-transform: none;
+    @media only screen and (min-width:$mobileBreakpoint) {
+      font-size: 1.5em;
+    }
+  }
+  .form-group{
+    text-align: left;
+    margin-bottom: 1.1em;
+    input[type=text], input[type=email]{
+      width:100%;
+      border: 1px solid #e8e8e8;
+      padding:15px 30px;
+    }
+    // Selecteurs doivent rester séparés
+    input::-webkit-input-placeholder {
+      color: $inputPlaceholder !important;
+    }
+    input:-moz-placeholder {
+      color: $inputPlaceholder !important;
+    }
+    input::-moz-placeholder {
+      color: $inputPlaceholder !important;
+    }
+    input:-ms-input-placeholder {
+      color: $inputPlaceholder !important;
+    }
+  }
+  .form-error{
+    display:none;
+    margin-bottom: 1em;
+    padding: 10px;
+    color: $primaryColor;
+    line-height: 1.2em;
+    background: #ffffff;
+  }
+  textarea {
+    color: #4f4f4f;
+    border: 1px solid #e8e8e8;
+    padding: 15px 30px;
+  }
+}

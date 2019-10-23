@@ -1,0 +1,94 @@
+form#ctaForm, form#ctaForm2, form#ctaForm3, form#ctaForm4 {
+  display: flex;
+  text-align: center;
+  // Hack IE 11
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    flex: inherit;
+    display: block;
+  }
+
+  .form-section {
+    width: 100%;
+    max-width: 497px;
+    padding: 0 1em;
+
+    .form-group {
+      position: relative;
+
+      label {
+
+        &.upperLabel {
+          color: lighten($darkColorBackground, 10%);
+          padding: 1px 10px;
+          font-size: 9px;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          position: absolute;
+          top: -7px;
+          left: 9px;
+          background-color: white;
+          border-radius: 28px;
+          border: 1px solid #e8e8e8;
+        }
+      }
+    }
+  }
+
+  .button-primary {
+    margin-top: 2em;
+    background: none;
+  }
+
+  .page {
+    // height:200px;
+    //position: relative;
+    transition: all 0.3s;
+    //left:0;
+    opacity: 1;
+
+    &[data-slide="show"] {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    &[data-slide="hideLeft"] {
+      //left: -1000px;
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+
+    &[data-slide="hideRight"] {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+  }
+
+  .page-confirm {
+    .fa.fa-check-circle {
+      color: #1f6d26;
+    }
+
+    .message.success p {
+      padding: 0 1em;
+      color: #225a27;
+      font-size: 1.2em;
+      line-height: 1.3em;
+    }
+
+    .fa.fa-exclamation-circle {
+      color: #c34444;
+    }
+
+    .message.error p {
+      padding: 0 1em;
+      color: #904141;
+      font-size: 1.2em;
+      line-height: 1.3em;
+    }
+
+    .success, .error {
+      display: none;
+    }
+  }
+
+}

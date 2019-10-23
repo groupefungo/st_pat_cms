@@ -1,0 +1,151 @@
+{% comment %}
+1)
+Declare all variables
+Set Months array
+Set Dates array
+Set Events array
+
+2)
+Loop all Events
+Get all Years as comma-separated string
+Set Years array and sort it and remove duplicate
+
+3)
+Loop all Years
+Set All Events per Year array
+
+4)
+Loop all Months
+Buid CaptionBox HTML
+Set All Events per Month array from the current Year Event array
+If the array is not empty, set All Events with no Dates in an array
+
+5)
+Loop All Events with no Dates and build HTML
+
+6)
+Loop all Dates
+Set individual Event according to the current Date as an array from the current Month Event array
+
+7)
+Loop Date Events array
+Build HTML
+
+8)
+Build LI container HTML and append all remaining HTML
+Reninit and empty HTML variables for next loop
+{% endcomment %}
+
+{% assign parent_element = ""  %}
+{% assign element = ""  %}
+{% assign caption_box = ""  %}
+{% assign all_months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: ',' %}
+{% assign all_dates = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31" | split: ',' %}
+{% assign site_events = site.events %}
+{% assign active_month = "now" | date: "%B" %}
+
+{% assign all_years = '' %}
+{% for s_e in site_events %}
+{% if forloop.last %}
+{% assign all_years = all_years | append: s_e.event_year %}
+{% else %}
+{% assign all_years = all_years | append: s_e.event_year | append: ',' %}
+{% endif %}
+{% endfor %}
+{% assign all_years = all_years | split: ',' | sort | uniq %}
+
+{% for year in all_years %}
+    {% assign all_events_per_year = site_events | where: 'event_year', year %}
+
+    {% for month in all_months %}
+        {% assign all_events_per_month = all_events_per_year | where: 'event_month', month %}
+
+        {% if all_events_per_month.size > 0 %}
+            {% assign month_event_no_date = all_events_per_month | where: 'event_date', '' %}
+
+            {% assign caption_box = caption_box | append: "<div class='captionBox'>" %}
+                {% assign caption_box = caption_box | append: "<p class='title'>" | append: month | append: "</p>" %}
+                {% assign caption_box = caption_box | append: "<p class='year'>" | append: year | append: "</p>" %}
+            {% assign caption_box = caption_box | append: "</div>" %}
+
+            {% if month_event_no_date.size > 0 %}
+                {% for mend in month_event_no_date %}
+                    {% assign element = element | append: "<div class='col-12'>" %}
+                        {% assign element = element | append: "<div class='event'>" %}
+                            {% assign element = element | append: "<div class='eventPict'>" %}
+                                {% capture image_tag %} <img src="{{mend.thumbnail}}" /> {% endcapture %}
+                                {% assign element = element | append: image_tag %}
+                            {% assign element = element | append: "</div>" %}
+                            {% assign element = element | append: "<div class='eventDetails'>" %}
+                                {% assign element = element | append: "<div class='eventTitle'>" | append: mend.title | append: "</div>" %}
+                                {% assign element = element | append: "<div class='eventDesc'>" | append: mend.intro_paragraph | append: "</div>" %}
+                            {% assign element = element | append: "</div>" %}
+                        {% assign element = element | append: "</div>" %}
+                    {% assign element = element | append: "</div>" %}
+                {% endfor %}
+            {% endif %}
+
+            {% for date in all_dates %}
+                {% assign month_event_according_to_date = all_events_per_month | where: 'event_date', date %}
+
+                {% if month_event_according_to_date.size > 0 %}
+                    {% for meatd in month_event_according_to_date %}
+                        {% assign element = element | append: "<div class='col-6'>" %}
+                            {% assign element = element | append: "<div class='event'>" %}
+                                {% assign element = element | append: "<div class='eventDate'>" | append: meatd.event_date | append: "</div>" %}
+                                {% assign element = element | append: "<div class='eventPict'>" %}
+                                    {% capture image_tag %} <img src="{{meatd.thumbnail}}" /> {% endcapture %}
+                                    {% assign element = element | append: image_tag %}
+                                {% assign element = element | append: "</div>" %}
+                                {% assign element = element | append: "<div class='eventDetails'>" %}
+                                    {% assign element = element | append: "<div class='eventTitle'>" | append: meatd.title | append: "</div>" %}
+                                    {% assign element = element | append: "<div class='eventDesc'>" | append: meatd.intro_paragraph | append: "</div>" %}
+                                {% assign element = element | append: "</div>" %}
+                            {% assign element = element | append: "</div>" %}
+                        {% assign element = element | append: "</div>" %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+
+            {% if element != "" %}
+                {% if month == active_month %}
+                    {% assign parent_element = parent_element | append: "<li class='active_month'>" %}
+                {% else %}
+                    {% assign parent_element = parent_element | append: "<li>" %}
+                {% endif %}
+                    {% assign parent_element = parent_element | append: caption_box %}
+                    {% assign parent_element = parent_element | append: "<div class='row'>" %}
+                        {% assign parent_element = parent_element | append: element %}
+                    {% assign parent_element = parent_element | append: "</div>" %}
+                {% assign parent_element = parent_element | append: "</li>" %}
+            {% endif %}
+
+        {% endif %}
+
+        {% assign caption_box = ""  %}
+        {% assign element = ""  %}
+    {% endfor %}
+{% endfor %}
+
+<section id="eventSlider" class="topSlider">
+    <div class="container">
+        <section class="slider">
+            <div class="flexslider">
+                <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                    <ul class="slides"
+                        style="width: 1200%; transition-duration: 0s; transform: translate3d(-1806px, 0px, 0px);">
+                        {{parent_element}}
+                    </ul>
+                </div>
+
+                <ol class="flex-control-nav flex-control-paging">
+
+                </ol>
+                <ul class="flex-direction-nav">
+                    <li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li>
+                    <li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</section>

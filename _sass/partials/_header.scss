@@ -1,0 +1,68 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $headerHeightMobile;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 64px 8px 20px 8px;
+  background-color: $headerBackground;
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.5);
+
+  .logo {
+    text-align: center;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .button-cta {
+    display: none;
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    justify-content: space-between;
+    height: $headerHeight;
+    padding: 85px 20px 50px 20px;
+    .logo {
+      float: left;
+
+      img {
+        height: 72px;
+      }
+    }
+    .button-cta {
+      display: inherit;
+      float: right;
+    }
+  }
+}
+
+.announcementBar {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  background-color: $darkColorBackground;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  
+  span {
+    
+    &.announce {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) {
+    span {
+
+      &.announce {
+        display: inline-block;
+      }
+    }
+  }
+}

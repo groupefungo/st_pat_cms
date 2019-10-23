@@ -1,0 +1,21 @@
+.hide-mobile{
+  display:none !important;
+  @media only screen and (min-width:$mobileBreakpoint) {
+    display: inherit !important;
+  }
+}
+.no-overflow{
+  overflow: hidden;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}

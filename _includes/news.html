@@ -1,0 +1,52 @@
+<section id="news" class="section section-features section-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h1">The Latest Information from St. Patrick's High School</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="newsBox">
+                    <div class="mainNews">
+                        {% assign author = site.data.authors[page.author] %}
+                        {% assign lastNews = site.news.last %}
+                        <span class="floatpicture">
+                            {% if oneNews.featuredpict !=nil %}
+                            <img src="{{ lastNews.featuredpict }}">
+                            {% else %}
+                            <img src="{{ lastNews.thumbnail }}">
+                            {% endif %}
+                        </span>
+                        <div class="details text-left">
+                            <p class="title"><span>{{ lastNews.shortdate }}</span><br>{{ lastNews.title }}</p>
+                            <p class="description">{{ lastNews.intro_paragraph | strip_newlines | truncate: 200 }}</p>
+                            <a class="button button-alert pull-left" href="{{ lastNews.url }}">Read More</a>
+                        </div>
+                    </div>
+                    <div class="secondaryNews">
+                        {% for oneNews in site.news limit:4 %}
+                        {% assign author = site.data.authors[page.author] %}
+                        <div class="singleNews text-left">
+                            <span class="picture"><img src="{{ oneNews.thumbnail }}"></span>
+                            <div class="details">
+                                <p class="title">{{ oneNews.title }}</p>
+                                <p class="description">{{ oneNews.intro_paragraph | strip_newlines | truncate: 78 }}</p>
+                                <a class="button button-alert pull-right" href="{{ oneNews.url }}">Read More</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <a class="button button-block buttonNews" href="./all_news.html">MORE NEWS</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2">Where academic, arts and sports meet.</h2>
+                <h2 class="h3"><a href="tel:+14185258421"> 418.525.8421</a></h2>
+            </div>
+        </div>
+    </div>
+</section>
