@@ -100,8 +100,9 @@ a.button, button.button {
   }
 
   &.button-alert {
+    color: white !important;
     background-color: #d32027;
-    font-size: .6rem;
+    font-size: .8rem;
     padding: .5em 0.8em;
     font-weight: 400;
     position: absolute;
@@ -109,6 +110,7 @@ a.button, button.button {
     text-align: center;
     right: 5px;
     bottom: 5px;
+    text-shadow: none;
 
     &:hover {
       background-color: darken(#d32027, 5%);
@@ -120,6 +122,17 @@ a.button, button.button {
     width: 100%;
     text-align: center;
     margin-top: 15px;
+  }
+
+  &.buttonNews {
+    margin: 0;
+    padding: 12px;
+    color: white !important;
+    background-color: $darkColorBackground;
+
+    &:hover {
+      background-color: $buttonSpecialBackground;
+    }
   }
 }
 

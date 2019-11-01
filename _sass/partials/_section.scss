@@ -476,7 +476,7 @@ section.topSlider#photoSlider {
   }
 }
 
-#foundation, #specialneeds, #ourschoolcrest, #history, #upcomingevents, #photogallery, #contact, #policies, #governingboard, #yearcalendar {
+#foundation, #specialneeds, #ourschoolcrest, #history, #upcomingevents, #photogallery, #contact, #policies, #governingboard, #yearcalendar, #fullnews, #singleNews {
   padding: 5em 0 18em 0;
   overflow: visible;
 
@@ -524,7 +524,7 @@ section.topSlider#photoSlider {
   }
 }
 
-#upcomingevents, #photogallery, #ourschoolcrest, #history, #contact, #policies, #governingboard {
+#upcomingevents, #photogallery, #ourschoolcrest, #history, #contact, #policies, #governingboard, #news {
 
   .event {
     display: flex;
@@ -586,6 +586,12 @@ section.topSlider#photoSlider {
         line-height: 1.15em;
         font-weight: 400;
         color: $darkColorBackground;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        max-width: 97%;
       }
     }
 
@@ -607,10 +613,11 @@ section.topSlider#photoSlider {
       }
 
       .eventDetails {
-        padding: 8px;
+        padding: 2px 10px;
 
         .eventTitle {
           font-size: 14px;
+          line-height: 1.1em;
         }
 
         .eventDesc {

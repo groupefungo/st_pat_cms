@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12">
+        {% assign author = site.data.authors[page.author] %}
+        <div class="singleNewsPage">
+            <div class="singleNewsImg">
+                {% if news.featuredpict != nil %}
+                <img src="{{ page.featuredpict }}">
+                {% else %}
+                <img src="{{ page.thumbnail }}">
+                {% endif %}
+            </div>
+            <div class="singleNewsContent">
+                <div class="details">
+                    <p class="description">{{ page.intro_paragraph }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>

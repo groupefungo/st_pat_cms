@@ -43,6 +43,12 @@ sass:
 compress_html:
   clippings: all
 
+collections:
+  news:
+    output: true
+  events:
+    output: true
+
 # set some common post defaults
 defaults:
   -
