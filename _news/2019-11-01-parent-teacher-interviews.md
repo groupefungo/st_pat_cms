@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: post
 title: Parent/Teacher Interviews
 intro_paragraph: >-
   Dear Parents,
