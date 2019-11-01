@@ -17,7 +17,7 @@ collections: # A list of collections the CMS should be able to edit
     sort: "date:asc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-     preview: false
+    preview: false
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
@@ -42,6 +42,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "_events" # The path to the folder where the documents are stored
     sort: "date:asc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
+    preview: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
@@ -69,6 +70,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "_slider" # The path to the folder where the documents are stored
     sort: "date:asc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
+    preview: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
