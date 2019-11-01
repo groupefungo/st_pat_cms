@@ -475,6 +475,17 @@ section.section.section-features {
       background-blend-mode: multiply;
       background-repeat: no-repeat;
 
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0,0.2);
+        z-index: 0;
+      }
+
       &.football {
         background-image: url("/assets/img/profiles/profile_foot.png");
       }
@@ -543,26 +554,39 @@ section.section.section-features {
           font-weight: 600;
           line-height: 1em;
           height: 50%;
+          //height: 100%;
           top: 0;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
+          //justify-content: center;
           align-content: center;
           align-items: center;
           hyphens: none;
         }
 
         &.description {
-          font-size: 16px;
-          font-weight: 400;
+          font-size: 13px;
+          font-weight: 600;
           line-height: 1.2em;
           height: 50%;
           bottom: 0;
           display: flex;
+          //display: none;
           flex-direction: column;
           justify-content: flex-start;
           align-content: center;
           align-items: center;
+
+          cite {
+            font-weight: 400;
+            font-size: 0.7em;
+            margin-top: 5px;
+          }
+        }
+
+        &.title, &.description {
+          z-index: 1;
         }
 
         @media only screen and (min-width: 700px) and (max-width: 1024px) {
@@ -571,7 +595,7 @@ section.section.section-features {
           }
 
           &.description {
-            font-size: 12px;
+            font-size: 10px;
           }
         }
       }

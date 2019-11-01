@@ -56,7 +56,7 @@ sectionid: specialneeds
         <div class="content2">
             <ul>
                 <li><a href="http://www.cpseminars.org/index.html" target="_blank">Clinical Developmental Resources Inc., Concerned Parents' Seminars, &amp; The ADHD/ADD Counseling and Education Centre</a> - are dedicated to providing high quality, in-depth educational programs for professionals and lay people.</li>
-                <li><a href="http://www.shapesofmind.ca/" target="_blank">Shapes of Mind</a> - designed to help English School Boards in Quebec develop effective service frameworks for students with learning difficulties. Emphasis is placed on inclusive (developmental) approaches — those that promote high teaching/learning standards for all students in inclusive schools.</li>
+                <li><a href="https://www.shapesofmind.org/" target="_blank">Shapes of Mind</a> - designed to help English School Boards in Quebec develop effective service frameworks for students with learning difficulties. Emphasis is placed on inclusive (developmental) approaches — those that promote high teaching/learning standards for all students in inclusive schools.</li>
                 <li><a href="http://www.learnquebec.ca/en/content/pedagogy/insight/partners/ies.html" target="_blank">InSight</a> - The IES (Inclusion Educational Service) is designed to support inclusive education in Québec's English school boards.</li>
             </ul>
         </div>

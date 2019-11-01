@@ -3,7 +3,7 @@
 
 backend:
   name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
-  branch: add_admin # Branch to update (master by default)
+  branch: master # Branch to update (master by default)
 
 media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 
@@ -17,6 +17,7 @@ collections: # A list of collections the CMS should be able to edit
     sort: "date:asc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+     preview: false
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
@@ -87,3 +88,17 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Featured Image (1920 x 978 / 72DPI to 96DPI)", name: "featuredpict", widget: "image"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
+    # PAGES
+  - name: "page"
+    label: "Page"
+    folder: "pages"
+    sort: "title:asc"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
+      - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
