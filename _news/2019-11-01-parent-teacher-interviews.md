@@ -1,6 +1,5 @@
 ---
-layout: post
-status: draft
+layout: home
 title: Parent/Teacher Interviews
 intro_paragraph: >-
   Dear Parents,
@@ -39,6 +38,7 @@ intro_paragraph: >-
 
   We hope to see you there on Report Card Night.
 thumbnail: /assets/img/uploads/ptn-sample-3.jpg
+featuredpict: /assets/img/uploads/ptn-sample-3.jpg
 author: marc_andre_daigle
 date: '2019-11-01 14:11:39'
 shortdate: '2019-11-13'
