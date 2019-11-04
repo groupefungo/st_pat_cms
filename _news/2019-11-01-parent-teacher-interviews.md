@@ -40,7 +40,7 @@ intro_paragraph: >-
 thumbnail: /assets/img/uploads/ptn-sample-3.jpg
 featuredpict: /assets/img/uploads/ptn-sample-3.jpg
 author: marc_andre_daigle
-date: '2019-11-01 14:11:39'
+date: Invalid date
 shortdate: '2019-11-13'
 ---
 
