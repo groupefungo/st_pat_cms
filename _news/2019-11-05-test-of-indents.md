@@ -1,6 +1,6 @@
 ---
 status: public
-layout: home
+layout: post
 title: TEST OF INDENTS
 thumbnail: /assets/img/uploads/openhouse.jpg
 featuredpict: /assets/img/uploads/sports.jpg
