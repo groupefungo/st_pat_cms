@@ -5,7 +5,7 @@ title: Parent/Teacher Interviews
 thumbnail: /assets/img/uploads/ptn-sample-3.jpg
 featuredpict: /assets/img/uploads/ptn-sample-3.jpg
 author: marc_andre_daigle
-date: '2019-11-06 00:11:00'
+date: '2019-11-05 00:11:00'
 shortdate: '2019-11-13'
 ---
 Dear Parents,
