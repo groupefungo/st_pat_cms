@@ -1,6 +1,6 @@
 ---
 status: public
-layout: home
+layout: post
 title: TEST OF INDENTS
 intro_paragraph: |-
   This is a test for indentation for a news.
