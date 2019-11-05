@@ -11,7 +11,6 @@ shortdate: '2019-11-13'
 Dear Parents,
 
 1. Our 1st term report card night is on Wednesday November 13th, from 4:30-7:30 PM
-
 2. Once again, we are using the online appointment system.
 
 [Click Here](https://stpats.schoolappointments.com)
@@ -22,7 +21,7 @@ The system will open for appointments as of 6:00 AM, Wednesday, November 6th and
 
 If you are the parent of twins, the system will not permit you to schedule back to back meetings with any specific teacher. You may call the secretary to have her help in this circumstance.
 
-Report Cards
+**Report Cards**
 
 Will be published on Friday, November 8th.
 
