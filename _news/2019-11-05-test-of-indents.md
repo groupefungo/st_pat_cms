@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: TEST OF INDENTS
 intro_paragraph: |-
