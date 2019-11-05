@@ -24,6 +24,12 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     fields: # The fields each document in this collection have
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Draft", value: "draft" }
+          - { label: "Public", value: "public" }
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Full Text", name: "intro_paragraph", widget: "markdown", required: false}
