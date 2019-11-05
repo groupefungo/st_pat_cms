@@ -1,8 +1,7 @@
 ---
-status: public
+status: draft
 layout: post
 title: Parent/Teacher Interviews
-intro_paragraph: TEST INTRO
 thumbnail: /assets/img/uploads/ptn-sample-3.jpg
 featuredpict: /assets/img/uploads/ptn-sample-3.jpg
 author: marc_andre_daigle
