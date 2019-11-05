@@ -5,6 +5,7 @@ title: TEST OF INDENTS
 intro_paragraph: |-
   This is a test for indentation for a news.
 
+
   * Test 1
   * Test 2
   * Test 3
