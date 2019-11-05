@@ -5,13 +5,13 @@ title: Parent/Teacher Interviews
 thumbnail: /assets/img/uploads/ptn-sample-3.jpg
 featuredpict: /assets/img/uploads/ptn-sample-3.jpg
 author: marc_andre_daigle
-date: '2019-09-01 00:09:00'
+date: '2019-10-29 00:10:00'
 shortdate: '2019-11-13'
 ---
 Dear Parents,
 
 1. Our 1st term report card night is on Wednesday November 13th, from 4:30-7:30 PM
-2. Once again, we are using the online appointment system. [Click Here](stpats.schoolappointments.com)
+2. Once again, we are using the online appointment system. [Click Here](https://stpats.schoolappointments.com/)
 
 We HIGHLY recommend that you register and add your child(ren) before the system officially opens for appointments.
 
