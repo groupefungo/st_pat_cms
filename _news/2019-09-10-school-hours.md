@@ -1,5 +1,6 @@
 ---
 layout: post
+status: public
 title: School Hours
 intro_paragraph: |-
   Monday to Friday<br>

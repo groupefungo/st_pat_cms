@@ -1,5 +1,6 @@
 ---
 layout: post
+status: public
 title: A New School Website!
 intro_paragraph: >-
   St. Patrick's High School is proud to present to you its new webpage. We hope
