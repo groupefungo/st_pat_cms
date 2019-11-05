@@ -1,5 +1,5 @@
-{% if page.intro_paragraph and page.intro_paragraph != '' %}
+{% if page.body and page.body != '' %}
   <p class="intro">
-    {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+    {{ page.body | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 {% endif %}
