@@ -1,5 +1,5 @@
 ---
-status: draft
+status: public
 layout: post
 title: Parent/Teacher Interviews
 intro_paragraph: TEST INTRO
