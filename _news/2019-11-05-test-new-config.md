@@ -10,7 +10,6 @@ shortdate: Invalid date
 Test de configuration avec nouveaux items.
 
 
-
 * Ceci est un test
 * Ceci aussi
 * hummm pas sur
