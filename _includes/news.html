@@ -19,7 +19,7 @@
                         <div class="card-details">
                             <h1 class="news-title">{{ oneNews.title }}</h1>
                             <p class="news-description">
-                                {{ oneNews.intro_paragraph | strip_newlines | truncate: 78 }}
+                                {{ oneNews.body | strip_newlines | truncate: 78 }}
                             </p>
                         </div>
                     </div>

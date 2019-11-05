@@ -26,7 +26,7 @@
                     </span>
                     <div class="details">
                         <p class="title">{{ oneNews.title }}</p>
-                        <p class="description">{{ oneNews.intro_paragraph | strip_newlines | truncate: 100 }}</p>
+                        <p class="description">{{ oneNews.body | strip_newlines | truncate: 100 }}</p>
                         <a class="button button-alert pull-right" href="{{ oneNews.url }}">Read More</a>
                     </div>
                 </div>
