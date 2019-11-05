@@ -83,6 +83,8 @@
     display: inline-block;
     padding: 15px;
     font-size: 1.35em;
+    text-shadow: none;
+    margin: 25px 0;
 
     &:hover {
       background-color: darken(#FFC80A, 10%);
