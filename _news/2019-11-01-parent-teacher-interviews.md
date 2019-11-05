@@ -2,7 +2,7 @@
 status: draft
 layout: post
 title: Parent/Teacher Interviews
-intro_paragraph: >-
+body: >-
   Dear Parents,
 
 

@@ -2,7 +2,7 @@
 layout: post
 status: public
 title: School Hours
-intro_paragraph: |-
+body: |-
   Monday to Friday<br>
 
   From 7h30am until 3h30pm

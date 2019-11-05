@@ -2,7 +2,7 @@
 layout: post
 status: public
 title: A New School Website!
-intro_paragraph: >-
+body: >-
   St. Patrick's High School is proud to present to you its new webpage. We hope
   that you find it visually interesting and easier to use.
 thumbnail: /assets/img/uploads/news_1.jpg
