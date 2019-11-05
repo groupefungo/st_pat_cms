@@ -1,3 +1,5 @@
+{% assign all_news = site.news | where: "status", "public" %}
+
 <section id="fullnews" class="section section-features section-white">
     <div class="container">
         <div class="row">
@@ -6,7 +8,7 @@
             </div>
         </div>
         <div class="row">
-            {% for oneNews in site.news %}
+            {% for oneNews in all_news %}
             {% assign author = site.data.authors[page.author] %}
             <div class="col-6">
                 <div class="singleAllNews text-left">
