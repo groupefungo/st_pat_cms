@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News" # Used in the UI, ie.: "New Post"
     folder: "_news" # The path to the folder where the documents are stored
-    sort: "date:asc" # Default is title:asc
+    sort: "order:asc"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
@@ -35,6 +35,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Full Text", name: "body", widget: "markdown", required: false}
       - {label: "Thumbnail Image (92 x 60 / 72DPI to 96DPI)", name: "thumbnail", widget: "image", required: true}
       - {label: "Featured Image (500 x 333 / 72DPI to 96DPI)", name: "featuredpict", widget: "image", required: false}
+      - {label: "Choose order", name: "order", widget: "string", tagname: "p", required: true}
       - label: "Author"
         name: "author"
         widget: "select"
@@ -44,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
           - { label: "Steven Dopheide", value: "steven_dopheide" }
           - { label: "Students Life", value: "student_life" }
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss", required: true}
       - {label: "Short Publish Date", name: "shortdate", widget: "date", format: "YYYY-MM-DD", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
   # EVENTS OF THE MONTH
