@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: Parent/Teacher Interviews
 thumbnail: /assets/img/uploads/ptn-sample-3.jpg
