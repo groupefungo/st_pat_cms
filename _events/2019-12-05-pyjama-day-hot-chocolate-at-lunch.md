@@ -1,4 +1,5 @@
 ---
+status: public
 layout: home
 event_year: '2019'
 event_month: December
