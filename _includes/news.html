@@ -1,4 +1,4 @@
-{% assign all_news = site.news | where: "status", "public" %}
+{% assign all_news = site.news | where: "status", "public" | sort: 'order' %}
 {% assign author = site.data.authors[page.author] %}
 
 <section id="news" class="section section-features section-color">
