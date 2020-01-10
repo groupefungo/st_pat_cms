@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News" # Used in the UI, ie.: "New Post"
     folder: "_news" # The path to the folder where the documents are stored
-    sort: "date:asc"
+    sort: "order:asc"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
