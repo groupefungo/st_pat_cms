@@ -35,15 +35,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Full Text", name: "body", widget: "markdown", required: false}
       - {label: "Thumbnail Image (92 x 60 / 72DPI to 96DPI)", name: "thumbnail", widget: "image", required: true}
       - {label: "Featured Image (500 x 333 / 72DPI to 96DPI)", name: "featuredpict", widget: "image", required: false}
-      - {label: "Choose order", name: "order", widget: "string", tagname: "p", required: true}
+      - {label: "Choose order", name: "order", widget: "string", tagname: "p", required: false}
       - label: "Author"
         name: "author"
         widget: "select"
         options:
-          - { label: "Direction", value: "direction" }
+          - { label: "Admin", value: "administration" }
           - { label: "Stephanie Duquet", value: "stephanie_duquet" }
           - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
-          - { label: "Steven Dopheide", value: "steven_dopheide" }
           - { label: "Students Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss", required: true}
       - {label: "Short Publish Date", name: "shortdate", widget: "date", format: "YYYY-MM-DD", required: false}
@@ -58,6 +57,12 @@ collections: # A list of collections the CMS should be able to edit
       preview: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Draft", value: "draft" }
+          - { label: "Public", value: "public" }
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Year", name: "event_year", widget: "string", required: true}
       - {label: "Month", name: "event_month", widget: "select", options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], required: true}
@@ -70,10 +75,9 @@ collections: # A list of collections the CMS should be able to edit
         name: "author"
         widget: "select"
         options:
-          - { label: "Direction", value: "direction" }
+          - { label: "Admin", value: "administration" }
           - { label: "Stephanie Duquet", value: "stephanie_duquet" }
           - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
-          - { label: "Steven Dopheide", value: "steven_dopheide" }
           - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
