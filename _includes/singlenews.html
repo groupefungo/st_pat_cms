@@ -1,5 +1,6 @@
 <div class="row">
     <div class="col-12">
+        {% assign author = site.news | where: "status", "public" %}
         {% assign author = site.data.authors[page.author] %}
         <div class="singleNewsPage">
             <div class="singleNewsImg">
