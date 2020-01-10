@@ -1,4 +1,5 @@
 ---
+status: public
 layout: home
 event_year: '2019'
 event_month: October
@@ -10,11 +11,8 @@ intro_paragraph: >-
   heroes. We hope you will join us and support this wonderful cause by donating
   to our Terry Fox School Run fundraising page, thank you. The future of cancer
   research has never looked brighter! Terry's dreams lives on at St. Pat's!!!!
-
-
-  <https://secure.terryfox.ca/registrant/TeamFundraisingPage.aspx?TeamID=859950#&panel1-1>
 thumbnail: /assets/img/uploads/terryfox.jpg
-author: direction
+author: administration
 date: '2019-08-26 00:08:00'
 ---
 
