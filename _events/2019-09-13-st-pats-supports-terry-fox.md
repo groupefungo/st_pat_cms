@@ -12,7 +12,7 @@ intro_paragraph: >-
   to our Terry Fox School Run fundraising page, thank you. The future of cancer
   research has never looked brighter! Terry's dreams lives on at St. Pat's!!!!
 thumbnail: /assets/img/uploads/terryfox.jpg
-author: direction
+author: administration
 date: '2019-08-26 00:08:00'
 ---
 
