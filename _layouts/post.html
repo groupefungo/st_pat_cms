@@ -19,7 +19,12 @@ layout: default
         {% include singlenews.html %}
 
         <nav aria-label="Adjacent Posts">
-            <ul>
+            <div class="row flexCol">
+                <div class="col-6">
+                    <a href="./all_news.html" class="more-news-link button button-block">RETURN TO NEWS</a>
+                </div>
+            </div>
+            <ul style="display: none;">
                 {% if page.previous.url %}
                 <li>
                     <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
