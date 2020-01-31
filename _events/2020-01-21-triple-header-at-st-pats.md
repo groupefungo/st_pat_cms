@@ -2,7 +2,7 @@
 status: public
 layout: home
 event_year: '2020'
-event_month: February
+event_month: January
 event_date: 24
 title: Triple Header at St.Pat's!
 intro_paragraph: |-
