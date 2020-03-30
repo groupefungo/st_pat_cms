@@ -1,7 +1,9 @@
 ---
 status: public
 layout: post
-title: Open School
+title: >-
+  The Ministry of Education's 'Open School' platform during establishment
+  closures.  
 thumbnail: /assets/img/uploads/open-school-poster.jpg
 author: marc_andre_daigle
 date: '2020-03-30 13:03:52'
