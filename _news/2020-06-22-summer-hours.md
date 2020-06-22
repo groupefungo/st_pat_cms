@@ -9,4 +9,8 @@ shortdate: 2020-06-22T00:00:00.000Z
 ---
 Please take note that the school office will be closed from July 13th until August 7th.  
 
-Should you have questions, you are invited to contact the Central Quebec School Board: www.cqsb.qc.ca
+Should you have questions, you are invited to contact the Central Quebec School Board: <!--StartFragment-->
+
+<https://www.cqsb.qc.ca/en>
+
+<!--EndFragment-->
