@@ -82,9 +82,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
   # SLIDER
-  - name: "slider" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "slides" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Slide" # Used in the UI, ie.: "New Post"
-    folder: "_slider" # The path to the folder where the documents are stored
+    folder: "_slides" # The path to the folder where the documents are stored
     sort: "date:asc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     editor:
@@ -95,7 +95,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Middle small text", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Button Label (text on button)", name: "buttonlabel", widget: "string"}
-      - {label: "Button URL", name: "url", widget: "string"}
+      - {label: "Button URL", name: "button_url", widget: "string"}
+      - label: "Is Button URL an anchor?"
+          name: "is_anchor"
+          widget: "select"
+          options:
+            - { label: "True", value: "true" }
+            - { label: "False", value: "false" }
       - label: "Author"
         name: "author"
         widget: "select"
@@ -105,6 +111,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
           - { label: "Steven Dopheide", value: "steven_dopheide" }
           - { label: "Students Life", value: "student_life" }
+      - {label: "Choose order", name: "order", widget: "number", default: 0, tagname: "p", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Featured Image (1920 x 978 / 72DPI to 96DPI)", name: "featuredpict", widget: "image"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
