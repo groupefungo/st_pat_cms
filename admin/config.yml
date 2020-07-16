@@ -93,7 +93,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Middle small text", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Middle small text", name: "intro_paragraph", widget: "string", required: false}
       - {label: "Button Label (text on button)", name: "buttonlabel", widget: "string"}
       - {label: "Button URL", name: "button_url", widget: "string"}
       - label: "Is Button URL an anchor?"
