@@ -35,7 +35,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Full Text", name: "body", widget: "markdown", required: false}
       - {label: "Thumbnail Image (92 x 60 / 72DPI to 96DPI)", name: "thumbnail", widget: "image", required: true}
       - {label: "Featured Image (500 x 333 / 72DPI to 96DPI)", name: "featuredpict", widget: "image", required: false}
-      - {label: "Choose order", name: "order", widget: "string", tagname: "p", required: false}
+      - {label: "Choose order", name: "order", widget: "number", default: 0, tagname: "p", required: false}
       - label: "Author"
         name: "author"
         widget: "select"
