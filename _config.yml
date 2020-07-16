@@ -49,7 +49,7 @@ collections:
   events:
     output: true
   slides:
-    output: false
+    output: true
 
 # set some common post defaults
 defaults:
