@@ -11,7 +11,7 @@ sectionid: history
 <div id="media-list">
     <div class="col-12 text-center flexCol">
         {% for media in media_list %}
-        {% capture media_url %}{{site.url}}/assets/docs/{{ media.name }}{% endcapture %}
+        {% capture media_url %}https://www.stpatrickshighschool.com/assets/docs/{{ media.name }}{% endcapture %}
         <div class="col-12 media-item">
             <div class="input-group">
                 <div class="input-group-prepend">
