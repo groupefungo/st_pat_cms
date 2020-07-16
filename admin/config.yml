@@ -97,11 +97,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Button Label (text on button)", name: "buttonlabel", widget: "string"}
       - {label: "Button URL", name: "button_url", widget: "string"}
       - label: "Is Button URL an anchor?"
-          name: "is_anchor"
-          widget: "select"
-          options:
-            - { label: "True", value: "true" }
-            - { label: "False", value: "false" }
+        name: "is_anchor"
+        widget: "select"
+        options:
+          - { label: "True", value: "true" }
+          - { label: "False", value: "false" }
       - label: "Author"
         name: "author"
         widget: "select"
