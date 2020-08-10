@@ -1,5 +1,5 @@
 ---
-status: draft
+status: public
 layout: post
 title: '"Ca va bien aller."'
 thumbnail: /assets/img/uploads/the-greater-the-storm-the-brighter-the-rainbow.jpg
