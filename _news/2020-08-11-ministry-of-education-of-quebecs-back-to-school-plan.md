@@ -10,11 +10,9 @@ shortdate: 2020-08-11
 ---
 Dear St.Pat's students and parents, 
 
-You will find below all the details from the Minister of Education's Back-to-School plan by clicking on the lick below:  
+You will find all the details from the Minister of Education's Back-to-School plan by clicking on the link below:  
 
 [Ministry of Education of Quebec Back-to-School Plan](https://www.quebec.ca/en/education/back-to-school-plan-fall-covid-19/)
-
-
 
 St.Patrick's High School is planning on abiding by the Ministry's plan.  The school will be sending more details home soon.  
 
