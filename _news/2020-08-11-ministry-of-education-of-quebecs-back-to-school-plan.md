@@ -1,7 +1,7 @@
 ---
 status: public
 layout: post
-title: Ministry of Education of Quebec's Back-to-School Plan
+title: Ministry of Education's Back-to-School Plan
 thumbnail: /assets/img/uploads/mees-plan.png
 order: 0
 author: marc_andre_daigle
