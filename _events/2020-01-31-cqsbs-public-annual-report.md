@@ -1,7 +1,7 @@
 ---
-status: public
+status: draft
 layout: home
-event_year: '2020'
+event_year: "2020"
 event_month: February
 event_date: 19
 title: CQSB's Public Annual Report
@@ -13,6 +13,5 @@ intro_paragraph: >-
   8pm
 thumbnail: /assets/img/uploads/INVITATION_Public_ANNUAL%20REPORT.png
 author: marc_andre_daigle
-date: '2020-01-31 12:01:36'
+date: 2020-01-31 12:01:36
 ---
-
