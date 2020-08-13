@@ -43,6 +43,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Admin", value: "administration" }
           - { label: "Stephanie Duquet", value: "stephanie_duquet" }
           - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
+          - { label: "Christopher Turnbull", value: "christopher_turnbull" }
           - { label: "Students Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss", required: true}
       - {label: "Short Publish Date", name: "shortdate", widget: "date", format: "YYYY-MM-DD", required: false}
@@ -78,6 +79,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Admin", value: "administration" }
           - { label: "Stephanie Duquet", value: "stephanie_duquet" }
           - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
+          - { label: "Christopher Turnbull", value: "christopher_turnbull" }
           - { label: "Student's Life", value: "student_life" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
@@ -109,7 +111,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Direction", value: "direction" }
           - { label: "Stephanie Duquet", value: "stephanie_duquet" }
           - { label: "Marc-André Daigle", value: "marc_andre_daigle" }
-          - { label: "Steven Dopheide", value: "steven_dopheide" }
+          - { label: "Christopher Turnbull", value: "christopher_turnbull" }
           - { label: "Students Life", value: "student_life" }
       - {label: "Choose order", name: "order", widget: "number", default: 0, tagname: "p", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
