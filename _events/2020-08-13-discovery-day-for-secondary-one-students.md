@@ -3,7 +3,7 @@ status: public
 layout: home
 event_year: "2020"
 event_month: August
-title: Discovery Day for Secondary one students
+title: Discovery Day for Secondary One students
 intro_paragraph: Mail will be sent home soon giving the students and parents
   details about the day.
 thumbnail: /assets/img/uploads/backtoschool-1.jpg
