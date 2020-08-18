@@ -50,6 +50,8 @@ collections:
     output: true
   slides:
     output: true
+  alert_badge:
+    output: true
 
 # set some common post defaults
 defaults:
