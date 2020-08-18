@@ -143,12 +143,13 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Category"
         name: "category"
         widget: "select"
+        default: "none"
         options:
-          - { label: "Choose a category", value: "" }
+          - { label: "Choose a category", value: "none" }
           - { label: "COVID-19", value: "covid" }
           - { label: "Winter Storm", value: "winter_storm" }
           - { label: "No Class Today", value: "no_class" }
           - { label: "Electric Outage", value: "outage" }
-          - { label: "Pedagogical Day:", value: "pedagogical" }
-          - { label: "Exams Session:", value: "exam_sessions" }
-          - { label: "Custom:", value: "custom_badge" }
+          - { label: "Pedagogical Day", value: "pedagogical" }
+          - { label: "Exams Session", value: "exam_sessions" }
+          - { label: "Custom", value: "custom_badge" }
