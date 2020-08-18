@@ -1,6 +1,7 @@
 ---
 status: public
 layout: home
+title: COVID 19
 custom_text: Important update
 link_text: More details
 link_url: ""
