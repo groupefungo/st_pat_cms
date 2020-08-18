@@ -138,7 +138,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Custom Text"
         name: "custom_text"
         widget: "string"
-        pattern: ['^.{26,}$', "Must not exceed 26 characters"]
+        pattern: ['.{26,}', "Must not exceed 26 characters"]
         required: false
       - {label: "Link Text", name: "link_text", widget: "string", required: false}
       - {label: "Link URL", name: "link_url", widget: "string", required: false}
