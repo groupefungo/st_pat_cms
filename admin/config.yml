@@ -117,3 +117,36 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss"}
       - {label: "Featured Image (1920 x 978 / 72DPI to 96DPI)", name: "featuredpict", widget: "image"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
+  # ALERT BADGES
+  - name: "alert_badge" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Alert Badges" # Used in the UI, ie.: "New Post"
+    folder: "_alerts" # The path to the folder where the documents are stored
+    sort: "order:asc"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields: # The fields each document in this collection have
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Draft", value: "draft" }
+          - { label: "Public", value: "public" }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+      - {label: "Custom Text", name: "custom_text", widget: "string", tagname: "h1", required: false}
+      - {label: "Link Text", name: "link_text", widget: "string", required: false}
+      - {label: "Link URL", name: "link_url", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss", required: true}
+      - {label: "Short Publish Date", name: "shortdate", widget: "date", format: "YYYY-MM-DD", required: false}
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "COVID-19", value: "covid" }
+          - { label: "Winter Storm", value: "winter_storm" }
+          - { label: "No Class Today", value: "no_class" }
+          - { label: "Electric Outage", value: "outage" }
+          - { label: "Pedagogical Day:", value: "pedagogical" }
+          - { label: "Exams Session:", value: "exam_sessions" }
+          - { label: "Custom:", value: "custom_badge" }
