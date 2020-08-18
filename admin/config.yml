@@ -134,7 +134,8 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Draft", value: "draft" }
           - { label: "Public", value: "public" }
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-      - {label: "Custom Text", name: "custom_text", widget: "string", tagname: "h1", required: false}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", required: false}
+      - {label: "Custom Text", name: "custom_text", widget: "string", required: false}
       - {label: "Link Text", name: "link_text", widget: "string", required: false}
       - {label: "Link URL", name: "link_url", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss", required: true}
@@ -143,6 +144,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "category"
         widget: "select"
         options:
+          - { label: "Choose a category", value: "" }
           - { label: "COVID-19", value: "covid" }
           - { label: "Winter Storm", value: "winter_storm" }
           - { label: "No Class Today", value: "no_class" }
