@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: home
 title: Custom Badge 1
 custom_text: Custom Badge 1

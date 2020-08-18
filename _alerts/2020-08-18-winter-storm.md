@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 title: Winter Storm
 layout: home
 custom_text: The school is closed today

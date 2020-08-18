@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: home
 title: Exams Session
 custom_text: " Exams Session started"

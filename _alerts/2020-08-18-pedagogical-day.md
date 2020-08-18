@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: home
 title: Pedagogical Day
 custom_text: No classes scheduled today

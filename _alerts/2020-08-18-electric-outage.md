@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: home
 title: Electric Outage
 custom_text: No classes today

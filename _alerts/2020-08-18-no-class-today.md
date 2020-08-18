@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: home
 title: No Class Today
 custom_text: Due to reasons out of our control
