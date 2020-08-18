@@ -118,7 +118,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Featured Image (1920 x 978 / 72DPI to 96DPI)", name: "featuredpict", widget: "image"}
       - {label: "Categories", name: "categories", widget: "string", required: false}
   # ALERT BADGES
-  - name: "alert_badge" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "alerts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Alert Badges" # Used in the UI, ie.: "New Post"
     folder: "_alerts" # The path to the folder where the documents are stored
     sort: "order:asc"
@@ -138,7 +138,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Custom Text"
         name: "custom_text"
         widget: "string"
-        pattern: ['.{26,}', "Must not exceed 26 characters"]
+        pattern: ['.{34,}', "Must not exceed 34 characters"]
         required: false
       - {label: "Link Text", name: "link_text", widget: "string", required: false}
       - {label: "Link URL", name: "link_url", widget: "string", required: false}

@@ -1,3 +1,14 @@
+{% assign site_alerts = site.alerts | where: "status", "public" %}
+{% assign alerts_size = site_alerts | size %}
+
+{% assign alert_covid = site.alerts | where: "category", "covid" %}
+{% assign alert_winter = site.alerts | where: "category", "winter_storm" %}
+{% assign alert_noclass = site.alerts | where: "category", "no_class" %}
+{% assign alert_outage = site.alerts | where: "category", "outage" %}
+{% assign alert_pedagogical = site.alerts | where: "category", "pedagogical" %}
+{% assign alert_exams = site.alerts | where: "category", "exam_sessions" %}
+{% assign alert_customs = site.alerts | where: "category", "custom_badge" %}
+
 <!--------------------------------->
 <!-- Section Floating Menu ------------>
 <!--------------------------------->
@@ -6,70 +17,160 @@
         <div class="row">
             <div class="col-12">
                 <!-- ALERT TAGS ZONE -->
-                <div id="alert_tags" class="" style="display: none;">
+                <div id="alert_tags" class="" style="{% if alerts_size <= 0 %}display: none;{% endif %}">
                     <!-- if pandemy -->
-                    <div class="alert_circle pandemy">
-                        <div class="alertcontent">
-                            <a href="#" class="clickall">
-                                <span class="sub_link" href="#">More Details</span>
-                            </a>
-                            <span class="topicon"></span>
-                            <span class="main_message">Covid-19</span>
-                            <span class="sub_message">Important Update</span>
+                    {%- for pandemy in alert_covid -%}
+                        <div class="alert_circle pandemy" style="{% if pandemy.status == 'draft' %}display: none;{% endif %}">
+                            <div class="alertcontent">
+                                <a href="{{pandemy.link_url}}"
+                                   class="clickall"
+                                   style="{% unless pandemy.link_url %}display: none;{% endunless %}"
+                                >
+                                    <span class="sub_link">
+                                        {{pandemy.link_text | strip}}
+                                    </span>
+                                </a>
+                                <span class="topicon"></span>
+                                <span class="main_message">
+                                    {{pandemy.title | strip}}
+                                </span>
+                                <span class="sub_message">
+                                    {{pandemy.custom_text | strip}}
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    {%- endfor -%}
+
                     <!-- if snow -->
-                    <div class="alert_circle snow">
-                        <div class="alertcontent">
-                            <span class="topicon"></span>
-                            <span class="main_message">Winter Storm</span>
-                            <span class="sub_message">The school is closed today</span>
+                    {%- for snow in alert_winter -%}
+                        <div class="alert_circle snow" style="{% if snow.status == 'draft' %}display: none;{% endif %}">
+                            <div class="alertcontent">
+                                <span class="topicon"></span>
+                                <span class="main_message">
+                                    {{snow.title | strip}}
+                                </span>
+                                <span class="sub_message">
+                                    {{snow.custom_text | strip}}
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    {%- endfor -%}
+
                     <!-- if no class today -->
-                    <div class="alert_circle noclass">
-                        <div class="alertcontent">
-                            <a href="#" class="clickall">
-                                <span class="sub_link" href="#">More Details</span>
-                            </a>
-                            <span class="topicon"></span>
-                            <span class="main_message">No Class Today</span>
-                            <span class="sub_message">Due to reasons out of our control</span>
+                    {%- for class in alert_noclass -%}
+                        <div class="alert_circle noclass" style="{% if class.status == 'draft' %}display: none;{% endif %}">
+                            <div class="alertcontent">
+                                <a href="{{class.link_url}}"
+                                   class="clickall"
+                                   style="{% unless class.link_url %}display: none;{% endunless %}"
+                                >
+                                    <span class="sub_link">
+                                        {{class.link_text | strip}}
+                                    </span>
+                                </a>
+                                <span class="topicon"></span>
+                                <span class="main_message">
+                                    {{class.title | strip}}
+                                </span>
+                                <span class="sub_message">
+                                    {{class.custom_text | strip}}
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    {%- endfor -%}
+
+
                     <!-- if electric outage -->
-                    <div class="alert_circle electricity">
-                        <div class="alertcontent">
-                            <a href="#" class="clickall">
-                                <span class="sub_link" href="#">More Details</span>
-                            </a>
-                            <span class="topicon"></span>
-                            <span class="main_message">Electric Outage</span>
-                            <span class="sub_message">No classes today</span>
+                    {%- for outage in alert_outage -%}
+                        <div class="alert_circle electricity" style="{% if outage.status == 'draft' %}display: none;{% endif %}">
+                            <div class="alertcontent">
+                                <a href="{{outage.link_url}}"
+                                   class="clickall"
+                                   style="{% unless outage.link_url %}display: none;{% endunless %}"
+                                >
+                                    <span class="sub_link">
+                                        {{outage.link_text | strip}}
+                                    </span>
+                                </a>
+                                <span class="topicon"></span>
+                                <span class="main_message">
+                                    {{outage.title | strip}}
+                                </span>
+                                <span class="sub_message">
+                                    {{outage.custom_text | strip}}
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    {%- endfor -%}
+
                     <!-- if pedago -->
-                    <div class="alert_circle pedago">
-                        <div class="alertcontent">
-                            <a href="#" class="clickall">
-                                <span class="sub_link" href="#">More Details</span>
-                            </a>
-                            <span class="topicon"></span>
-                            <span class="main_message">Pedagogic Day</span>
-                            <span class="sub_message">No classes scheduled today</span>
+                    {%- for pedagogical in alert_pedagogical -%}
+                        <div class="alert_circle pedago" style="{% if pedagogical.status == 'draft' %}display: none;{% endif %}">
+                            <div class="alertcontent">
+                                <a href="{{pedagogical.link_url}}"
+                                   class="clickall"
+                                   style="{% unless pedagogical.link_url %}display: none;{% endunless %}"
+                                >
+                                    <span class="sub_link">
+                                        {{pedagogical.link_text | strip}}
+                                    </span>
+                                </a>
+                                <span class="topicon"></span>
+                                <span class="main_message">
+                                    {{pedagogical.title | strip}}
+                                </span>
+                                <span class="sub_message">
+                                    {{pedagogical.custom_text | strip}}
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    {%- endfor -%}
+
+                    <!-- if exams -->
+                    {%- for exams in alert_exams -%}
+                        <div class="alert_circle exams" style="{% if exams.status == 'draft' %}display: none;{% endif %}">
+                            <div class="alertcontent">
+                                <a href="{{exams.link_url}}"
+                                   class="clickall"
+                                   style="{% unless exams.link_url %}display: none;{% endunless %}"
+                                >
+                                    <span class="sub_link">
+                                        {{exams.link_text | strip}}
+                                    </span>
+                                </a>
+                                <span class="topicon"></span>
+                                <span class="main_message">
+                                    {{exams.title | strip}}
+                                </span>
+                                <span class="sub_message">
+                                    {{exams.custom_text | strip}}
+                                </span>
+                            </div>
+                        </div>
+                    {%- endfor -%}
+
                     <!-- if generic -->
-                    <div class="alert_circle generic">
-                        <div class="alertcontent">
-                            <a href="#" class="clickall">
-                                <span class="sub_link" href="#">More Details</span>
-                            </a>
-                            <span class="topicon"></span>
-                            <span class="main_message">Generic Alert</span>
-                            <span class="sub_message">Example</span>
+                    {%- for custom in alert_customs -%}
+                        <div class="alert_circle generic" style="{% if custom.status == 'draft' %}display: none;{% endif %}">
+                            <div class="alertcontent">
+                                <a href="{{custom.link_url}}"
+                                   class="clickall"
+                                   style="{% unless custom.link_url %}display: none;{% endunless %}"
+                                >
+                                    <span class="sub_link">
+                                        {{custom.link_text | strip}}
+                                    </span>
+                                </a>
+                                <span class="topicon"></span>
+                                <span class="main_message">
+                                    {{custom.title | strip}}
+                                </span>
+                                <span class="sub_message">
+                                    {{custom.custom_text | strip}}
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    {%- endfor -%}
                 </div>
                 <!-- END OF ALERT TAGS ZONE -->
 
