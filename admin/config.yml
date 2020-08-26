@@ -148,7 +148,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Custom", value: "custom_badge" }
       - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: false}
-      - label: "Custom Text"
+      - label: "Custom Text (max 34 characters)"
         name: "custom_text"
         widget: "string"
         pattern: ['^.{0,34}$', "Must not exceed 34 characters"]
