@@ -133,7 +133,7 @@ collections: # A list of collections the CMS should be able to edit
         options:
           - { label: "Draft", value: "draft" }
           - { label: "Public", value: "public" }
-      - label: "Category"
+      - label: "Alert Tag Category"
         name: "category"
         widget: "select"
         default: "none"
@@ -151,7 +151,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Custom Text"
         name: "custom_text"
         widget: "string"
-        pattern: ['.{36,}', "Must not exceed 34 characters"]
+        pattern: ['^.{0,34}$', "Must not exceed 34 characters"]
         required: false
       - {label: "Link Text", name: "link_text", widget: "string", required: false}
       - {label: "Link URL", name: "link_url", widget: "string", required: false}
