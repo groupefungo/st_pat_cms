@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 category: no_class
 layout: home
 title: No Class Today
