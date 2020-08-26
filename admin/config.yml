@@ -133,17 +133,6 @@ collections: # A list of collections the CMS should be able to edit
         options:
           - { label: "Draft", value: "draft" }
           - { label: "Public", value: "public" }
-      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1", required: false}
-      - label: "Custom Text"
-        name: "custom_text"
-        widget: "string"
-        pattern: ['.{34,}', "Must not exceed 34 characters"]
-        required: false
-      - {label: "Link Text", name: "link_text", widget: "string", required: false}
-      - {label: "Link URL", name: "link_url", widget: "string", required: false}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss", required: true}
-      - {label: "Short Publish Date", name: "shortdate", widget: "date", format: "YYYY-MM-DD", required: false}
       - label: "Category"
         name: "category"
         widget: "select"
@@ -157,3 +146,14 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Pedagogical Day", value: "pedagogical" }
           - { label: "Exams Session", value: "exam_sessions" }
           - { label: "Custom", value: "custom_badge" }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", required: false}
+      - label: "Custom Text"
+        name: "custom_text"
+        widget: "string"
+        pattern: ['.{34,}', "Must not exceed 34 characters"]
+        required: false
+      - {label: "Link Text", name: "link_text", widget: "string", required: false}
+      - {label: "Link URL", name: "link_url", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:ss", required: true}
+      - {label: "Short Publish Date", name: "shortdate", widget: "date", format: "YYYY-MM-DD", required: false}
