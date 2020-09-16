@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: Ministry of Education's Back-to-School Plan
 thumbnail: /assets/img/uploads/mees-plan.png
