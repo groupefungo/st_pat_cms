@@ -9,11 +9,3 @@ date: 2020-03-30 13:03:46
 shortdate: 2020-03-30
 ---
 THE GREATER THE STORM, THE BRIGHTER THE RAINBOW!
-
-
-
-
-
-
-
-Stay at home safe St.Pat's.  We will see you soon!
