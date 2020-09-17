@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 category: custom_badge
 layout: home
 title: Color Clash was postponed.  Today is a regular school Day 2
