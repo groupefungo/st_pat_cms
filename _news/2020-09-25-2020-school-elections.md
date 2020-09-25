@@ -5,7 +5,7 @@ title: 2020 School Elections
 thumbnail: /assets/img/uploads/cqsb.png
 order: 0
 author: marc_andre_daigle
-date: 2020-09-24 21:09:40
+date: 2020-09-24 21:09:36
 shortdate: 2020-09-24
 ---
 **Information concerning the November 1st, 2020 Election**
