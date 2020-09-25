@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: "St.Pat's Annual General Assembly - September 16th, 2020, 7h00pm.  "
 thumbnail: /assets/img/uploads/school-assembly.png
