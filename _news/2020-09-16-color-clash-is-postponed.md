@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: Color Clash is Postponed
 thumbnail: /assets/img/uploads/color-clash.png
