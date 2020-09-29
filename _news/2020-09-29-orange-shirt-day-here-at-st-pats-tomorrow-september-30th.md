@@ -1,7 +1,7 @@
 ---
 status: public
 layout: post
-title: "Orange Shirt Day here at St.Pat's tomorrow September 30th! "
+title: "Orange Shirt Day at St.Pat's tomorrow September 30th! "
 thumbnail: /assets/img/uploads/orange-shirt-day.png
 order: 0
 author: marc_andre_daigle
