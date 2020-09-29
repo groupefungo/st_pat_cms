@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 category: pedagogical
 layout: home
 title: Pedagogical Day
