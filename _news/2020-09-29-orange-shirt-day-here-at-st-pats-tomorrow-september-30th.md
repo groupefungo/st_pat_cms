@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: "Orange Shirt Day at St.Pat's tomorrow September 30th! "
 thumbnail: /assets/img/uploads/orange-shirt-day.png
