@@ -1,5 +1,5 @@
 ---
-status: draft
+status: public
 layout: home
 event_year: "2020"
 event_month: October
