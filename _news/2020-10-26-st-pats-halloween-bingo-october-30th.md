@@ -1,7 +1,7 @@
 ---
 status: public
 layout: post
-title: St.Pat's Halloween Bingo!  October 30th!
+title: St.Pat's Halloween Bingo on October 30th!
 thumbnail: /assets/img/uploads/halloween.png
 order: 0
 author: marc_andre_daigle
