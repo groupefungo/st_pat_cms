@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: 2020 School Elections
 thumbnail: /assets/img/uploads/cqsb.png
