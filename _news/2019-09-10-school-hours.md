@@ -1,5 +1,5 @@
 ---
-status: draft
+status: public
 layout: post
 title: School Hours
 thumbnail: /assets/img/uploads/news_2.jpg
