@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: St.Pat's Halloween Bingo on October 30th!
 thumbnail: /assets/img/uploads/halloween.png
