@@ -1,7 +1,7 @@
 ---
 status: public
 layout: post
-title: Ugly Sweater Day
+title: Ugly Sweater Day today December 10th and tomorrow!
 thumbnail: /assets/img/uploads/ugly-sweater-day.png
 order: 0
 author: marc_andre_daigle
