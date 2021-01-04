@@ -1,5 +1,5 @@
 ---
-status: public
+status: draft
 layout: post
 title: Ugly Sweater Day today December 10th and tomorrow!
 thumbnail: /assets/img/uploads/ugly-sweater-day.png
